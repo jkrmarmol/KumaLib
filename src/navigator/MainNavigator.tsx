@@ -1,14 +1,17 @@
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "../views/Home";
-import SignIn from "../views/SignIn";
-import SignUp from '../views/SignUp';
+import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
+import Home from "../screens/Home";
+import SignIn from "../screens/SignIn";
+import SignUp from '../screens/SignUp';
 
 
 
 const Stack = createNativeStackNavigator();
 
 export default function MainNavigator() {
+  const nav = useNavigation<NavigationProp<ParamListBase>>();
+
   return (
     <Stack.Navigator>
 
@@ -30,7 +33,10 @@ export default function MainNavigator() {
           },
           headerShadowVisible: false,
           headerRight: () => (
-            <TouchableOpacity style={style.signInTouchableOpacity}>
+            <TouchableOpacity
+              onPress={() => nav.navigate('SignUp')}
+              style={style.signInTouchableOpacity}
+            >
               <Text style={style.signInText}>Register</Text>
             </TouchableOpacity>
           ),
@@ -47,7 +53,10 @@ export default function MainNavigator() {
           },
           headerShadowVisible: false,
           headerRight: () => (
-            <TouchableOpacity style={style.signInTouchableOpacity}>
+            <TouchableOpacity
+              onPress={() => nav.navigate('SignIn')}
+              style={style.signInTouchableOpacity}
+            >
               <Text style={style.signInText}>Login</Text>
             </TouchableOpacity>
           ),

@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { SafeAreaView } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
-import MainNavigator from './src/routes/MainNavigator';
+import MainNavigator from './src/navigator/MainNavigator';
 import * as SplashScreen from 'expo-splash-screen'
 import { useFonts } from 'expo-font'
 
