@@ -1,4 +1,4 @@
-import React, { useState, useRef, MutableRefObject } from 'react'
+import React, { useState, useRef, MutableRefObject } from 'react';
 import {
   View,
   Text,
@@ -9,13 +9,15 @@ import {
   Animated,
   TouchableOpacity,
   StyleSheet
-} from 'react-native'
+} from 'react-native';
+import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import slide from '../constant/slideItems';
-import OnboardingItems from '../components/OnboardingItems';
-import Paginator from '../components/Paginator';
+import OnboardingItems from '../components/Home/OnboardingItems';
+import Paginator from '../components/Home/Paginator';
 
 
 export default function Home() {
+  const nav = useNavigation<NavigationProp<ParamListBase>>();
   const { width } = useWindowDimensions();
   const WIDTH = (85 / 100) * width;
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,16 +36,13 @@ export default function Home() {
       />
 
       <View style={style.mainContainer}>
-
         <View style={[style.container, { width: WIDTH }]}>
-
           <Image
             source={require('../assets/images/KumaLib_Logo.png')}
             style={style.logoImage}
           />
 
           <View style={style.onboardingContainer}>
-
             <FlatList
               data={slide}
               renderItem={({ item }) => <OnboardingItems item={item} />}
@@ -71,19 +70,23 @@ export default function Home() {
               data={slide}
               scrollX={scrollX.current}
             />
-
           </View>
 
           <View style={style.buttonContainer}>
-            <TouchableOpacity style={style.buttonTouchableOpacity}>
+            <TouchableOpacity
+              onPress={() => nav.navigate('SignIn')}
+              style={style.buttonTouchableOpacity}
+            >
               <Text style={style.buttonText}>Log In</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={style.buttonTouchableOpacity}>
+            <TouchableOpacity
+              onPress={() => nav.navigate('SignUp')}
+              style={style.buttonTouchableOpacity}
+            >
               <Text style={style.buttonText}>Create new account</Text>
             </TouchableOpacity>
           </View>
-
         </View>
       </View >
     </>
@@ -115,17 +118,17 @@ const style = StyleSheet.create({
   buttonContainer: {
     width: '100%',
     marginVertical: 25,
-    gap: 12
+    gap: 12,
   },
   buttonTouchableOpacity: {
     backgroundColor: '#000',
     width: '100%',
-    borderRadius: 12
+    borderRadius: 12,
   },
   buttonText: {
     color: '#fff',
     textAlign: 'center',
-    paddingVertical: 14,
-    fontWeight: 'bold'
+    paddingVertical: 12,
+    fontFamily: 'PoppinsMedium'
   }
 })

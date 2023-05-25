@@ -11,3 +11,8 @@ export interface IPaginatorParam {
   data: ISlideItems[],
   scrollX: Animated.Value
 }
+
+export interface ISocMedImages {
+  name: string;
+  images: ImageSourcePropType
+}
