@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, useWindowDimensions, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { MaterialCommunityIcons, MaterialIcons, Entypo } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar'
@@ -7,6 +8,7 @@ import SocMedAuth from '../components/SignNSignUp/SocMedAuth'
 
 
 export default function SignIn() {
+  const nav = useNavigation<NavigationProp<ParamListBase>>();
   const { width } = useWindowDimensions();
   const WIDTH = (85 / 100) * width;
   const [showPassword, setShowPassword] = useState(true);
@@ -67,7 +69,10 @@ export default function SignIn() {
 
             </View>
 
-            <TouchableOpacity style={style.signUpTouchableOpacity}>
+            <TouchableOpacity
+              onPress={() => nav.navigate('DashboardNav')}
+              style={style.signUpTouchableOpacity}
+            >
               <LinearGradient
                 colors={['#F7A600', '#F70000']}
                 start={{ x: 0, y: 0 }}
