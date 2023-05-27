@@ -16,3 +16,16 @@ export interface ISocMedImages {
   name: string;
   images: ImageSourcePropType
 }
+
+export interface IDataBookRender {
+  id: number;
+  title: string;
+  author: string;
+  cover: string;
+  hash: string;
+}
+
+export interface IBookRenderParam {
+  tab: string;
+  item: IDataBookRender[]
+}

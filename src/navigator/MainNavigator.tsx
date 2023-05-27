@@ -1,13 +1,10 @@
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
-import AppLoader from '../screens/AppLoader';
 import Home from "../screens/Home";
 import SignIn from "../screens/SignIn";
 import SignUp from '../screens/SignUp';
 import DashboardNavigator from './DashboardNavigator';
-
-
 
 
 const Stack = createNativeStackNavigator();
@@ -17,14 +14,6 @@ export default function MainNavigator() {
 
   return (
     <Stack.Navigator>
-
-      <Stack.Screen
-        name='AppLoader'
-        component={AppLoader}
-        options={{
-          headerShown: false,
-        }}
-      />
 
       <Stack.Screen
         name='Home'

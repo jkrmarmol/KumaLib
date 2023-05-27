@@ -1,0 +1,1755 @@
+{
+  "success": 1,
+  "books": [
+      {
+          "id": 25139557,
+          "title": "Birds of Japan",
+          "author": "Mark Brazil",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e6/59/32/e65932983c7cbb42391495ee33900e7e.jpg",
+          "hash": "5e13cb"
+      },
+      {
+          "id": 25139558,
+          "title": "Birds of Southern India",
+          "author": "Richard Grimmett, Tim Inskipp",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/77/d1/28/77d12891c0df6dda3360befdf079e46a.jpg",
+          "hash": "9435b2"
+      },
+      {
+          "id": 25139559,
+          "title": "Birds of Northern India",
+          "author": "Richard Grimmett, Tim Inskipp",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1a/51/f7/1a51f7e2c7e631daf05d05e4a3e0dc14.jpg",
+          "hash": "7ba2d2"
+      },
+      {
+          "id": 25139562,
+          "title": "메타버스 사피엔스",
+          "author": "김대식",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b7/df/01/b7df018b4882f3324fed50ad3c6ac0fd.jpg",
+          "hash": "f15bae"
+      },
+      {
+          "id": 25139563,
+          "title": "북택트",
+          "author": "김범석",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/00/30/28/003028f6b6928b703e578c1c4e7b8b27.jpg",
+          "hash": "052acb"
+      },
+      {
+          "id": 25139564,
+          "title": "비즈니스 워",
+          "author": "데이비드 브라운",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/00/28/50/00285060052edba6f0ffb55f980155ab.jpg",
+          "hash": "d09d28"
+      },
+      {
+          "id": 25139595,
+          "title": "MICROSOFT AZURE COGNITIVE SERVICES",
+          "author": "CHRISTOPHER. NELLIS SEFERLIS (CHRISTOPHER. ROBERTS, TIMOTHY ANDY.)",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/8c/60/a3/8c60a3faa30dff06a66c1be72b2aed2a.jpg",
+          "hash": "45b97d"
+      },
+      {
+          "id": 25139609,
+          "title": "Transitional Justice and the Historical Abuses of Church and State",
+          "author": "James Gallen",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f1/88/34/f1883426c08859b205d3db502f5344b1.jpg",
+          "hash": "962b0a"
+      },
+      {
+          "id": 25139614,
+          "title": "Next Generation Retail",
+          "author": "Deborah Weinswig, Renee Hartmann",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a5/2c/e6/a52ce635e64e9a0fd6bcce9f2c8accb3.jpg",
+          "hash": "ae25e4"
+      },
+      {
+          "id": 25139627,
+          "title": "Plant MicroRNAs and Stress Response",
+          "author": "Deepu Pandita (editor), Anu Pandita (editor)",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/41/b1/46/41b1468633a10c273e9b074585573722.jpg",
+          "hash": "10ff3c"
+      },
+      {
+          "id": 25139628,
+          "title": "Logistics and Supply Chain Innovation",
+          "author": "John Manners-Bell, Ken Lyon",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/7e/63/ec/7e63ec491ff9633a579a87c60dfc64bc.jpg",
+          "hash": "4e5036"
+      },
+      {
+          "id": 25139629,
+          "title": "On Contemporary Chinese Legal System",
+          "author": "Xiaobo Dong, Yafang Zhang",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a2/0c/ba/a20cbad4e6bd209a98d85bdc0046dc6f.jpg",
+          "hash": "eae9e2"
+      },
+      {
+          "id": 25139658,
+          "title": "The Semantic Web: 20th International Conference, ESWC 2023, Hersonissos, Crete, Greece, May 28–June 1, 2023, Proceedings",
+          "author": "Catia Pesquita, Ernesto Jimenez-Ruiz, Jamie McCusker, Daniel Faria, Mauro Dragoni, Anastasia Dimou, Raphael Troncy, Sven Hertling, (eds.)",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/29/f5/07/29f50795f06352c7d57a330786ec42d5.jpg",
+          "hash": "d258cf"
+      },
+      {
+          "id": 25139659,
+          "title": "Making a Metaverse That Matters: From Snow Crash & Second Life to A Virtual World Worth Fighting For",
+          "author": "Wagner James Au",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/22/96/aa/2296aad483c851433bf6a96498cde8ef.jpg",
+          "hash": "2cdb6c"
+      },
+      {
+          "id": 25139672,
+          "title": "Artificial Intelligence Techniques in Human Resource Management",
+          "author": "Arvind K. Birdie",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0e/5e/e7/0e5ee7f1c5f4776b181398d3f705548c.jpg",
+          "hash": "15b053"
+      },
+      {
+          "id": 25139681,
+          "title": "How to Be a Rule-Breaking Letterer: A Guide to Making Perfectly Imperfect Art",
+          "author": "Huyen Dinh",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/be/93/60/be936068f68be26a8653cbdadcabd395.jpg",
+          "hash": "615c7f"
+      },
+      {
+          "id": 25139688,
+          "title": "The Plant-Powered Plan to Beat Diabetes",
+          "author": "Sharon Palmer",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3c/3c/88/3c3c88afbe23a5a1421db2a5a0be8ea4.jpg",
+          "hash": "d03916"
+      },
+      {
+          "id": 25139690,
+          "title": "Edible Wild Plants, Volume 2",
+          "author": "John Kallas, PhD",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/5a/22/48/5a224872316058afd392b06218a8889c.jpg",
+          "hash": "9418ec"
+      },
+      {
+          "id": 25139692,
+          "title": "The Yards Between Us: A Memoir of Life, Love and Football",
+          "author": "Ryan Russell",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/2d/a8/9f/2da89ffae0e25c75a7a6e095eae99bc8.jpg",
+          "hash": "f9ace0"
+      },
+      {
+          "id": 25139698,
+          "title": "The T Guide: Our Trans Experiences and a Celebration of Gender Expression—Man, Woman, Nonbinary, and Beyond",
+          "author": "Gigi Gorgeous; Gottmik; Swan Huntley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b9/67/58/b96758a4cd0b9230190c12cc2f5d0ce1.jpg",
+          "hash": "dfd48e"
+      },
+      {
+          "id": 25139699,
+          "title": "Extra Easy Keto",
+          "author": "Stephanie Laska",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/2d/1d/4a/2d1d4a2222e480979843a488e44f8dba.jpg",
+          "hash": "3529b0"
+      },
+      {
+          "id": 25139706,
+          "title": "Avidly Reads Screen Time",
+          "author": "Phillip Maciak",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/83/0f/67/830f67fb9b83fdf5892e87bf89fb14be.jpg",
+          "hash": "298ab7"
+      },
+      {
+          "id": 25139720,
+          "title": "Fundamentals of Hydrogen Embrittlement",
+          "author": "Michihiko Nagumo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/9c/c2/c8/9cc2c853aa371d214b060f358008f875.jpg",
+          "hash": "9f1c75"
+      },
+      {
+          "id": 25139725,
+          "title": "O conceito de Barroco",
+          "author": "Arnold Hauser",
+          "cover": "http://libgen.rs/covers/3739000/d87ea061633774c286bfe1d19e55dc24-d.jpg",
+          "hash": "cf03a8"
+      },
+      {
+          "id": 25139742,
+          "title": "Resista não faça nada: A Batalha pela Economia da Atenção",
+          "author": "Jenny Odell",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c4/ba/98/c4ba98998a7f13059e72c3781937ddb9.png",
+          "hash": "8f13a4"
+      },
+      {
+          "id": 25139756,
+          "title": "Comunismo del hombre solo: Un ensayo sobre Aki Kaurismäki",
+          "author": "Federico Galende",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/37/78/a2/3778a2cef8ae8a28b1a1771597d496d9.jpg",
+          "hash": "804324"
+      },
+      {
+          "id": 25139757,
+          "title": "Birds of Costa Rica",
+          "author": "Dale Dyer, Steve N. G. Howell",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/da/28/4b/da284b8f0ad48ddf17b072fc595fca61.jpg",
+          "hash": "a8b9f6"
+      },
+      {
+          "id": 25139759,
+          "title": "Lilo and Stitch. The Official Cookbook : More Than 40 Recipes to Make for Your ‘Ohana",
+          "author": "Insight Editions",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/7c/40/63/7c4063617e7fcaf4d3f55383840c5eed.jpg",
+          "hash": "8776e9"
+      },
+      {
+          "id": 25139829,
+          "title": "Ensayos sobre la libertad en un planeta frágil",
+          "author": "José Ardillo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/4c/85/92/4c85921bfde8f023262422211c43069a.jpg",
+          "hash": "eb9da2"
+      },
+      {
+          "id": 25139861,
+          "title": "北极史前史：人类在高纬度地区的定居",
+          "author": "约翰·F.霍菲克尔",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b8/4a/29/b84a29f1cd9c3fd873a581d64d9ec28d.jpg",
+          "hash": "5a43ad"
+      },
+      {
+          "id": 25139901,
+          "title": "Collusion: The Dark History of the Duplessis Orphans",
+          "author": "Rod Vienneau",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ac/c6/4b/acc64b9a3259bdd69af77ddc9a69bdb3.jpg",
+          "hash": "1cf785"
+      },
+      {
+          "id": 25139910,
+          "title": "The Oxford Handbook of Time in Music",
+          "author": "Mark Doffman, Emily Payne, Toby Young",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/16/ac/6f/16ac6f476ff3aecb1153ee45e079754e.jpg",
+          "hash": "62f638"
+      },
+      {
+          "id": 25139922,
+          "title": "Fire night",
+          "author": "Penelope Douglas",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/5f/db/c6/5fdbc649eeb5e46d82614d6406504040.jpg",
+          "hash": "b7f0c7"
+      },
+      {
+          "id": 25139935,
+          "title": "La teoria della rivalità (Italian Edition)",
+          "author": "Paola Chiozza",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/77/a7/47/77a747426f5406a400d08abc09c8b378.jpg",
+          "hash": "b8468f"
+      },
+      {
+          "id": 25139947,
+          "title": "50부터는 알아서 척척, 건강해지는 착한 몸은 없다",
+          "author": "황윤신",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b3/ef/83/b3ef83440a9a18d2305afe2b02369303.jpg",
+          "hash": "b661d0"
+      },
+      {
+          "id": 25139948,
+          "title": "오십에 읽는 순자",
+          "author": "최종엽",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f2/a6/f9/f2a6f94346bb7b5e24f8606a176831b0.jpg",
+          "hash": "aa0a05"
+      },
+      {
+          "id": 25139968,
+          "title": "Linux是怎样工作的（198张图解+大量实验程序，直击Linux运行原理；“现代计算机操作系统”图解趣味版）（图灵图书）",
+          "author": "武内觉",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f9/f2/e4/f9f2e450c5304fa79673edbe04565cd2.jpg",
+          "hash": "29724d"
+      },
+      {
+          "id": 25139970,
+          "title": "Linux是怎样工作的（198张图解+大量实验程序，直击Linux运行原理；“现代计算机操作系统”图解趣味版）（图灵图书）",
+          "author": "武内觉",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/62/a2/0c/62a20cb569b2899377d3ddfe9ae5f618.jpg",
+          "hash": "178a9a"
+      },
+      {
+          "id": 25139987,
+          "title": "Quelques mois dans ma vie",
+          "author": "Michel Houellebecq",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/76/dc/ef/76dcef895ca28ec69d52f77e741de9ba.jpg",
+          "hash": "94d2af"
+      },
+      {
+          "id": 25140123,
+          "title": "Dear Aaron (Livro Único)",
+          "author": "Mariana Zapata - SCB",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/86/c5/e3/86c5e3345f9aef70d2e05b136d75238b.jpg",
+          "hash": "a048eb"
+      },
+      {
+          "id": 25140134,
+          "title": "Made For Romeo",
+          "author": "Natasha Madison",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/44/66/e1/4466e1246df6f34d7b9ec337582af50e.jpg",
+          "hash": "3f405d"
+      },
+      {
+          "id": 25140174,
+          "title": "Princess",
+          "author": "Chlore Smys & Juliette Pierce",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0b/08/d8/0b08d887e7846eece6e39fe0a04520dc.jpg",
+          "hash": "45feed"
+      },
+      {
+          "id": 25140301,
+          "title": "Tentang Kita yang Tak Mengerti Makna Sia-Sia",
+          "author": "Pradnya Paramitha",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/90/6a/bb/906abb6c8abcdc100ac19e89b76cbb0c.jpg",
+          "hash": "b7b1e9"
+      },
+      {
+          "id": 25140363,
+          "title": "How to Worship a King Study Guide SPA",
+          "author": "Zach Neese",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/86/be/a0/86bea0d0746a5ed8d96e7937a47101bd.jpg",
+          "hash": "cf8d5c"
+      },
+      {
+          "id": 25140424,
+          "title": "Un singular plural. El psicoanálisis ante la prueba del grupo",
+          "author": "René Kaës",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e4/0d/99/e40d99b2219cbd57acb0acbf867520ff.jpg",
+          "hash": "ab4dcd"
+      },
+      {
+          "id": 25140435,
+          "title": "Yaldızlı Kemikler Tacı ",
+          "author": "Jennifer l. Armentrout",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/00/8d/8d/008d8dc700747def5070122c6c85a35d.jpg",
+          "hash": "762c59"
+      },
+      {
+          "id": 25140442,
+          "title": "Found in a Bookshop",
+          "author": "Stephanie Butland",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/76/df/ff/76dfff7e2d923c70592e2391398a0e60.jpg",
+          "hash": "0f6dc2"
+      },
+      {
+          "id": 25140467,
+          "title": "Microsoft Word - el placer de leer a lacan.docx",
+          "author": "Benjamin Rubio",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/72/46/40/724640966ea1f8c4293cec4dd0f7de69.jpg",
+          "hash": "b305ce"
+      },
+      {
+          "id": 25140468,
+          "title": "EL PLACER DE LEER A FREUD",
+          "author": "JUAN DAVID NASIO",
+          "cover": "https://reader.cdn-zlib.se/books/26920b07a9afa2948ed771e861db4633/1s299.jpg",
+          "hash": "e02189"
+      },
+      {
+          "id": 25140504,
+          "title": "Una temporada con Lacan - Pierre Rey",
+          "author": "Pierre Rey",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a0/15/ff/a015ff3621c9f0a576fdc7cf66627e4d.jpg",
+          "hash": "2538a3"
+      },
+      {
+          "id": 25140554,
+          "title": "La luna está en Duala",
+          "author": "Sani Ladan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0b/a0/e5/0ba0e52c1ea2d77ab12bc875e1b3f410.jpg",
+          "hash": "359db3"
+      },
+      {
+          "id": 25140555,
+          "title": "Los pasos perdidos del catolicismo español: los católicos y la política española del siglo XX",
+          "author": "Carlos M. Rodríguez López-Brea (ed.)",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e9/d2/12/e9d212ddaeb7c0ce10ea126f9ebde475.jpg",
+          "hash": "5eb4b1"
+      },
+      {
+          "id": 25140556,
+          "title": "A los delincuentes hay que matarlos",
+          "author": "Rosa Silverio",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f6/36/a2/f636a29a6fe2f38827894b08c65414be.jpg",
+          "hash": "0109d8"
+      },
+      {
+          "id": 25140585,
+          "title": "Las sociologías del individuo",
+          "author": "Danilo Martuccelli, François de Singly",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0c/8c/fa/0c8cfa36412128209c44914cd22a7619.jpg",
+          "hash": "30bd33"
+      },
+      {
+          "id": 25140636,
+          "title": "Minué para guitarra",
+          "author": "Vitomil Zupan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/17/25/c2/1725c2511aed325c5a3201e3ddc1fee2.jpg",
+          "hash": "4feb4b"
+      },
+      {
+          "id": 25140637,
+          "title": "El retrato de Dorian Gray (Edición sin censura)",
+          "author": "Oscar Wilde",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/08/40/e6/0840e67cbf61e46831bb58afe9dc1a40.jpg",
+          "hash": "0ccc41"
+      },
+      {
+          "id": 25140638,
+          "title": "Todo el mundo miente",
+          "author": "Seth Stephens-Davidowitz",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/46/67/34/4667342ee9725c57e652da7dbe1b3805.jpg",
+          "hash": "3e0e0f"
+      },
+      {
+          "id": 25140639,
+          "title": "Pedro Páramo",
+          "author": "Juan Rulfo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d5/89/d0/d589d0f1d031a82903fcb82bf98d740c.jpg",
+          "hash": "4ec1ed"
+      },
+      {
+          "id": 25140640,
+          "title": "Gargantúa",
+          "author": "François Rabelais",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/42/e2/d9/42e2d909f9f0ae5ae6d884bdf96fb1a9.jpg",
+          "hash": "3e9cfb"
+      },
+      {
+          "id": 25140641,
+          "title": "Fígaro",
+          "author": "Mariano José de Larra",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f7/79/5f/f7795ff704b6e6082e3c825fbc8b058d.jpg",
+          "hash": "1a4684"
+      },
+      {
+          "id": 25140642,
+          "title": "¿Es razonable creer en Dios?",
+          "author": "Timothy Keller",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/cf/c9/5e/cfc95eb0e952ab8d640e4fe58c53968b.jpg",
+          "hash": "38831b"
+      },
+      {
+          "id": 25140643,
+          "title": "Capitalismo y pulsión de muerte. Artículos y conversaciones",
+          "author": "Byung-Chul Han",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/14/b2/09/14b209edc9aabf32caca6bac3aa1982b.jpg",
+          "hash": "3ee28e"
+      },
+      {
+          "id": 25140644,
+          "title": "Agudas. Mujeres que hicieron de la conversación un arte",
+          "author": "Michelle Dean",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/72/4c/82/724c82294a6032bc612aea1821a05d88.jpg",
+          "hash": "2394d6"
+      },
+      {
+          "id": 25140645,
+          "title": "Horus, señor de la guerra",
+          "author": "Dan Abnett",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ad/f6/9a/adf69a802e1f06aa08b9720ab162aa3d.jpg",
+          "hash": "d154a4"
+      },
+      {
+          "id": 25140646,
+          "title": "El incierto señor Don Hamlet y otras piezas dramáticas",
+          "author": "Álvaro Cunqueiro",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/af/99/f5/af99f5ab725a44bb998071a0a48a6e3f.jpg",
+          "hash": "18b089"
+      },
+      {
+          "id": 25140648,
+          "title": "LA PERVERSION",
+          "author": "PIERA AULAGNIER / CASTORIADIS",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c9/96/80/c99680ebb7d679272cf4473a6616fa5e.jpg",
+          "hash": "b36c25"
+      },
+      {
+          "id": 25140670,
+          "title": "La Frontera Salvaje",
+          "author": "Jorge Majfud",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f5/61/9c/f5619cc4e5e65eb8fa1184824425ffdd.jpg",
+          "hash": "051255"
+      },
+      {
+          "id": 25140672,
+          "title": "A Year of Living Simply",
+          "author": "Kate Humble",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e3/3e/b8/e33eb849cb1f2ebd7e82fe9180692f8a.jpg",
+          "hash": "593b17"
+      },
+      {
+          "id": 25140673,
+          "title": "Al Margen Del Camino",
+          "author": "Jorge Majfud",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/47/85/28/478528748c61fdc3fed4e5ca578bcf9b.jpg",
+          "hash": "c843df"
+      },
+      {
+          "id": 25140740,
+          "title": "Regional Archaeology in the Valle de la Plata, Colombia/Arqueología Regional en el Valle de la Plata, Colombia",
+          "author": "VV.AA",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3d/1c/42/3d1c42516be67afa91fc59b2543a7ed5.jpg",
+          "hash": "e66c2b"
+      },
+      {
+          "id": 25141285,
+          "title": "開放對話．期待對話：尊重他者當下的他異性",
+          "author": "亞科．賽科羅（Jaakko Seikkula），湯姆．艾瑞克．昂吉爾（Tom Erik Arnkil）",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/70/5a/3d/705a3dabc5e96c6c77055fc2d351e910.jpg",
+          "hash": "cc46cb"
+      },
+      {
+          "id": 25141442,
+          "title": "Badshahi Amal (বাদশাহী আমল)",
+          "author": "Binay Ghosh (বিনয় ঘোষ)",
+          "cover": "http://libgen.rs/covers/3739000/4b15770cc2b188550a9a9c316414af8f-g.jpg",
+          "hash": "0817bc"
+      },
+      {
+          "id": 25141460,
+          "title": "Die Produktion des Geldes. Ein Plädoyer wider die Macht der Banken",
+          "author": "Ann Pettifor",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/33/f2/2b/33f22b3e8b3314ab19b9a3733bbb6753.jpg",
+          "hash": "4bcde5"
+      },
+      {
+          "id": 25141594,
+          "title": "Body of Wisdom",
+          "author": "Hilary Hart",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c1/8a/d8/c18ad8b379557b8dfbf070f79239bde7.jpg",
+          "hash": "5b75f3"
+      },
+      {
+          "id": 25141860,
+          "title": "Call of the Grimoire",
+          "author": "Ella Stone",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/bd/8d/07/bd8d076040210853b25f83d6cf4c8517.jpg",
+          "hash": "7aa2ab"
+      },
+      {
+          "id": 25141953,
+          "title": "Shortbread and Sorrow (Peridale Cafe Cozy Mystery Book 5)",
+          "author": "Agatha Frost",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/41/0a/e3/410ae35fb35c446a62e6deb9f8f2078f.jpg",
+          "hash": "f9491c"
+      },
+      {
+          "id": 25141954,
+          "title": "Shortbread and Sorrow (Peridale Cafe Cozy Mystery Book 5)",
+          "author": "Agatha Frost",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/5f/d6/4f/5fd64f6c8163029995acc7c8bee6ed72.jpg",
+          "hash": "eca703"
+      },
+      {
+          "id": 25141955,
+          "title": "An Ex in the Puzzle: A Crossword Puzzle Cozy Mystery",
+          "author": "Louise Foster",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/50/11/73/5011732860b509589677a62b3f98b768.jpg",
+          "hash": "8a1f9b"
+      },
+      {
+          "id": 25141956,
+          "title": "Keep Your Twin Up: A Paranormal Women's Fiction Cozy Witch Mystery (Wears Valley Witches Book 3)",
+          "author": "L.A. Boruff & Lorraine Cooke",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/60/52/58/605258af40947dbd6f904850f1cf2729.jpg",
+          "hash": "335bc2"
+      },
+      {
+          "id": 25141959,
+          "title": "Wonky Spells & Seashells (A Fade Island Paranormal Cozy Mystery Book 2)",
+          "author": "Claire Robyns",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/30/a9/6d/30a96d546605c315c662fc3e0d1874af.jpg",
+          "hash": "a785ce"
+      },
+      {
+          "id": 25141998,
+          "title": "Walker",
+          "author": "Jennifer Allis Provost",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/67/d6/c2/67d6c2516f33b6c8d66fe5f8ffd00ccd.jpg",
+          "hash": "c21437"
+      },
+      {
+          "id": 25142075,
+          "title": "El centro del ciclón",
+          "author": "John C. Lilly",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0e/40/d6/0e40d63b300eba58ee9096c63eeac014.png",
+          "hash": "9ab60f"
+      },
+      {
+          "id": 25142123,
+          "title": "O fardo da lucidez",
+          "author": "Ricardo Zalcberg Angulo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/47/63/a0/4763a064dfd49051dded801214b2eaee.jpg",
+          "hash": "54bf9a"
+      },
+      {
+          "id": 25142124,
+          "title": "Dom Casmurro - Coleção de Bolso",
+          "author": "Machado de Assis",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/da/a7/97/daa7971b433dd84d93c2beb9696ed054.jpg",
+          "hash": "f3a666"
+      },
+      {
+          "id": 25142154,
+          "title": "SU WEN (First part: Books 1-11)",
+          "author": "Hoang Ti & Nei King",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/76/e7/74/76e774a4a982ef59eb1d3c8c7a36fe98.jpg",
+          "hash": "c9bacc"
+      },
+      {
+          "id": 25142168,
+          "title": "Dying with Dignity: A Legal Approach to Assisted Death",
+          "author": "Giza Lopes",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/25/54/80/2554808bbf29e7d86954513339a9f1a1.jpg",
+          "hash": "5a4e59"
+      },
+      {
+          "id": 25142323,
+          "title": "La luna está en Duala. Y mi destino en el conocimiento",
+          "author": "Sani Ladan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f8/4e/e3/f84ee3101e804d6886b666bc75a19abf.jpg",
+          "hash": "ddb883"
+      },
+      {
+          "id": 25142511,
+          "title": "El día que mi madre conoció a Audrey",
+          "author": "Yolanda Guerrero",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/44/1a/d9/441ad94313a958e52e086768ed43226c.jpg",
+          "hash": "2c4ad4"
+      },
+      {
+          "id": 25142581,
+          "title": "El día que mi madre conoció a Audrey",
+          "author": "Yolanda Guerrero",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f6/ad/ab/f6adab21f5c35bff0f79659ab2fc2f3d.jpg",
+          "hash": "4d1c4b"
+      },
+      {
+          "id": 25142584,
+          "title": "Una creencia fundamental",
+          "author": "Amanda Apthorpe",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1c/de/ff/1cdeff9e48e2fd7659dd9436fd13ef59.jpg",
+          "hash": "f3f765"
+      },
+      {
+          "id": 25142591,
+          "title": "Una creencia fundamental",
+          "author": "Amanda Apthorpe",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/41/b6/cb/41b6cbf23162275347092c62012c3003.jpg",
+          "hash": "1419b9"
+      },
+      {
+          "id": 25142687,
+          "title": "A los delincuentes hay que matarlos",
+          "author": "Rosa Silverio",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/55/8b/81/558b81b78c781cb17ae32863183fda81.jpg",
+          "hash": "11f7ef"
+      },
+      {
+          "id": 25142838,
+          "title": "Un destino llamado Puerto",
+          "author": "Magalí Escandell",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/09/3d/6c/093d6ced71c31e6acec57e0207a98e2d.jpg",
+          "hash": "6952c9"
+      },
+      {
+          "id": 25142915,
+          "title": "Un destino llamado Puerto",
+          "author": "Magalí Escandell",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0b/53/8c/0b538ca74965affbc954eb9b0b29ff38.jpg",
+          "hash": "aa6aef"
+      },
+      {
+          "id": 25142977,
+          "title": "Mariposa. (Trilogía completa)",
+          "author": "Kris Buendia",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/54/d1/cb/54d1cb8257576b4104b001967325f1b5.jpg",
+          "hash": "210ac6"
+      },
+      {
+          "id": 25142978,
+          "title": "Mariposa. (Trilogía completa)",
+          "author": "Kris Buendia",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/4b/a5/ba/4ba5baace31045a366e108b699d35c0c.jpg",
+          "hash": "e7d23b"
+      },
+      {
+          "id": 25142979,
+          "title": "Mariposa. (Trilogía completa)",
+          "author": "Kris Buendia",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/7c/93/ee/7c93eec23cfa6b87fa579454200dee34.jpg",
+          "hash": "c46bac"
+      },
+      {
+          "id": 25142980,
+          "title": "Mariposa. (Trilogía completa)",
+          "author": "Kris Buendia",
+          "cover": "/img/cover-not-exists.png",
+          "hash": "797892"
+      },
+      {
+          "id": 25142981,
+          "title": "Mariscos a la heroína",
+          "author": "Kelltom Mcintire",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f0/d7/e4/f0d7e426400f7051f3c0977b515a12f1.jpg",
+          "hash": "9fd68a"
+      },
+      {
+          "id": 25142982,
+          "title": "Mariscos a la heroína",
+          "author": "Kelltom Mcintire",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/12/ab/04/12ab042106877884ab43246ce52de1f7.jpg",
+          "hash": "367f25"
+      },
+      {
+          "id": 25142983,
+          "title": "Marneus Calgar: Señor de ultramar",
+          "author": "Graham McNeill",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c3/1f/3f/c31f3f491bfc4a3cd04d4d65dda93a7e.jpg",
+          "hash": "f2bdb9"
+      },
+      {
+          "id": 25142984,
+          "title": "Marneus Calgar: Señor de ultramar",
+          "author": "Graham McNeill",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/fa/40/37/fa4037d9f8780c0b5fa98d79faf329fb.jpg",
+          "hash": "c3ad27"
+      },
+      {
+          "id": 25142985,
+          "title": "Marneus Calgar: Señor de ultramar",
+          "author": "Graham McNeill",
+          "cover": "/img/cover-not-exists.png",
+          "hash": "acdecb"
+      },
+      {
+          "id": 25142986,
+          "title": "María de Magdala",
+          "author": "Frank G. Slaughter",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ee/85/dc/ee85dce774ec01464986cb2115867c3e.jpg",
+          "hash": "7fa65f"
+      },
+      {
+          "id": 25142987,
+          "title": "Mariposa de salón",
+          "author": "Joe Mogar",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d8/56/31/d8563125530de5d6fa19b93d3efec166.jpg",
+          "hash": "96cd92"
+      },
+      {
+          "id": 25142988,
+          "title": "Mariposa de salón",
+          "author": "Joe Mogar",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b4/13/a1/b413a160726a70c2c232658dabb9c69b.jpg",
+          "hash": "dab6b2"
+      },
+      {
+          "id": 25142989,
+          "title": "Mariposa de salón",
+          "author": "Joe Mogar",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3f/d1/31/3fd13144c5bc9301e5c6d09791dfe064.jpg",
+          "hash": "b85005"
+      },
+      {
+          "id": 25142990,
+          "title": "Mariposa de salón",
+          "author": "Joe Mogar",
+          "cover": "/img/cover-not-exists.png",
+          "hash": "df1e5a"
+      },
+      {
+          "id": 25142991,
+          "title": "Mariquita y Antonio",
+          "author": "Juan Valera",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c8/e0/6f/c8e06f6f6de741ce26c0d7f456a6566f.jpg",
+          "hash": "d02da9"
+      },
+      {
+          "id": 25142992,
+          "title": "Mariquita y Antonio",
+          "author": "Juan Valera",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e8/99/ee/e899ee72204d39b77eb7d49d32d68ce8.jpg",
+          "hash": "ae2c33"
+      },
+      {
+          "id": 25143004,
+          "title": "El químico escéptico",
+          "author": "Angels Gimeno",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3b/d5/4e/3bd54e27287f5ef46168d9c9687f210d.jpg",
+          "hash": "db9ec6"
+      },
+      {
+          "id": 25143005,
+          "title": "El químico escéptico",
+          "author": "Angels Gimeno",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d6/bf/62/d6bf622986ecb0f3f8abc21661841d7c.jpg",
+          "hash": "2667ea"
+      },
+      {
+          "id": 25143006,
+          "title": "Quédate: Volumen 6 (Spanish Edition)",
+          "author": "LINA PEROZO & LILY PEROZO",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1f/90/16/1f9016d0fe23688cdf0c3c99e38effe4.jpg",
+          "hash": "6da5be"
+      },
+      {
+          "id": 25143009,
+          "title": "Al Margen Del Camino",
+          "author": "Jorge Majfud",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c3/a5/19/c3a519d235898d3e0195febc9a781911.jpg",
+          "hash": "dfe1d5"
+      },
+      {
+          "id": 25143078,
+          "title": "Girl in the Dark",
+          "author": "Elleby Harper",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b5/22/74/b52274ebf7ab04f2c238004308e28d48.jpg",
+          "hash": "b77f2e"
+      },
+      {
+          "id": 25143079,
+          "title": "Carly See FBI 06 - No Way to Die",
+          "author": "Rylie Dark",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/42/b0/19/42b0190ef21d25ae5f33ea93929f38fe.jpg",
+          "hash": "1c143c"
+      },
+      {
+          "id": 25143080,
+          "title": "The Counterfeit Scoundrel",
+          "author": "Lorraine Heath",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/90/8d/8d/908d8d411f205be4def65a2c27cece54.jpg",
+          "hash": "a67a3c"
+      },
+      {
+          "id": 25143081,
+          "title": "The Misfortunate Miss Farthington",
+          "author": "Maggie Dallen",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3b/93/1c/3b931ced3e8f1ebe598e7c1e19d08add.jpg",
+          "hash": "1aff2b"
+      },
+      {
+          "id": 25143082,
+          "title": "She's a Keeper",
+          "author": "Liz Lincoln",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/23/24/e8/2324e8821b599697c3e10fd76ea98e3b.jpg",
+          "hash": "a2d4e0"
+      },
+      {
+          "id": 25143083,
+          "title": "Morgan Stark FBI 04 - Too Lost",
+          "author": "Rylie Dark",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/69/1e/d4/691ed43168a5055742bcd2291d2f2444.jpg",
+          "hash": "53814c"
+      },
+      {
+          "id": 25143117,
+          "title": "A cosa servono i gatti",
+          "author": "Paolo Nori",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/36/70/e4/3670e4d6fa1ce5d12758a3eb75ab7f17.jpg",
+          "hash": "77a15b"
+      },
+      {
+          "id": 25143152,
+          "title": "Il libro dei sogni",
+          "author": "Jack Kerouac",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d4/dd/2d/d4dd2d56bdef144b7db13d77f208ee70.jpg",
+          "hash": "40d2c5"
+      },
+      {
+          "id": 25143188,
+          "title": "Do Archives Have Value?",
+          "author": "Michael Moss, David Thomas",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f7/5f/ce/f75fce91416ff6bb3249c879bb6598cf.jpg",
+          "hash": "bca514"
+      },
+      {
+          "id": 25143249,
+          "title": "Diversity in Couple and Family Therapy: Ethnicities, Sexualities, and Socioeconomics",
+          "author": "Shalonda Kelly, PhD",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e3/85/19/e385196fea2f385e31fcf3316eb9acdf.jpg",
+          "hash": "64039c"
+      },
+      {
+          "id": 25143319,
+          "title": "Jujutsu Kaisen V08",
+          "author": "Gege Akutami",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f9/36/c3/f936c305fb5f98dca35c28e7e282ccf9.jpg",
+          "hash": "f855d4"
+      },
+      {
+          "id": 25143350,
+          "title": "Digital Twins and Healthcare: Trends, Techniques, and Challenges",
+          "author": "Loveleen Gaur, Noor Zaman Jhanjhi",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/cb/34/3c/cb343cc3b6cd23974e40be4f2816d6cc.jpg",
+          "hash": "5d43d2"
+      },
+      {
+          "id": 25143385,
+          "title": "Creation and chaos : a reconsideration of Hermann Gunkel's chaoskampf hypothesis",
+          "author": "JoAnn Scurlock, Richard Henry Beal",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ef/54/b8/ef54b8321dc1117361b6dcd7db8e56f8.jpg",
+          "hash": "398b82"
+      },
+      {
+          "id": 25143387,
+          "title": "Inalcanzable",
+          "author": "Laura Sanz",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/16/07/d6/1607d606c6243e10050da5701982a8e4.jpg",
+          "hash": "d46b32"
+      },
+      {
+          "id": 25143388,
+          "title": "Los destrozos (Spanish Edition)",
+          "author": "Easton Ellis, Bret",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/bc/26/57/bc2657b41a8f50a79439d660748753c1.jpg",
+          "hash": "90cb7f"
+      },
+      {
+          "id": 25143389,
+          "title": "Los destrozos (Spanish Edition)",
+          "author": "Easton Ellis, Bret",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/42/c6/f8/42c6f81b0b70883aa36012b0d60f63ca.jpg",
+          "hash": "44860f"
+      },
+      {
+          "id": 25143395,
+          "title": "Hart’s Ridge 03-In My Life",
+          "author": "Bratt, Kay",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/75/1d/2a/751d2a77828a8e2aa89cf21c670c1eb3.jpg",
+          "hash": "e41d3f"
+      },
+      {
+          "id": 25143396,
+          "title": "Hart’s Ridge 05-Instant Karma",
+          "author": "Kay Bratt",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/23/8e/68/238e68ed5b947d9c329b33700f0c18d5.jpg",
+          "hash": "efea01"
+      },
+      {
+          "id": 25143397,
+          "title": "Hart’s Ridge 05-Instant Karma",
+          "author": "Bratt, Kay",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/44/ba/a3/44baa3d4de34618a00c10367e13d00da.jpg",
+          "hash": "e8e33e"
+      },
+      {
+          "id": 25143398,
+          "title": "Hart’s Ridge 04-Borrowed Time",
+          "author": "Kay Bratt",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1f/46/b1/1f46b1b38ae985f1dc06a3b394c18420.jpg",
+          "hash": "0bd5e7"
+      },
+      {
+          "id": 25143400,
+          "title": "Hart’s Ridge 04-Borrowed Time",
+          "author": "Bratt, Kay",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d7/b4/87/d7b487b404813ec5b4729318c0dfb08c.jpg",
+          "hash": "ddb4d3"
+      },
+      {
+          "id": 25143404,
+          "title": "Hart’s Ridge 03-In My Life",
+          "author": "Kay Bratt",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c5/7f/a4/c57fa47879e323ca6709225de210c518.jpg",
+          "hash": "4b392d"
+      },
+      {
+          "id": 25143442,
+          "title": "El violín de Lev",
+          "author": "Helena Attlee",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/66/82/32/6682326e6b03ad1f9b9bf82ebf365bc0.jpg",
+          "hash": "abaa82"
+      },
+      {
+          "id": 25143536,
+          "title": "Digital Preservation",
+          "author": "Marilyn Deegan, Simon Tanner",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/46/26/ee/4626ee59c6f2954b35340eb80e9e975c.jpg",
+          "hash": "692681"
+      },
+      {
+          "id": 25143537,
+          "title": "From the Mari Archives",
+          "author": "Jack M. Sasson",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c2/37/5a/c2375abfeb8eb0d8e80a1c3512c471a5.jpg",
+          "hash": "f9cf06"
+      },
+      {
+          "id": 25143539,
+          "title": "Developing a Sport Psychology Consultancy Practice : A Toolkit for Students and Trainees",
+          "author": "Vaithehy Shanmuganathan-Felton, Stephen Smith",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/4f/a2/2a/4fa22a795a0a8b3719769d440634a711.jpg",
+          "hash": "6607c9"
+      },
+      {
+          "id": 25143541,
+          "title": "Fault, Responsibility, and Administrative Law in Late Babylonian Legal Texts",
+          "author": "F. Rachel Magdalene, Cornelia Wunsch, Bruce Wells",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/cc/12/a1/cc12a1fc512aa821fb84fe4d70048874.jpg",
+          "hash": "33475c"
+      },
+      {
+          "id": 25143542,
+          "title": "Fault, Responsibility, and Administrative Law in Late Babylonian Legal Texts",
+          "author": "F. Rachel Magdalene, Cornelia Wunsch, Bruce Wells",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/2f/39/3d/2f393d055df0eac18f2e540cfdaf1335.jpg",
+          "hash": "d0e3cc"
+      },
+      {
+          "id": 25143720,
+          "title": "El asesinato de Lady Gregor",
+          "author": "Anthony Wynne",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/19/96/37/199637cfb4c06d54dd676012a9e77f67.jpg",
+          "hash": "86af57"
+      },
+      {
+          "id": 25143731,
+          "title": "El Asesino de Lady Gregor",
+          "author": "Anthony Wyne",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/58/d0/21/58d0219ce2dcc522897e81d191eeb661.jpg",
+          "hash": "e9b81b"
+      },
+      {
+          "id": 25143758,
+          "title": "La danza de las abejas",
+          "author": "Eva M. Soler e Idoia Amo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1c/fd/98/1cfd988361a0481473aa607a35140ec3.jpg",
+          "hash": "7362f6"
+      },
+      {
+          "id": 25143765,
+          "title": "Un virus en apuros",
+          "author": "Lucía Almagro Ruz",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/32/d3/ec/32d3ec350bb081c68a287a7cbdec7efe.jpg",
+          "hash": "838a26"
+      },
+      {
+          "id": 25143766,
+          "title": "Un virus en apuros",
+          "author": "Lucía Almagro Ruz",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f3/5e/41/f35e41492a5850ceda6c568531cc2e05.jpg",
+          "hash": "8ef469"
+      },
+      {
+          "id": 25143768,
+          "title": "Las mariposas negras",
+          "author": "Gabriel Katz (Mody)",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/11/be/19/11be191d0a5c2e97d7ee7575ea890dd2.jpg",
+          "hash": "f80a1a"
+      },
+      {
+          "id": 25143769,
+          "title": "Las mariposas negras",
+          "author": "Gabriel Katz (Mody)",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a7/33/27/a73327cb0d8a2ac0c3aba8b0f78289fc.jpg",
+          "hash": "10543a"
+      },
+      {
+          "id": 25143770,
+          "title": "El arte de resisitir",
+          "author": "Andrea Marcolongo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/99/86/87/998687b4f6f69c79e30deb0b7a3791b0.jpg",
+          "hash": "ad0ae6"
+      },
+      {
+          "id": 25143771,
+          "title": "El arte de resisitir",
+          "author": "Andrea Marcolongo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d0/32/7b/d0327b33be929172befaf73574063010.jpg",
+          "hash": "1caa86"
+      },
+      {
+          "id": 25143777,
+          "title": "La espada y el fuego",
+          "author": "Sigfrido Alcántara",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a7/4f/12/a74f124aacadb9a7c2fcc9c55e6e4281.jpg",
+          "hash": "090af9"
+      },
+      {
+          "id": 25143788,
+          "title": "La espada y el fuego",
+          "author": "Sigfrido Alcántara",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/23/bc/70/23bc70f3b849dd94490bb37ee4130ea4.jpg",
+          "hash": "e45550"
+      },
+      {
+          "id": 25143789,
+          "title": "Not by Scripture Alone",
+          "author": "Robert A. Sungenis",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/9c/be/c8/9cbec8ac7160fe2f76c5bab86443717f.jpg",
+          "hash": "ca3fa0"
+      },
+      {
+          "id": 25143790,
+          "title": "Presos Unidos: El cuento americano (Parte 1)",
+          "author": "Editorial Aguilar Martínez",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/24/1e/96/241e969939e2b4576947199d4842a340.jpg",
+          "hash": "410760"
+      },
+      {
+          "id": 25143791,
+          "title": "Presos Unidos: El cuento americano (Parte 1)",
+          "author": "Editorial Aguilar Martínez",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/8b/57/cf/8b57cf76d0ae8fd51033d1901fbf20f5.jpg",
+          "hash": "1023e2"
+      },
+      {
+          "id": 25143810,
+          "title": "Superviviente",
+          "author": "Carter Damon",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/71/3d/4a/713d4a2c1c66a0a40b948f164f19aced.jpg",
+          "hash": "de5b5a"
+      },
+      {
+          "id": 25143811,
+          "title": "Superviviente",
+          "author": "Carter Damon",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d3/d8/4e/d3d84e546c62bd82e53529521225e805.jpg",
+          "hash": "b841e4"
+      },
+      {
+          "id": 25143814,
+          "title": "Imborrables",
+          "author": "Estrella Correa",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/09/c3/34/09c334d15d866a149b65329bc913fbb0.jpg",
+          "hash": "7cfa44"
+      },
+      {
+          "id": 25143815,
+          "title": "Imborrables",
+          "author": "Estrella Correa",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/29/c2/d4/29c2d475d6c9815090290dc55c1d546a.jpg",
+          "hash": "88b9d1"
+      },
+      {
+          "id": 25143817,
+          "title": "Fingiendo amor",
+          "author": "Víctor Hernández ",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/45/8b/8e/458b8e95c2fff499fe99f5a84fc1fa2b.jpg",
+          "hash": "ffa7e6"
+      },
+      {
+          "id": 25143818,
+          "title": "Fingiendo amor",
+          "author": "Víctor Hernández ",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/cf/06/70/cf06702fb2550a18baf0e021192f444b.jpg",
+          "hash": "9f720c"
+      },
+      {
+          "id": 25143823,
+          "title": "Historia de Marruecos",
+          "author": "España. Subdirección General de Cooperación Internacional",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/27/1a/e6/271ae65c746085edfc6f044d1abf1879.jpg",
+          "hash": "7ad5c9"
+      },
+      {
+          "id": 25144004,
+          "title": "Un duque para Lady Victoria",
+          "author": "Maddi Magrì",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0f/bf/d9/0fbfd98b1e4b8150ecd8d1a2435d6674.jpg",
+          "hash": "52f6e7"
+      },
+      {
+          "id": 25144013,
+          "title": "Herzog & de Meuron",
+          "author": "Naomi Stungo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c4/d0/ee/c4d0eeacd649b5684b275a7393fe4ad8.jpg",
+          "hash": "6b4d49"
+      },
+      {
+          "id": 25144040,
+          "title": "Protecting Your #1 Asset",
+          "author": "Michael A. Lechter",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/06/02/14/06021424328c3b6b5f635f5de4e2631c.jpg",
+          "hash": "f6ca7b"
+      },
+      {
+          "id": 25144046,
+          "title": "MASTERING CSS GRID",
+          "author": "PASCAL. THORMEIER",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/07/7e/ac/077eac743543be4cd8c496a1560c6d5c.jpg",
+          "hash": "85b378"
+      },
+      {
+          "id": 25144076,
+          "title": "Maan",
+          "author": "Lucinda Riley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/37/a9/04/37a9043c019ac79432d9d89b954f2020.jpg",
+          "hash": "8518bb"
+      },
+      {
+          "id": 25144203,
+          "title": "When the Past Finds You",
+          "author": "Adrian J. Smith",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/40/f8/dc/40f8dc46cd401283f06861a039713c01.jpg",
+          "hash": "ecaa65"
+      },
+      {
+          "id": 25144233,
+          "title": "1000 recetas de oro",
+          "author": "Karlos Arguiñano",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c7/53/7c/c7537cb8ab20e880da4d8ee37fd66372.jpg",
+          "hash": "c06a5c"
+      },
+      {
+          "id": 25144235,
+          "title": "1000 recetas de oro",
+          "author": "Karlos Arguiñano",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/44/8f/9d/448f9dece977596c15c274caa36b5b6c.jpg",
+          "hash": "a8c5e8"
+      },
+      {
+          "id": 25144259,
+          "title": "¿Para qué sirve realmente la ética?",
+          "author": "Adela Cortina Orts",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/01/f7/a9/01f7a9563d0c39ecf2328002145d93ed.jpg",
+          "hash": "9433f6"
+      },
+      {
+          "id": 25144277,
+          "title": "Julia and Jacques Cooking at Home",
+          "author": "Julia Child, Jacques Pepin",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3d/ef/5a/3def5a97d2391c0d90dad6e5b4d4d2d7.jpg",
+          "hash": "f115ab"
+      },
+      {
+          "id": 25144282,
+          "title": "The Outlaws",
+          "author": "Ernst Von Salomon",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c6/aa/ca/c6aaca42e94db5701c8b4e9712165f67.jpg",
+          "hash": "8a4f12"
+      },
+      {
+          "id": 25144301,
+          "title": "Manual práctico de derechos humanos y derecho constitucional",
+          "author": "Darío Richarte, Paula Ossietinsky, Paula Vázquez",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/4a/ee/48/4aee4877e512ae0780cd714ca68df012.jpg",
+          "hash": "91b794"
+      },
+      {
+          "id": 25144310,
+          "title": "Delirio y destino",
+          "author": "María Zambrano",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3c/e1/8e/3ce18eb5b89863fa6cf6e0bc38529bd6.jpg",
+          "hash": "3c70e1"
+      },
+      {
+          "id": 25144319,
+          "title": "Foundation Models for Natural Language Processing",
+          "author": "Gerhard Paaß, Sven Giesselbach",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/13/33/86/1333864535ac058b36bed6623891e87c.jpg",
+          "hash": "a6dd6d"
+      },
+      {
+          "id": 25144329,
+          "title": "Handbook on Governmentality",
+          "author": "William Walters, Martina Tazzioli",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/48/9a/e4/489ae4d58fcd0f3984dfa709e083c7f5.jpg",
+          "hash": "56e651"
+      },
+      {
+          "id": 25144369,
+          "title": "The Ultimate Guide to SAT Grammar by Erica Meltzer (digital sat)",
+          "author": "Erica L. Meltzer",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/82/4c/b4/824cb4c0a1d82f9173957581df37185f.jpg",
+          "hash": "cf0b18"
+      },
+      {
+          "id": 25144371,
+          "title": "Computational Materials, Chemistry, and Biochemistry: From Bold Initiatives to the Last Mile",
+          "author": "Sadasivan Shankar, Richard Muller, Thom Dunning, Guan Hua Chen",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/83/37/ee/8337ee8d03f5a2de3c16803ec36eb0d0.jpg",
+          "hash": "7e87ae"
+      },
+      {
+          "id": 25144420,
+          "title": "More (Almost) Impossible Integrals, Sums, and Series",
+          "author": "Cornel Ioan Vălean",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c0/67/3c/c0673cf1534cef621026afabb514eca5.jpg",
+          "hash": "f119f2"
+      },
+      {
+          "id": 25144492,
+          "title": "Deep Learning and Neural Networks : concepts, methodologies, tools, and applications",
+          "author": "Information Resources Management Association",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b7/35/f3/b735f37b3691d137504e3b3b53d4e8ca.jpg",
+          "hash": "589d3e"
+      },
+      {
+          "id": 25144497,
+          "title": "Decolonizing Consciousness",
+          "author": "Shilpa Ashok Pandit",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/6a/b8/aa/6ab8aa55ef29fbbc33d5b38b4f77b01c.jpg",
+          "hash": "9ccc19"
+      },
+      {
+          "id": 25145098,
+          "title": "魁拔之书",
+          "author": "青青树",
+          "cover": "/img/cover-not-exists.png",
+          "hash": "394a67"
+      },
+      {
+          "id": 25145099,
+          "title": "The Imago Dei as Human Identity",
+          "author": "Ryan S. Peterson",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/9c/96/09/9c96090536c3b4d986751997725bc953.jpg",
+          "hash": "3ed918"
+      },
+      {
+          "id": 25145121,
+          "title": "The Norton Anthology of American Literature (Volume 2)",
+          "author": "Robert S. Levine, Michael A. Elliott , Lisa Siraganian , Amy Hungerford , GerShun Avilez",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/75/1a/ee/751aee6bd44af792f4d755f6675230da.jpg",
+          "hash": "66c984"
+      },
+      {
+          "id": 25145153,
+          "title": "财报掘金：林园选股的核心财务指标: 林园炒股秘籍4",
+          "author": "王洪; 张晓曦",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a5/ff/a5/a5ffa5f566b661e7cd7ab69ee9723fdd.jpg",
+          "hash": "c2ce4c"
+      },
+      {
+          "id": 25145187,
+          "title": "The God Desire",
+          "author": "David Baddiel",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/65/d4/9c/65d49ccdd07cb35a0c8eb39b0eeef204.jpg",
+          "hash": "973606"
+      },
+      {
+          "id": 25145379,
+          "title": "Handbook of Research on Curriculum Reform Initiatives in English Education",
+          "author": "Denman, Christopher, Al-Mahrooqi, Rahma",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/5d/b7/6f/5db76f1df7b1548bf2b14f20c3de4509.jpg",
+          "hash": "090dc1"
+      },
+      {
+          "id": 25145523,
+          "title": "Double Agents",
+          "author": "Peter Jones",
+          "cover": "/img/cover-not-exists.png",
+          "hash": "f94acf"
+      },
+      {
+          "id": 25145526,
+          "title": "Continuities in Psychological Anthropology",
+          "author": "Philip K. Bock",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1e/e9/62/1ee962c641c246718cebc2ab7707939d.jpg",
+          "hash": "bda6eb"
+      },
+      {
+          "id": 25145539,
+          "title": "Comparative Studies and Regionally-focused Cases Examining Local Governments",
+          "author": "Ugur Sadioglu, Kadir Dede",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/de/ec/b0/deecb0cbd63bb9df68bd7f196c7c7e2a.jpg",
+          "hash": "f935f5"
+      },
+      {
+          "id": 25145570,
+          "title": "道教文化100问",
+          "author": "王卡",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/fd/86/83/fd868379fa70b620f2495403d329fbaa.jpg",
+          "hash": "57a72b"
+      },
+      {
+          "id": 25145600,
+          "title": "Collisions of Earth and Sky",
+          "author": "Heidi Barr",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a4/51/74/a4517452b3e38ac5a32874278ee95371.jpg",
+          "hash": "41adf4"
+      },
+      {
+          "id": 25145647,
+          "title": "The Yahwist",
+          "author": "John Van Seters",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/40/f8/9a/40f89ada11fcf04e90c18c84849cc156.jpg",
+          "hash": "184fc9"
+      },
+      {
+          "id": 25145675,
+          "title": "Clinical Data Mining for Physician Decision Making and Investigating Health Outcomes",
+          "author": "Patricia B. Cerrito, John Cerrito",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d0/26/aa/d026aae62592cd8bbed704d15bdfd45e.jpg",
+          "hash": "3dd2a4"
+      },
+      {
+          "id": 25145762,
+          "title": "The Prophets of Israel",
+          "author": "Reinhard G. Kratz",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/97/5e/d1/975ed14f674af76c55c8cc2faf5e8b6d.jpg",
+          "hash": "f7f031"
+      },
+      {
+          "id": 25145763,
+          "title": "[现代社会学文库·译著系列]网络社会：跨文化的视角",
+          "author": "[美]曼纽尔·卡斯特",
+          "cover": "https://reader.cdn-zlib.se/books/2c9f8a8dc8b25cd3148ebd340eff47ec/1s299.jpg",
+          "hash": "042f6e"
+      },
+      {
+          "id": 25145764,
+          "title": "Four Corners War (Pacheco & Chino Mysteries Book 3)",
+          "author": "Ted Clifton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d5/44/8f/d5448fa80b4138134d184f82145d03ac.jpg",
+          "hash": "74cc50"
+      },
+      {
+          "id": 25145765,
+          "title": "Dog Gone Lies (Pacheco & Chino Mysteries Book 1)",
+          "author": "Ted Clifton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/9e/fd/45/9efd45ea5bce48e8cc6e0700cf24b1e5.jpg",
+          "hash": "3ada36"
+      },
+      {
+          "id": 25145766,
+          "title": "[伪满史料丛书]伪满人物",
+          "author": "本卷编者霍燎原",
+          "cover": "https://reader.cdn-zlib.se/books/6bb230a84f202318dd29bf6cd8e897c1/1s299.jpg",
+          "hash": "5ee148"
+      },
+      {
+          "id": 25145767,
+          "title": "Sky High Stakes (Pacheco & Chino Mysteries Book 2)",
+          "author": "Ted Clifton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/91/25/fb/9125fbe6394171989bf3077893a8be91.jpg",
+          "hash": "8f841e"
+      },
+      {
+          "id": 25145768,
+          "title": "The Nanny's Amish Family",
+          "author": "Patricia Johns",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b7/66/ff/b766ff52082dc4e487fd98428c4f0e81.jpg",
+          "hash": "feac3c"
+      },
+      {
+          "id": 25145791,
+          "title": "Ted Clifton-Vincent Malone 01-Santa Fe Mojo",
+          "author": "Ted Clifton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/82/25/6f/82256f17bc8954efb5e1e242a46a24d2.jpg",
+          "hash": "6dad5d"
+      },
+      {
+          "id": 25145796,
+          "title": "Blue Flower Red Thorns",
+          "author": "Ted Clifton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/28/a7/36/28a73632fd255774a19ab8675b1e5e91.jpg",
+          "hash": "419ccb"
+      },
+      {
+          "id": 25145798,
+          "title": "Fiction No More",
+          "author": "Ted Clifton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0b/8c/0e/0b8c0e6e6d0dfdb009b516c2b38253f7.jpg",
+          "hash": "4f89ae"
+      },
+      {
+          "id": 25145890,
+          "title": "The City After Abandonment",
+          "author": "Margaret Dewar, June Manning Thomas",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a1/8b/56/a18b56afb57ec69788c63a90fe8ea9f4.jpg",
+          "hash": "67a6c7"
+      },
+      {
+          "id": 25145894,
+          "title": "爱灵魂自我教程——哲学",
+          "author": "庞思奋",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/49/02/94/490294f2e43360d9c7c94f39b079a7ae.jpg",
+          "hash": "72f548"
+      },
+      {
+          "id": 25145912,
+          "title": "Civil War Command And Strategy",
+          "author": "Jones Archer",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/be/62/86/be62869fa512a3cec2501fb13056d74f.jpg",
+          "hash": "b88c6d"
+      },
+      {
+          "id": 25145940,
+          "title": "大秦帝国",
+          "author": "孙皓晖",
+          "cover": "/img/cover-not-exists.png",
+          "hash": "e1b324"
+      },
+      {
+          "id": 25145970,
+          "title": "Chaos Theory, Asimov's Foundations and Robots, and Herbert's Dune",
+          "author": "Donald Palumbo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e9/16/44/e91644391c41ba3a13397135247d8732.jpg",
+          "hash": "61cdb0"
+      },
+      {
+          "id": 25145998,
+          "title": "Theater of a City",
+          "author": "Jean E. Howard",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f4/b0/32/f4b03247a9edbf84541ab580208e638e.jpg",
+          "hash": "02647f"
+      },
+      {
+          "id": 25146031,
+          "title": "From Cyrus to Alexander",
+          "author": "Pierre Briant",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/6f/e6/0f/6fe60f9ea0bff603b6b9f8626dde00cd.jpg",
+          "hash": "32fc11"
+      },
+      {
+          "id": 25146047,
+          "title": "The Buried Mirror",
+          "author": "Carlos Fuentes",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/61/95/8b/61958ba7f39249a607ed6ac80c509671.jpg",
+          "hash": "12e084"
+      },
+      {
+          "id": 25146051,
+          "title": "Globalized Fruit, Local Entrepreneurs: How One Banana-Exporting Country Achieved Worldwide Reach",
+          "author": "Douglas Southgate, Lois Roberts",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/86/dc/0a/86dc0a87101483f89c039dc82f0156ad.jpg",
+          "hash": "47c2a0"
+      },
+      {
+          "id": 25146056,
+          "title": "The land before the kingdom of Israel : a history of the Southern Levant and the people who populated it",
+          "author": "Brendon C. Benz",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/89/d4/ac/89d4ac4047fa4999778f366cd11aa8f0.jpg",
+          "hash": "a496b1"
+      },
+      {
+          "id": 25146061,
+          "title": "Brawls, Bribes and Broken Dreams",
+          "author": "Graeme Strachan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/90/a6/f8/90a6f8475fb2f0dab07ff24e86bb7ead.jpg",
+          "hash": "97a856"
+      },
+      {
+          "id": 25146074,
+          "title": "The Girl Who Ruled The Stars (The Starlight Duology Book 2)",
+          "author": "Heather Hildenbrand",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ad/80/f4/ad80f42bb987651bd5dcf9b1e364db4d.jpg",
+          "hash": "175a93"
+      },
+      {
+          "id": 25146084,
+          "title": "The Assassins Series 5-Book Bundle",
+          "author": "Toni Aleo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d6/d0/e4/d6d0e4c23f60d6fcd361247e322ce1d8.jpg",
+          "hash": "f0ddf5"
+      },
+      {
+          "id": 25146087,
+          "title": "Juicy Rebound (IceCats Book 1)",
+          "author": "Toni Aleo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/15/b9/72/15b972f84c1f3ddeb62e6fd451147ecc.jpg",
+          "hash": "1f22f1"
+      },
+      {
+          "id": 25146088,
+          "title": "Spiked by Love",
+          "author": "Toni Aleo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c4/96/ec/c496ec9eea3c074878052405e6d7d593.jpg",
+          "hash": "eeba93"
+      },
+      {
+          "id": 25146089,
+          "title": "End Game: Bellevue Bullies Series",
+          "author": "Toni Aleo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/15/89/a5/1589a51191e724634486c72a9397636e.jpg",
+          "hash": "871153"
+      },
+      {
+          "id": 25146090,
+          "title": "Changing Lines: A Bellevue Bullies Novella",
+          "author": "Aleo, Toni",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/04/1f/8c/041f8c5092a655a25acb0403254fa1e9.jpg",
+          "hash": "e8491c"
+      },
+      {
+          "id": 25146091,
+          "title": "Boarded by Love",
+          "author": "Toni Aleo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ee/5b/22/ee5b22413b5b30ede8d4e1a75dbc62c6.jpg",
+          "hash": "8eb3e3"
+      },
+      {
+          "id": 25146092,
+          "title": "Delayed Call (Assassins Book 11)",
+          "author": "Toni Aleo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/49/34/07/4934073d7adb146da30ded067822e52b.jpg",
+          "hash": "ec3ff7"
+      },
+      {
+          "id": 25146093,
+          "title": "BRING IT HOME (Nashville Assassins: Next Generation Book 3)",
+          "author": "Toni Aleo",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b5/46/17/b54617c2b6bee66f768c946beacc61f6.jpg",
+          "hash": "70f6df"
+      },
+      {
+          "id": 25146096,
+          "title": "Romantic Assassination",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1f/47/67/1f476776f83009677d1866b45bafaf79.jpg",
+          "hash": "32eb54"
+      },
+      {
+          "id": 25146097,
+          "title": "Loving Thieves",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/bd/d1/0d/bdd10d34edd47502a2e51dfbccb7b09e.jpg",
+          "hash": "37b5e6"
+      },
+      {
+          "id": 25146098,
+          "title": "Returning Strength",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/87/be/8c/87be8c9df0f32e3683653f9dba8a72ee.jpg",
+          "hash": "5128db"
+      },
+      {
+          "id": 25146099,
+          "title": "Unwanted Return",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/71/f1/ab/71f1ab54d64fd58540cdfecef4867d47.jpg",
+          "hash": "40deaf"
+      },
+      {
+          "id": 25146100,
+          "title": "Romantic Thieves",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/68/35/29/68352931a7b1eafbada9a0a8af0987d4.jpg",
+          "hash": "b56bb3"
+      },
+      {
+          "id": 25146101,
+          "title": "Sweet Romance Short Story Collection",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/43/51/56/43515666e5dad35f614a5ffa4970ecbb.jpg",
+          "hash": "724623"
+      },
+      {
+          "id": 25146102,
+          "title": "Spy Romance Collection Volume 1",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/99/cc/7e/99cc7e11f82d3c85cdd2b89c8bcacbca.jpg",
+          "hash": "800828"
+      },
+      {
+          "id": 25146103,
+          "title": "Emperor's Watch",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0c/f8/ae/0cf8aed9d6d307b3ad17ae13dbae647b.jpg",
+          "hash": "0b7e31"
+      },
+      {
+          "id": 25146104,
+          "title": "Romancing Around Mermaids",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/5d/9a/9a/5d9a9aca6d758ac9813a81dc0caf6823.jpg",
+          "hash": "ab1cfd"
+      },
+      {
+          "id": 25146105,
+          "title": "Trial to Live",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/59/93/43/5993436c28b3642d3f99c5d05ea3464a.jpg",
+          "hash": "99ce2f"
+      },
+      {
+          "id": 25146106,
+          "title": "Spy Stories Collection",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3b/74/ea/3b74ea7dc9b9b2bdd1b11bcb10dbdac8.jpg",
+          "hash": "30ce66"
+      },
+      {
+          "id": 25146107,
+          "title": "Saving Mr Billhorn",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/cb/00/ec/cb00ec53e2bbb05f73232af900075024.jpg",
+          "hash": "aaeb98"
+      },
+      {
+          "id": 25146108,
+          "title": "Romance Spies Collection Volume 2",
+          "author": "Connor Whiteley",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c5/8b/52/c58b52b89efd57c804c98cbc9b992b63.jpg",
+          "hash": "9754c1"
+      },
+      {
+          "id": 25146113,
+          "title": "Taxpayer Compliance. Volume 1, An Agenda for Research",
+          "author": "Jeffrey A. Roth, John T. Scholz",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b7/20/70/b7207057e5a7fc2dc569d2db697fbce5.jpg",
+          "hash": "e5d727"
+      },
+      {
+          "id": 25146119,
+          "title": "The Sea Peoples and Their World : A Reassessment",
+          "author": "Eliezer D. Oren",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ec/33/96/ec33967bedc2f4edb77594d8c2254187.jpg",
+          "hash": "65afe4"
+      },
+      {
+          "id": 25146122,
+          "title": "Beer in East Asia",
+          "author": "Paul Chambers, Nithi Nuangjamnong",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/4c/a6/53/4ca653179952eb9ddfa8f2f531bb87ee.jpg",
+          "hash": "81341f"
+      },
+      {
+          "id": 25146163,
+          "title": "Gendered modernisms : American women poets and their readers",
+          "author": "Margaret Dickie, Thomas J. Travisano",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e6/ca/9d/e6ca9d18f1e38ba48ce677641981ff14.jpg",
+          "hash": "cf4307"
+      },
+      {
+          "id": 25146181,
+          "title": "Always-On Enterprise Information Systems for Modern Organizations",
+          "author": "Nijaz Bajgoric",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/83/ab/6e/83ab6e62a2e1a4c8bfcec800bdb63622.jpg",
+          "hash": "85f3c4"
+      },
+      {
+          "id": 25146182,
+          "title": "Nuevo Prisma A1, edición ampliada. Libro del alumno",
+          "author": "Equipo Nuevo Prisma",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/5f/51/6f/5f516fcf8d5eba1a1fc9d85c875399c2.jpg",
+          "hash": "2d7cda"
+      },
+      {
+          "id": 25146184,
+          "title": "Nuevo Prisma A1, edición ampliada. Libro del profesor",
+          "author": "Paula Cerdeira Núñez, Equipo Nuevo Prisma, José Vicente Ianni",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/8c/ee/0a/8cee0a13d7e7f5f82aa6fa8289128d1b.jpg",
+          "hash": "4cb254"
+      },
+      {
+          "id": 25146185,
+          "title": "Nuevo Prisma A1. Libro del alumno",
+          "author": "Equipo nuevo Prisma",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/5f/32/6f/5f326f721a370d33ddf14439aae6f2d6.jpg",
+          "hash": "36f3a8"
+      },
+      {
+          "id": 25146214,
+          "title": "Nuevo Prisma A1. Libro de ejercicios",
+          "author": "Equipo nuevo Prisma",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/22/9b/18/229b184543be2fe54bfacf9ff5d62b41.jpg",
+          "hash": "c07409"
+      },
+      {
+          "id": 25146224,
+          "title": "Nuevo Prisma A1. Libro del profesor",
+          "author": "Paula Cerdeira",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/4c/db/6d/4cdb6dc3125d0a82716004d93ff72824.jpg",
+          "hash": "8d1664"
+      },
+      {
+          "id": 25146251,
+          "title": "Nuevo Prisma Fusión A1 A2. Libro del profesor",
+          "author": "Equipo Nuevo Prisma",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/cb/25/95/cb2595691310897b48080882aa8a24ae.jpg",
+          "hash": "e43665"
+      }
+  ]
+}

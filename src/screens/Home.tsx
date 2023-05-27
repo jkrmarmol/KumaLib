@@ -117,7 +117,7 @@ const style = StyleSheet.create({
   },
   buttonContainer: {
     width: '100%',
-    marginVertical: 25,
+    marginVertical: 25, 
     gap: 12,
   },
   buttonTouchableOpacity: {

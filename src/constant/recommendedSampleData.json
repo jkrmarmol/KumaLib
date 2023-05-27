@@ -1,0 +1,705 @@
+{
+  "success": 1,
+  "books": [
+      {
+          "id": 438005,
+          "title": "Schaum's Outline of Engineering Mechanics",
+          "author": "E. Nelson, Charles Best, William McLean",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1d/0d/9a/1d0d9a388102ea941617668214ea604c.jpg",
+          "hash": "957f32"
+      },
+      {
+          "id": 458891,
+          "title": "Financial Engineering Principles: A Unified Theory for Financial Product Analysis and Valuation",
+          "author": "Perry H. Beaumont",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/64/f8/18/64f818b3e2ff37dacec51ffa0565da23.jpg",
+          "hash": "95b3aa"
+      },
+      {
+          "id": 490912,
+          "title": "Trump Strategies for Real Estate: Billionaire Lessons for the Small Investor",
+          "author": "George Ross, Andrew James McLean, Donald J. Trump",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f4/48/a2/f448a2bae01cd2aa3fc45c26f6f00657.jpg",
+          "hash": "02d3a4"
+      },
+      {
+          "id": 543988,
+          "title": "Excel by Example A Mcrosoft Excel Cookbook for Electronic Engineers",
+          "author": "Aubrey Kagan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3b/99/a2/3b99a29202a02acb103320478c81db8a.jpg",
+          "hash": "7bad5b"
+      },
+      {
+          "id": 568657,
+          "title": "You Can Choose to be Rich",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b8/01/f0/b801f0b702df26a66b17ea07679c2406.jpg",
+          "hash": "0c0313"
+      },
+      {
+          "id": 593031,
+          "title": "Engineering economic analysis",
+          "author": "Donald G. Newnan, Ted G. Eschenbach, Jerome P. Lavelle",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/da/cf/0e/dacf0e0cd9d5848ac199af48a1c560eb.jpg",
+          "hash": "254939"
+      },
+      {
+          "id": 611110,
+          "title": "Mathematics for Finance: An Introduction to Financial Engineering",
+          "author": "Marek Capinski, Tomasz Zastawniak",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/df/a9/8a/dfa98a0c17b98b7951f9d4c6840aba60.jpg",
+          "hash": "0f116e"
+      },
+      {
+          "id": 611441,
+          "title": "Fundamentals of Engineering Economics",
+          "author": "Chan S. Park",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3f/b2/89/3fb2899a374550faba93a9667049cb5b.jpg",
+          "hash": "86e477"
+      },
+      {
+          "id": 654494,
+          "title": "Rich Dad's Prophecy: Why the Biggest Stock Market Crash in History Is Still Coming... and How You Can Prepare Yourself and Profit from It!",
+          "author": "Robert T. Kiyosaki, Sharon L. Lechter",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3f/e3/a7/3fe3a74c4155e7f678e606e20a2b0897.jpg",
+          "hash": "018d34"
+      },
+      {
+          "id": 683848,
+          "title": "Why We Want You to Be Rich: Two Men, One Message",
+          "author": "Donald Trump, Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/4d/13/22/4d13227b3da233ef7a4a06550ae1d887.jpg",
+          "hash": "f3d019"
+      },
+      {
+          "id": 685754,
+          "title": "Schaum's Outline of Engineering Economics",
+          "author": "Jose Sepulveda, William Souder, Byron Gottfried",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ce/ff/04/ceff045517af963c9eb47cdce318afb1.jpg",
+          "hash": "de97a8"
+      },
+      {
+          "id": 697519,
+          "title": "Global Engineering Economics: Financial Decision Making for Engineers (with Student CD-ROM",
+          "author": "Niall M. Fraser, Elizabeth M. Jewkes, Irwin Bernhardt, May Tajima",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/34/1b/d2/341bd2467de1d620dce7e5b9a4cfdd5d.jpg",
+          "hash": "570624"
+      },
+      {
+          "id": 698497,
+          "title": "Fundamentals of Engineering Economics",
+          "author": "Chan S. Park",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e6/b0/38/e6b038718fdb582101874468b065c9c6.jpg",
+          "hash": "12e390"
+      },
+      {
+          "id": 773566,
+          "title": "Grunch of Giants",
+          "author": "R. Buckminster Fuller",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/5b/07/50/5b07502464389ae52fc195852c6778cd.jpg",
+          "hash": "a6daad"
+      },
+      {
+          "id": 808096,
+          "title": "Rich Dad's Guide to Investing: What the Rich Invest in That the Poor and Middle Class Do Not!",
+          "author": "Robert T. Kiyosaki, Sharon L. Lechter",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f3/2e/5a/f32e5a07f900985bf2ade9cb8a50a27b.jpg",
+          "hash": "4b169e"
+      },
+      {
+          "id": 824330,
+          "title": "Cashflow Quadrant: Rich Dad's Guide to Financial Freedom",
+          "author": "Robert T. Kiyosaki, Sharon L. Lechter",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/52/8b/76/528b76c6f92abddfd8685b45b0141fac.jpg",
+          "hash": "ac3a05"
+      },
+      {
+          "id": 848120,
+          "title": "The Millionaire Real Estate Investor",
+          "author": "Gary Keller, Dave Jenks, Jay Papasan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/6b/20/24/6b20244b886ae9ae1ca2015b89cb668b.jpg",
+          "hash": "3843bd"
+      },
+      {
+          "id": 874575,
+          "title": "Own Your Own Corporation: Why the Rich Own Their Own Companies and Everyone Else Works for Them (Rich Dad's Advisors)",
+          "author": "Garret Sutton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f4/df/0f/f4df0f5476bec78562741d156cbffe96.jpg",
+          "hash": "aaa216"
+      },
+      {
+          "id": 883009,
+          "title": "Rich Dad's Conspiracy of The Rich: The 8 New Rules of Money   ",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e9/ea/68/e9ea6821e3edf40b6ce65ba4f9c74a4e.jpg",
+          "hash": "703f96"
+      },
+      {
+          "id": 953615,
+          "title": "The Real Book of Real Estate: Real Experts. Real Stories. Real Life.",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/93/9f/87/939f87f6330d098e5eb2743cee5bb50e.jpg",
+          "hash": "4fa917"
+      },
+      {
+          "id": 982371,
+          "title": "Rich Dad's Before You Quit Your Job: 10 Real-Life Lessons Every Entrepreneur Should Know About Building a Multimillion-Dollar Business",
+          "author": "Robert T. Kiyosaki, Sharon L. Lechter",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/29/b5/54/29b55467536380974fecc999d35834a9.jpg",
+          "hash": "509b7a"
+      },
+      {
+          "id": 991617,
+          "title": "Profit by Investing in Real Estate Tax Liens: Earn Safe, Secured, and Fixed Returns Every Time",
+          "author": "Larry B. Loftis",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1c/4d/49/1c4d49f7ca699a82257f21be2c45b319.jpg",
+          "hash": "606380"
+      },
+      {
+          "id": 995465,
+          "title": "Rich Dad's Rich Kid, Smart Kid: Giving Your Children a Financial Headstart",
+          "author": "Robert T. Kiyosaki, Sharon L. Lechter",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/17/c7/e1/17c7e119575f62098333be19482b0130.jpg",
+          "hash": "346c1b"
+      },
+      {
+          "id": 1083886,
+          "title": "Sales Dogs : You Do Not Have to Be an Attack Dog to Be Successful in Sales (Rich Dad's Advisors series)",
+          "author": "Blair Singer",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/89/77/0d/89770dc53febd01def90d78b29930146.jpg",
+          "hash": "9a2c85"
+      },
+      {
+          "id": 1093191,
+          "title": "Rich Dad's Success Stories: Real Life Success Stories from Real Life People Who Followed the Rich Dad Lessons",
+          "author": "Robert T. Kiyosaki, Sharon L. Lechter",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/63/c3/84/63c38456309ec4ce37622559c88b6b9b.jpg",
+          "hash": "6fee4b"
+      },
+      {
+          "id": 1093325,
+          "title": "Rich Dad's Advisors: Guide to Investing In Gold and Silver: Protect Your Financial Future",
+          "author": "Michael Maloney",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/af/46/0e/af460e1776a04094eba7bca68a099f7f.jpg",
+          "hash": "89ee07"
+      },
+      {
+          "id": 1110078,
+          "title": "Unfair Advantage: The Power of Financial Education",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3a/9e/2d/3a9e2d521fca59fb4d7a1ae388e8a938.jpg",
+          "hash": "923f64"
+      },
+      {
+          "id": 1111375,
+          "title": "Engineering economic analysis, 9th edition",
+          "author": "Donald G. Newnan, Ted Eschenbach, Jerome P. Lavelle",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ec/bc/4a/ecbc4ada052947a4cbcefa62667b6125.jpg",
+          "hash": "312b46"
+      },
+      {
+          "id": 1124085,
+          "title": "Operating Manual for Spaceship Earth",
+          "author": "R. Buckminster Fuller",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/cc/62/bd/cc62bd1ba3bbeddb45d46a7b9b479869.jpg",
+          "hash": "ba274b"
+      },
+      {
+          "id": 1201455,
+          "title": "The ABC's of Property Management: What You Need to Know to Maximize Your Money Now (Rich dad’s advisors), 1st Edition  ",
+          "author": "Ken McElroy",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a4/aa/78/a4aa7816a46953c88b10e938cc495a2f.jpg",
+          "hash": "ac8709"
+      },
+      {
+          "id": 1201813,
+          "title": "Midas Touch: Why Some Entrepreneurs Get Rich-And Why Most Don't  ",
+          "author": "Donald J. Trump, Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a6/2a/9d/a62a9d73a7ba1ac31796d0535fed0142.jpg",
+          "hash": "77e47d"
+      },
+      {
+          "id": 1225789,
+          "title": "Basics of Engineering Economy    ",
+          "author": "Leland Blank, Anthony Tarquin",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/dc/19/87/dc1987e9c66f74fcc5be7ef7fabbe2ba.jpg",
+          "hash": "f4efab"
+      },
+      {
+          "id": 1227113,
+          "title": "Rich Dad's Increase Your Financial IQ",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/96/f8/bd/96f8bde85beb34f57ca72bd94e6af8c5.jpg",
+          "hash": "b00d54"
+      },
+      {
+          "id": 1310782,
+          "title": "Trump: How to Get Rich",
+          "author": "Donald J. Trump, Meredith McIver",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/68/d4/3c/68d43cbbf93475419ec05e4da0be5f5d.jpg",
+          "hash": "7ed4b0"
+      },
+      {
+          "id": 2083165,
+          "title": "Engineering Economy 7th Edition",
+          "author": "Leland Blank, Anthony Tarquin",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/eb/8b/c6/eb8bc6f8983419e81946e6a9bf3d33f9.jpg",
+          "hash": "ac8a46"
+      },
+      {
+          "id": 2163192,
+          "title": "The ABCs of Real Estate Investing: The Secrets of Finding Hidden Profits Most Investors Miss",
+          "author": "Ken McElroy",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/2c/1c/33/2c1c33a726be0991009a0e0fada89ff8.jpg",
+          "hash": "92fc5a"
+      },
+      {
+          "id": 2222453,
+          "title": "Rich Dad's Advisors®: The ABC's of Real Estate Investing: The Secrets of Finding Hidden Profits Most Investors Miss",
+          "author": "Ken McElroy",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ea/20/9e/ea209e0ae4efdd549639262304a6cbcf.jpg",
+          "hash": "03ee76"
+      },
+      {
+          "id": 2269728,
+          "title": "Tax-Free Wealth: How to Build Massive Wealth by Permanently Lowering Your Taxes",
+          "author": "Tom Wheelwright",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/d0/09/b6/d009b6e69fa0361d624a47da0dc2b065.jpg",
+          "hash": "dd719d"
+      },
+      {
+          "id": 2270740,
+          "title": "The Real Book of Real Estate: Real Experts. Real Stories. Real Life.",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/85/c4/33/85c43306e76620b5bbbc38d126458f13.jpg",
+          "hash": "da521f"
+      },
+      {
+          "id": 2271110,
+          "title": "Rich Dad's Guide to Becoming Rich...Without Cutting Up Your Credit Cards",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/cb/a9/d9/cba9d93cc93b902e28939581469b260f.jpg",
+          "hash": "f90060"
+      },
+      {
+          "id": 2330105,
+          "title": "The Stock Market Cash Flow: Four Pillars of Investing for Thriving in Today’s Markets",
+          "author": "Andy Tanner",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b9/a2/40/b9a240a6ac9760a353ead3e862599c11.jpg",
+          "hash": "b92dc2"
+      },
+      {
+          "id": 2345385,
+          "title": "Managing Your Money: Personal Finance Simplified",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/69/e7/cf/69e7cfea9c8a527a5fefee1c32c0cabc.jpg",
+          "hash": "a5bfc1"
+      },
+      {
+          "id": 2345455,
+          "title": "Education on Tax Secrets",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/17/17/bd/1717bd5e97b4b5a365e97db0577d7b45.jpg",
+          "hash": "f9101b"
+      },
+      {
+          "id": 2352024,
+          "title": "How to Buy Your First Investment Property",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/e7/9a/b8/e79ab84a7f6c2f25051da30cf659a400.jpg",
+          "hash": "67e586"
+      },
+      {
+          "id": 2352582,
+          "title": "Handbook in Monte Carlo Simulation: Applications in Financial Engineering, Risk Management, and Economics",
+          "author": "Paolo Brandimarte",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/81/5d/69/815d69c2f216c4a7935f61df8c22e60d.jpg",
+          "hash": "46ca30"
+      },
+      {
+          "id": 2369112,
+          "title": "Fundamentals of Engineering Economics and Decision Analysis",
+          "author": "David L. Whitman, Ronald E. Terry",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/55/01/23/5501233f7b6c0ea0d79a227e6955f7f5.jpg",
+          "hash": "2ecf0d"
+      },
+      {
+          "id": 2383600,
+          "title": "Engineering Economics and Economic Design for Process Engineers",
+          "author": "Thane Brown",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1c/30/f1/1c30f1f514fc16d5b9319c3a9f4a7153.jpg",
+          "hash": "87ee53"
+      },
+      {
+          "id": 2482021,
+          "title": "Fundamentals of Engineering Economics. Chan S. Park",
+          "author": "Chan S. Park",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/86/8c/66/868c66d82e5067ee931115d300cc5445.jpg",
+          "hash": "999588"
+      },
+      {
+          "id": 2530102,
+          "title": "The business of the 21st century",
+          "author": "Robert T Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f7/61/88/f76188f66bb862d938951b86591797ea.jpg",
+          "hash": "4b433e"
+      },
+      {
+          "id": 2536922,
+          "title": "The ABCs of Getting Out of Debt. Turn Bad Debt into Good Debt and Bad Credit into Good Credit",
+          "author": "Garrett Sutton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/bb/25/b7/bb25b7c516aa15969c4544012b5cc4cb.png",
+          "hash": "e72f23"
+      },
+      {
+          "id": 2580112,
+          "title": "Engineering Economic Analysis, Solutions",
+          "author": "Donald G. Newnan, Ted G. Eschenbach, Jerome P. Lavelle",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/37/07/35/370735a1d9e5fe26fc335981794c7263.jpg",
+          "hash": "9534f2"
+      },
+      {
+          "id": 2580114,
+          "title": "Engineering Economic Analysis, Solutions",
+          "author": "Donald G. Newnan, Ted G. Eschenbach, Jerome P. Lavelle",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a0/1e/37/a01e3785eb980bdc979b7f3b3666c4f2.jpg",
+          "hash": "c260b3"
+      },
+      {
+          "id": 2624798,
+          "title": "Principles of Financial Engineering",
+          "author": "Robert Kosowski, Salih N. Neftci",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/02/24/9a/02249ac9ab58fde042aad9d05cded4fd.jpg",
+          "hash": "8d47ee"
+      },
+      {
+          "id": 2637741,
+          "title": "An introduction to engineering economics",
+          "author": "Sharma, Kal Renganathan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ab/43/f9/ab43f96847b41a978bad8648b75d6ef6.jpg",
+          "hash": "f33741"
+      },
+      {
+          "id": 2714129,
+          "title": "Engineering economic analysis",
+          "author": "Eschenbach, Ted G.; Newnan, Donald G.; Lavelle, Jerome P",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/7b/50/19/7b501987bd2da5e5a8b3a1e58ed592ca.jpg",
+          "hash": "368982"
+      },
+      {
+          "id": 2930633,
+          "title": "Trump: The Art of the Deal",
+          "author": "Trump, Donald J., Schwartz, Tony",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/94/e4/0c/94e40cdbcc57f4aaa140726b4b2d8839.jpg",
+          "hash": "d37c4a"
+      },
+      {
+          "id": 3317858,
+          "title": "Toxic client : knowing and avoiding the problem customer",
+          "author": "Sutton, Garrett",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/7a/08/db/7a08db5d95f61c1365df9c71e68e5a6f.jpg",
+          "hash": "39cdaa"
+      },
+      {
+          "id": 3325649,
+          "title": "Second chance : for your money, your life and our world",
+          "author": "Kiyosaki, Robert T",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/23/59/38/2359385443e4e5a7f1dba89d7e6d2db7.jpg",
+          "hash": "b26da4"
+      },
+      {
+          "id": 3330030,
+          "title": "The ABCs of Getting Out of Debt : Turn Bad Debt Into Good Debt and Bad Credit Into Good Credit",
+          "author": "Sutton, Garrett",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1a/b9/00/1ab900b01f2ec7c6759c10af916a16d7.jpg",
+          "hash": "4f5235"
+      },
+      {
+          "id": 3405473,
+          "title": "Engineering Economy",
+          "author": "Leland Blank, Anthony Tarquin",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/7e/cf/fa/7ecffabd862939278c227c432d5b86de.jpg",
+          "hash": "f0bb49"
+      },
+      {
+          "id": 3409938,
+          "title": "The Book on Investing in Real Estate with No (and Low) Money Down: Real Life Strategies for Investing in Real Estate Using Other People’s Money",
+          "author": "Brandon Turner",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b8/f9/c7/b8f9c748dc2fbf6b1894165893757de8.jpg",
+          "hash": "e2a62e"
+      },
+      {
+          "id": 3419119,
+          "title": "Maintenance Costs and Life Cycle Cost Analysis",
+          "author": "Diego Galar, Peter Sandborn, Uday Kumar",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3e/11/9d/3e119da6fa03020018cf47823b13ef1e.jpg",
+          "hash": "6a4299"
+      },
+      {
+          "id": 3495538,
+          "title": "Applied Engineering Economics Using Excel",
+          "author": "Mehta, Merwan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/71/a8/99/71a899d7cb5fd85ec90c4010da5f8b8c.jpg",
+          "hash": "5ea180"
+      },
+      {
+          "id": 3499978,
+          "title": "Risk Management and Financial Institutions",
+          "author": "John C. Hull",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/43/0f/9c/430f9c7472b816095b6d05e752dc4c82.jpg",
+          "hash": "8ef933"
+      },
+      {
+          "id": 3505369,
+          "title": "Rich Dad’s CASHFLOW Quadrant: Rich Dad’s Guide to Financial Freedom",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/83/c6/1d/83c61d639ecc606ea26c93f55b354ead.jpg",
+          "hash": "5f7ad9"
+      },
+      {
+          "id": 3562054,
+          "title": "Little Voice Mastery: How to Win the War Between Your Ears in 30 Seconds or Less and Have an Extraordinary Life!",
+          "author": "Blair Singer [Singer, Blair]",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/a2/d7/0f/a2d70f56231be8e93d7218c0548de9ef.jpg",
+          "hash": "356874"
+      },
+      {
+          "id": 3657400,
+          "title": "Rich Dad’s Guide to Investing",
+          "author": "Robert Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/6b/27/9f/6b279f88692d7cef0126130c135f147f.jpg",
+          "hash": "7b6717"
+      },
+      {
+          "id": 3667983,
+          "title": "Engineering Economy Solution Manual 8th Edition",
+          "author": "Leland Blank, Anthony Tarquin",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/dc/5b/69/dc5b696aa48c62ee29a0c3b90466d662.jpg",
+          "hash": "5d6a2a"
+      },
+      {
+          "id": 3689396,
+          "title": "Engineering Economic Analysis",
+          "author": "Donald G Newnan; Ted G. Eschenbach; Jerome P Lavelle",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/44/d3/fd/44d3fd1d5b85f44253d5ffa1e4ee05d1.jpg",
+          "hash": "9260c2"
+      },
+      {
+          "id": 3703965,
+          "title": "Basics of Engineering Economy",
+          "author": "Leland Blank, Anthony Tarquin",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/fb/52/2f/fb522f9535f97f99d3e7a7568086e256.jpg",
+          "hash": "1f331d"
+      },
+      {
+          "id": 4976404,
+          "title": "Engineering economics",
+          "author": "Yates, J. K",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/0c/cd/6e/0ccd6e8e2eded0f8982aba4565dd828b.jpg",
+          "hash": "c3220a"
+      },
+      {
+          "id": 4976405,
+          "title": "Engineering economics of life cycle cost analysis",
+          "author": "Faber, Isaac; Farr, John V",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c9/1d/e1/c91de1f91ef599892c5ea539d9ec7c30.jpg",
+          "hash": "1082fe"
+      },
+      {
+          "id": 4990803,
+          "title": "The business school for people who like helping people",
+          "author": "1947- Kiyosaki Robert T, L Lechter Sharon, L Lechter Sharon",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/93/7e/21/937e2180d68ac959d4e5a9a95cd84f7d.jpg",
+          "hash": "06e92a"
+      },
+      {
+          "id": 4995267,
+          "title": "If You Want to Be Rich & Happy, Don't Go to School?: Ensuring Lifetime Security for Yourself and Your Children",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/9c/56/be/9c56be34ee113cd32797587cc273e2e5.png",
+          "hash": "d3a63c"
+      },
+      {
+          "id": 5156483,
+          "title": "Why \"A\" Students Work for \"C\" Students and Why \"B\" Students Work for the Government: Rich Dad's Guide to Financial Education for Parents",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/df/91/0b/df910b69622620f37eca3248400cf892.jpg",
+          "hash": "e3b3ac"
+      },
+      {
+          "id": 5208556,
+          "title": "Rich Dad's Who Took My Money?: Why Slow Investors Lose and Fast Money Wins!",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/24/57/b9/2457b98f99f4f6bf8f936890c5561544.png",
+          "hash": "56a1aa"
+      },
+      {
+          "id": 5216698,
+          "title": "The Advanced Guide to Real Estate Investing",
+          "author": "McElroy Ken",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b8/eb/78/b8eb78e44fa998a2fb81cdabb0c98ac8.jpg",
+          "hash": "ba88b8"
+      },
+      {
+          "id": 5220039,
+          "title": "Own Your Own Corporation",
+          "author": "Sutton Garrett, Kiyosaki Robert T.",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/8d/23/0c/8d230c0c7220c385db061ceeb75337bc.jpg",
+          "hash": "505235"
+      },
+      {
+          "id": 5220726,
+          "title": "Loopholes of Real Estate",
+          "author": "Garrett Sutton",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/9d/fe/29/9dfe29f2fcfc934bdcebefa622fe622d.jpg",
+          "hash": "44bb85"
+      },
+      {
+          "id": 5281864,
+          "title": "Cashflow Quadrant: Rich dad poor dad",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/60/bd/b0/60bdb0ce06164569350e7ad192cf99db.jpg",
+          "hash": "2e5222"
+      },
+      {
+          "id": 5394976,
+          "title": "Fundamentals of Engineering Economic Analysis",
+          "author": "John A. White et al.",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ab/ad/e4/abade49bd5778251cb5dc1b63cfbd086.jpg",
+          "hash": "49b33d"
+      },
+      {
+          "id": 5517631,
+          "title": "Principles of Engineering Economics with Applications",
+          "author": "Zahid A. Khan, Arshad N. Siddiquee, Brajesh Kumar, Mustufa H. Abidi",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/f6/15/c1/f615c144e4c17af44fabc3d8d3524b43.jpg",
+          "hash": "5f749e"
+      },
+      {
+          "id": 5594363,
+          "title": "The ABC's of Real State Investing",
+          "author": "Ken McElroy",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/b1/a9/fc/b1a9fcb5b4789ae358dc025d2a68b2e6.jpg",
+          "hash": "19198d"
+      },
+      {
+          "id": 5624606,
+          "title": "The 16 % Solution, Revised Edition: How to Get High Interest Rates in a Low-Interest World with Tax Lien Certificates",
+          "author": "J.D.,Joel S. Moskowitz",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/06/f5/37/06f5379acdaa5fe99b192ed4efce01d2.jpg",
+          "hash": "b676de"
+      },
+      {
+          "id": 5824673,
+          "title": "Loopholes of real estate: secrets of successful real estate investing",
+          "author": "Kiyosaki, Robert;Sutton, Garrett",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/51/89/a5/5189a5d72539dd5dbd580f5285282823.jpg",
+          "hash": "4a4715"
+      },
+      {
+          "id": 5867168,
+          "title": "Engineering Economy",
+          "author": "William G. Sullivan, Elin M. Wicks, C. Patrick Koelling",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ad/c3/7e/adc37e57f52ed063cf1efcfc255c4a0c.jpg",
+          "hash": "28af4e"
+      },
+      {
+          "id": 5876121,
+          "title": "Engineering Economic Analysis",
+          "author": "Donald G. Newnan, Ted G. Eschenbach, Jerome P. Lavelle, Neal A. Lewis",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/24/95/1e/24951e16293de66ee42d4988b0ce88f5.jpg",
+          "hash": "b12b18"
+      },
+      {
+          "id": 5878487,
+          "title": "Engineering Economic Analysis, 14th Edition",
+          "author": "Donald G. Newnan",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/66/b1/73/66b173a0044ff84dd555b29f1103340e.jpg",
+          "hash": "568b91"
+      },
+      {
+          "id": 6014307,
+          "title": "Rich Dad's Advisors: The ABC's of Writing Winning Business Plans",
+          "author": "Sutton, garrett",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/c1/e8/fd/c1e8fdaa882dd27cdcae123a77b71234.jpg",
+          "hash": "c62b0a"
+      },
+      {
+          "id": 6014308,
+          "title": "Rich Dad's Advisors: Own Your Own Corporation",
+          "author": "Sutton, Garrett;Kiyosaki, Robert, T",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/62/a3/43/62a343fbd0213abb4248e841e4500be5.jpg",
+          "hash": "826b76"
+      },
+      {
+          "id": 6122264,
+          "title": "The Cashflow Way to Invest in Real Estate",
+          "author": "Robert Kiyosaki, Ken McElory",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/10/a0/0f/10a00f175afa5461b1929678e3e2bda5.jpg",
+          "hash": "227dc9"
+      },
+      {
+          "id": 11341462,
+          "title": "Fundamentals of Engineering Economics (e-book)",
+          "author": "Chan S. Park",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/98/42/10/9842100a283c00267487820a43ee698f.jpg",
+          "hash": "e1e682"
+      },
+      {
+          "id": 11490806,
+          "title": "The Social Capitalist: Passion and Profits - An Entrepreneurial Journey (Rich Dad's Advisors (Paperback))",
+          "author": "Josh Lannon & Lisa Lannon [Lannon, Josh]",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/51/8b/48/518b484825b1311ae1ff7648ee1eabaf.jpg",
+          "hash": "053f64"
+      },
+      {
+          "id": 11517473,
+          "title": "Tax-Free Wealth: How to Build Massive Wealth by Permanently Lowering Your Taxes",
+          "author": "Tom Wheelwright [Wheelwright, Tom]",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/61/3b/5a/613b5adf00bb1f3e51b0524c45824cad.jpg",
+          "hash": "14492b"
+      },
+      {
+          "id": 11768898,
+          "title": "Engineering Economy, Global Edition, 17th Edition",
+          "author": "William G. Sullivan, Elin M. Wicks, C. Patrick Koelling",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/29/73/65/297365c031d151a2d016da51798ebaff.jpg",
+          "hash": "33fff0"
+      },
+      {
+          "id": 11853255,
+          "title": "Rich Dad's CASHFLOW Quadrant",
+          "author": "Robert T. Kiyosaki",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/3b/9e/be/3b9ebeac2f1fd1e5458ce3aea4719535.jpg",
+          "hash": "b0f8de"
+      },
+      {
+          "id": 11950061,
+          "title": "Tailings and Mine Waste 2020",
+          "author": "The Organizing Committee of the 14th International Conference on Tailings and Mine Waste",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/ca/a6/0c/caa60cac6938f23aaec1fa34829611b3.jpg",
+          "hash": "e49ce4"
+      },
+      {
+          "id": 13110398,
+          "title": "Team Code of Honor: The Secrets of Champions in Business and in Life",
+          "author": "Blair Singer",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/29/47/6a/29476a57cb20e94a432d02642df48c5e.jpg",
+          "hash": "d00d70"
+      },
+      {
+          "id": 16674016,
+          "title": "ABCs of Buying Rental Property: How You Can Achieve Financial Freedom in Five Years",
+          "author": "Ken McElroy",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/8f/c3/01/8fc301f7ab233befbdffdfdf972c85ea.jpg",
+          "hash": "ef1c5a"
+      },
+      {
+          "id": 19034208,
+          "title": "Scam-Proof Your Assets",
+          "author": "Sutton, Garrett",
+          "cover": "https://static.zlibrary-asia.se/covers299/books/1c/aa/22/1caa22b8afbe6c0d362378e8b080a5c9.jpg",
+          "hash": "77f37d"
+      }
+  ]
+}
