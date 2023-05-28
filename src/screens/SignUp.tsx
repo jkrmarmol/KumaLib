@@ -3,7 +3,7 @@ import { View, Text, useWindowDimensions, TextInput, TouchableOpacity, StyleShee
 import { MaterialCommunityIcons, MaterialIcons, Entypo } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar'
-import SocMedAuth from '../components/SignNSignUp/SocMedAuth'
+import SocMedAuth from '../components/SocMedAuth'
 
 
 export default function SignUp() {

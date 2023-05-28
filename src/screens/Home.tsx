@@ -12,8 +12,8 @@ import {
 } from 'react-native';
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import slide from '../constant/slideItems';
-import OnboardingItems from '../components/Home/OnboardingItems';
-import Paginator from '../components/Home/Paginator';
+import OnboardingItems from '../components/OnboardingItems';
+import Paginator from '../components/Paginator';
 
 
 export default function Home() {
@@ -117,7 +117,7 @@ const style = StyleSheet.create({
   },
   buttonContainer: {
     width: '100%',
-    marginVertical: 25, 
+    marginVertical: 25,
     gap: 12,
   },
   buttonTouchableOpacity: {

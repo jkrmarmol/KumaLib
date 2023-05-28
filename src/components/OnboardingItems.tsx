@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, useWindowDimensions, Image, StyleSheet } from 'react-native'
-import { ISlideItems } from '../../typings/interfaces';
+import { ISlideItems } from '../typings/interfaces';
 
 export default function OnboardingItems({ item }: { item: ISlideItems }) {
   const { width } = useWindowDimensions();

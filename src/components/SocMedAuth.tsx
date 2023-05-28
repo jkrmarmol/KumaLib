@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Image, TouchableOpacity, StyleSheet } from 'react-native'
-import socMedImages from '../../constant/socmedImages'
+import socMedImages from '../constant/socmedImages'
 
 
 export default function SocMedAuth() {

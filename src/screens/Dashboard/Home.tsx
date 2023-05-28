@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, StyleSheet, useWindowDimensions, ScrollVi
 import React, { useState } from 'react'
 import GradientText from '../../components/GradientText';
 import BookRender from '../../components/HomeBookRender';
-import BookSaved from '../../components/HomeBookSaved';
+import BookSaved from '../../components/BookFavorite';
 import mostPopularSampleData from '../../constant/mostPopularSampleData.json';
 import recentlyAddedSampleData from '../../constant/recentlyAddedSampleData.json';
 import recommendedSampleData from '../../constant/recommendedSampleData.json';
