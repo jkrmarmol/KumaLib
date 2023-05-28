@@ -29,3 +29,20 @@ export interface IBookRenderParam {
   tab: string;
   item: IDataBookRender[]
 }
+
+export interface IChangePasswordState {
+  newPassword: string;
+  confirmPassword: string
+}
+
+export interface IEditProfileState {
+  email: string;
+  nameOrNick: string;
+}
+
+export interface ISocialMediaLink {
+  email: string;
+  facebook: string;
+  linkedin: string;
+  github: string;
+}

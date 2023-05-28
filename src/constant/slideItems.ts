@@ -1,4 +1,4 @@
-import { ISlideItems } from "../typings/interface";
+import { ISlideItems } from "../typings/interfaces";
 
 const items: ISlideItems[] = [
   {

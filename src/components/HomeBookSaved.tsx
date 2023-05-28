@@ -3,7 +3,7 @@ import React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import bookSavedSampleData from '../constant/bookSavedSampleData.json';
 
-export default function BookSaved() {
+export default function HomeBookSaved() {
   const { width } = useWindowDimensions();
 
   return (

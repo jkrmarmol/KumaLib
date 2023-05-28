@@ -1,0 +1,33 @@
+{
+  "success": 1,
+  "book": {
+      "id": 2481754,
+      "title": "Engineering Economics Financial Decision Making for Engineers",
+      "author": "Niall Fraser, Elizabeth Jewkes",
+      "volume": "",
+      "year": 2012,
+      "edition": "5",
+      "publisher": "Pearson Education Canada",
+      "identifier": "9780132935791,0132935791",
+      "language": "English",
+      "extension": "pdf",
+      "pages": 553,
+      "filesize": 5274264,
+      "series": "",
+      "cover": "https://static.zlibrary-asia.se/covers299/books/96/e6/d6/96e6d637e84bfaeb3a47b49d310a2e7a.jpg",
+      "terms_hash": "e9b9e87184ab2ed980c4dd4639fb99ac",
+      "active": 1,
+      "deleted": 0,
+      "filesizeString": "5.03 MB",
+      "href": "/book/2481754/c0ff9a",
+      "hash": "c0ff9a",
+      "description": "Emphasizes the importance of financial intelligence to good money management and describes how to improve financial information and increase, protect, budget, and leverage money.",
+      "kindleAvailable": false,
+      "sendToEmailAvailable": true,
+      "interestScore": "0",
+      "qualityScore": "0",
+      "dl": "/dl/2481754/c0b8a6",
+      "preview": "ireader/2481754",
+      "_isUserSavedBook": false
+  }
+}

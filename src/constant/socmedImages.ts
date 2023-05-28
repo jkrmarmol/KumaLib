@@ -1,4 +1,4 @@
-import { ISocMedImages } from "../typings/interface"
+import { ISocMedImages } from "../typings/interfaces"
 
 const socMedImages: ISocMedImages[] = [
   {

@@ -70,7 +70,7 @@ export default function SignIn() {
             </View>
 
             <TouchableOpacity
-              onPress={() => nav.navigate('DashboardNav')}
+              onPress={() => nav.navigate('DashboardBottomNav')}
               style={style.signUpTouchableOpacity}
             >
               <LinearGradient

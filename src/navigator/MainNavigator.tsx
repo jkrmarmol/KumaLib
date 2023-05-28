@@ -1,10 +1,18 @@
-import { TouchableOpacity, Text, StyleSheet } from 'react-native'
+import { TouchableOpacity, Text, StyleSheet, Touchable } from 'react-native'
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
+import { useNavigation, NavigationProp, ParamListBase, RouteProp } from '@react-navigation/native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Home from "../screens/Home";
 import SignIn from "../screens/SignIn";
 import SignUp from '../screens/SignUp';
-import DashboardNavigator from './DashboardNavigator';
+
+// User Dashboard Nav & Screen
+import DashboardBottomNavigator from './DashboardBottomNavigator';
+import BookInformation from '../screens/Dashboard/BookInformation';
+import Profile from '../screens/Dashboard/Profile';
+import EditProfile from '../screens/Dashboard/EditProfile';
+import ChangePassword from '../screens/Dashboard/ChangePassword';
+import AboutMe from '../screens/Dashboard/AboutMe';
 
 
 const Stack = createNativeStackNavigator();
@@ -63,13 +71,87 @@ export default function MainNavigator() {
         }}
       />
 
+      {/* Start Dashboard Navigation  */}
       <Stack.Screen
-        name='DashboardNav'
-        component={DashboardNavigator}
+        name='DashboardBottomNav'
+        component={DashboardBottomNavigator}
         options={{
           headerShown: false
         }}
       />
+
+      <Stack.Screen
+        name='BookInformation'
+        component={BookInformation}
+        options={{
+          headerRight: () => (
+            <TouchableOpacity>
+              <MaterialCommunityIcons name="bookmark-plus-outline" size={30} color="black" />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+
+      <Stack.Screen
+        name='Profile'
+        component={Profile}
+        options={{
+          headerShadowVisible: false,
+          headerTitle: 'My Profile',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontFamily: 'PoppinsSemiBold',
+            fontSize: 18
+          }
+        }}
+      />
+
+      <Stack.Screen
+        name='EditProfile'
+        component={EditProfile}
+        options={{
+          headerShadowVisible: false,
+          headerTitle: 'Edit Profile',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontFamily: 'PoppinsSemiBold',
+            fontSize: 18
+          }
+        }}
+      />
+
+      <Stack.Screen
+        name='ChangePassword'
+        component={ChangePassword}
+        options={{
+          headerShadowVisible: false,
+          headerTitle: 'Change Password',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontFamily: 'PoppinsSemiBold',
+            fontSize: 18
+          }
+        }}
+      />
+
+      <Stack.Screen
+        name='AboutMe'
+        component={AboutMe}
+        options={{
+          headerShadowVisible: false,
+          headerTitle: '',
+          headerTransparent: true,
+          headerTintColor: '#fff',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontFamily: 'PoppinsSemiBold',
+            fontSize: 18
+          }
+        }}
+      />
+
+      {/* End Dashboard Navigation  */}
+
 
     </Stack.Navigator>
   );

@@ -1,14 +1,15 @@
 import { View, Text, TouchableOpacity, StyleSheet, useWindowDimensions, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import GradientText from '../../components/GradientText';
-import BookRender from '../../components/BookRender';
-import BookSaved from '../../components/BookSaved';
+import BookRender from '../../components/HomeBookRender';
+import BookSaved from '../../components/HomeBookSaved';
 import mostPopularSampleData from '../../constant/mostPopularSampleData.json';
 import recentlyAddedSampleData from '../../constant/recentlyAddedSampleData.json';
 import recommendedSampleData from '../../constant/recommendedSampleData.json';
 
 
 export default function Home() {
+
   const { width } = useWindowDimensions();
   const [activeTab, setActiveTabs] = useState<string>('Popular');
 
@@ -25,19 +26,22 @@ export default function Home() {
         horizontal
         showsHorizontalScrollIndicator={false}
       >
-        <View style={[style.horizontalTabs, { width }]}>
+        <View style={[style.horizontalTabs]}>
           <TouchableOpacity
+            style={style.horizontalTabsButton}
             onPress={() => setActiveTabs('Popular')}
           >
             <Text style={[activeTab === 'Popular' ? style.activeTab : style.inActiveTab]}>Popular</Text>
             <View style={[activeTab === 'Popular' && style.activeTabIndicator]}></View>
           </TouchableOpacity>
           <TouchableOpacity
+            style={style.horizontalTabsButton}
             onPress={() => setActiveTabs('Recently Added')}>
             <Text style={[activeTab === 'Recently Added' ? style.activeTab : style.inActiveTab]}>Recently Added</Text>
             <View style={[activeTab === 'Recently Added' && style.activeTabIndicator]}></View>
           </TouchableOpacity>
           <TouchableOpacity
+            style={style.horizontalTabsButton}
             onPress={() => setActiveTabs('Recommended')}>
             <Text style={[activeTab === 'Recommended' ? style.activeTab : style.inActiveTab]}>Recommended</Text>
             <View style={[activeTab === 'Recommended' && style.activeTabIndicator]}></View>
@@ -80,8 +84,8 @@ const style = StyleSheet.create({
     alignSelf: 'center'
   },
   inActiveTab: {
-    fontFamily: 'PoppinsSemiBold',
-    opacity: 0.6
+    fontFamily: 'PoppinsMedium',
+    opacity: 0.4
   },
   homeLatestBookContainer: {
     marginLeft: 15
@@ -94,11 +98,14 @@ const style = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginVertical: 15,
-    justifyContent: 'space-between',
-    marginLeft: 15,
+    marginHorizontal: 15,
+  },
+  horizontalTabsButton: {
+    marginRight: 30
   },
   bookListContainer: {
     marginHorizontal: 15,
+    marginBottom: 100,
   },
   bookListTitleSeeAll: {
     flexDirection: 'row',
