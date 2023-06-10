@@ -1,16 +1,22 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+import type { NavigationProp, ParamListBase } from '@react-navigation/native'
+import type { IDataBookRender } from '../typings/interfaces'
 import React from 'react'
 
-export default function BookLists({ data }: any) {
+
+export default function BookLists({ id, title, cover, author, hash }: any) {
+  const nav = useNavigation<NavigationProp<ParamListBase>>();
+
   return (
     <TouchableOpacity
-      onPress={() => console.log(data.id)}
+      onPress={() => nav.navigate('BookInformation', { id, title, hash })}
       style={{
         flexDirection: 'row',
         marginVertical: 7,
       }}>
       <Image
-        source={{ uri: data.cover }}
+        source={{ uri: cover }}
         style={{
           resizeMode: 'contain',
           width: 120,
@@ -28,11 +34,11 @@ export default function BookLists({ data }: any) {
         <Text style={{
           fontFamily: 'PoppinsBold',
           fontSize: 16
-        }}>{data.title}</Text>
+        }}>{title}</Text>
         <Text style={{
           fontFamily: 'PoppinsRegular',
           fontSize: 12
-        }}>by: {data.author}</Text>
+        }}>by: {author}</Text>
       </View>
     </TouchableOpacity>
   )

@@ -1,9 +1,11 @@
 import React, { useCallback } from 'react';
 import { SafeAreaView } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
-import MainNavigator from './src/navigator/MainNavigator';
 import * as SplashScreen from 'expo-splash-screen'
 import { useFonts } from 'expo-font'
+import { Provider } from 'react-redux';
+import MainNavigator from './src/navigator/MainNavigator';
+import store from './src/redux/store';
 
 
 SplashScreen.preventAutoHideAsync();
@@ -29,11 +31,14 @@ export default function App() {
     return null;
   }
 
+
   return (
     <SafeAreaView onLayout={onLayoutRootView} style={{ flex: 1 }}>
-      <NavigationContainer>
-        <MainNavigator />
-      </NavigationContainer>
+      <Provider store={store}>
+        <NavigationContainer>
+          <MainNavigator />
+        </NavigationContainer>
+      </Provider>
     </SafeAreaView>
   );
 }

@@ -1,17 +1,39 @@
-import { View, Text, useWindowDimensions, Image, TouchableOpacity, StyleSheet } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { View, Text, useWindowDimensions, Image, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native'
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { MaterialIcons, AntDesign, Feather, SimpleLineIcons } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar'
 import * as Application from 'expo-application';
+import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
+import { modalOpen } from '../../redux/slices/modalSlice';
+import { viewProfile } from '../../redux/slices/accountSlice';
 import AvatarSample from '../../assets/images/AvatarSample.png';
 import KumaLibLogo from '../../assets/images/KumaLib_Logo.png'
+import WarningSign from '../../assets/images/undraw_Warning_re_eoyh.png'
 
 
 export default function Profile() {
   const nav = useNavigation<NavigationProp<ParamListBase>>();
   const { width } = useWindowDimensions();
   const WIDTH = (90 / 100) * width;
+  const dispatch = useAppDispatch();
+  const selectViewProfile = useAppSelector(state => state.account.viewProfile);
+
+
+  useEffect(() => {
+    dispatch(viewProfile())
+  }, [])
+
+  if (selectViewProfile.status !== 'ok') {
+    return <View style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+      <ActivityIndicator size="large" color="#F7A600" />
+    </View>
+  }
+
 
   return (
     <>
@@ -22,10 +44,10 @@ export default function Profile() {
           <View style={style.profileBannerContainer}>
             <View style={style.profileInfoContainer}>
               <View style={style.profileNameContainer}>
-                <Text style={style.profileNameText}>Kurt Russelle Marmol</Text>
+                <Text style={style.profileNameText}>{selectViewProfile.response?.user.name}</Text>
                 <MaterialIcons name="verified" size={20} color="#fff" style={style.profileVerifiedIcon} />
               </View>
-              <Text style={style.profileEmailText}>jkrmarmol@gmail.com</Text>
+              <Text style={style.profileEmailText}>{selectViewProfile.response?.user.email}</Text>
             </View>
             <Image
               source={AvatarSample}
@@ -36,12 +58,12 @@ export default function Profile() {
           <View style={style.downloadContainer}>
 
             <View style={style.downloadTodayContainer}>
-              <Text style={style.downloadTodayNumber}>0</Text>
+              <Text style={style.downloadTodayNumber}>{selectViewProfile.response?.user.downloads_today}</Text>
               <Text style={style.downloadTodayText}>Download Today</Text>
             </View>
 
             <View style={style.downloadLimitContainer}>
-              <Text style={style.downloadLimitNumber}>10</Text>
+              <Text style={style.downloadLimitNumber}>{selectViewProfile.response?.user.downloads_limit}</Text>
               <Text style={style.downloadLimitText}>Download Limit</Text>
             </View>
 
@@ -59,7 +81,7 @@ export default function Profile() {
                   <Text style={style.settingNameText}>Edit Profile</Text>
                 </View>
                 <TouchableOpacity
-                  onPress={() => nav.navigate('EditProfile')}
+                  onPress={() => nav.navigate('EditProfile', { email: selectViewProfile.response?.user.email, name: selectViewProfile.response?.user.name })}
                 >
                   <MaterialIcons name="keyboard-arrow-right" size={28} color="black" style={{ opacity: 0.7 }} />
                 </TouchableOpacity>
@@ -94,7 +116,9 @@ export default function Profile() {
                   <SimpleLineIcons name="logout" size={24} color="black" />
                   <Text style={style.settingNameText}>Logout</Text>
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => dispatch(modalOpen({ message: 'Something went wrong', description: 'Please check your internet connection', images: WarningSign }))}
+                >
                   <MaterialIcons name="keyboard-arrow-right" size={28} color="black" style={{ opacity: 0.7 }} />
                 </TouchableOpacity>
               </View>

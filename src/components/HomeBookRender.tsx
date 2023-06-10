@@ -1,27 +1,24 @@
-import { Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 import React from 'react'
+import { Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
-import { IBookRenderParam } from '../typings/interfaces';
 
 
-export default function HomeBookRender({ tab, item }: IBookRenderParam) {
+export default function HomeBookRender({ id, title, cover, author, hash }: any) {
   const nav = useNavigation<NavigationProp<ParamListBase>>();
+
   return (
     <>
-      {item ? item.map((data, index) => (
-        <TouchableOpacity
-          onPress={() => nav.navigate('BookInformation', { id: data.id, title: data.title })}
-          key={index}
-          style={style.container}
-        >
-          <Image
-            source={{ uri: data.cover }}
-            style={style.bookImages}
-          />
-          <Text style={style.bookTitle}>{data.title}</Text>
-          <Text style={style.bookAuthor}>by: {data.author}</Text>
-        </TouchableOpacity>
-      )) : 'Loading...'}
+      <TouchableOpacity
+        onPress={() => nav.navigate('BookInformation', { id, title, hash })}
+        style={style.container}
+      >
+        <Image
+          source={{ uri: cover }}
+          style={style.bookImages}
+        />
+        <Text style={style.bookTitle}>{title}</Text>
+        <Text style={style.bookAuthor}>by: {author}</Text>
+      </TouchableOpacity>
     </>
   )
 }

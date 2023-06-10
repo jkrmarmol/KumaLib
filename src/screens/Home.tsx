@@ -14,12 +14,13 @@ import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/
 import slide from '../constant/slideItems';
 import OnboardingItems from '../components/OnboardingItems';
 import Paginator from '../components/Paginator';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function Home() {
   const nav = useNavigation<NavigationProp<ParamListBase>>();
   const { width } = useWindowDimensions();
-  const WIDTH = (85 / 100) * width;
+  const WIDTH = (90 / 100) * width;
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollX: MutableRefObject<Animated.Value> = useRef(new Animated.Value(0));
   const slideRef = useRef(null);
@@ -27,6 +28,7 @@ export default function Home() {
     setCurrentIndex(viewableItems[0].index)
   }).current;
   const viewConfig = useRef({ viewAreaCoveragePercentThreshold: 50 }).current;
+
 
   return (
     <>
@@ -42,7 +44,7 @@ export default function Home() {
             style={style.logoImage}
           />
 
-          <View style={style.onboardingContainer}>
+          <View style={[style.onboardingContainer]}>
             <FlatList
               data={slide}
               renderItem={({ item }) => <OnboardingItems item={item} />}
@@ -87,8 +89,12 @@ export default function Home() {
               <Text style={style.buttonText}>Create new account</Text>
             </TouchableOpacity>
           </View>
+
+          <View style={style.footerContainer}>
+            <Text style={style.footerText}>Designed and Developed by Kurt Russelle Marmol</Text>
+          </View>
         </View>
-      </View >
+      </View>
     </>
   )
 }
@@ -130,5 +136,14 @@ const style = StyleSheet.create({
     textAlign: 'center',
     paddingVertical: 12,
     fontFamily: 'PoppinsMedium'
+  },
+  footerContainer: {
+    marginTop: -10,
+    marginBottom: 20
+  },
+  footerText: {
+    fontFamily: 'PoppinsRegular',
+    fontSize: 10,
+    textAlign: 'center'
   }
 })

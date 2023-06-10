@@ -6,7 +6,7 @@ export default function OnboardingItems({ item }: { item: ISlideItems }) {
   const { width } = useWindowDimensions();
 
   return (
-    <View style={[style.container, { width: (85 / 100) * width }]}>
+    <View style={[style.container, { width: (90 / 100) * width }]}>
       <Image source={item.images} style={style.image}
       />
 

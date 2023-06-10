@@ -3,19 +3,63 @@ import { View, Text, useWindowDimensions, TextInput, TouchableOpacity, StyleShee
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { MaterialCommunityIcons, MaterialIcons, Entypo } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import { StatusBar } from 'expo-status-bar'
+import { StatusBar } from 'expo-status-bar';
+import { useAppDispatch } from '../redux/app/hook';
+import { signInAccount } from '../redux/slices/authenticationSlice';
 import SocMedAuth from '../components/SocMedAuth'
+import DeniedSign from '../assets/images/undraw_access_denied_re_awnf.png';
+import CustomModal from '../components/CustomModal';
+import { IModalState } from '../typings/interfaces';
 
 
 export default function SignIn() {
   const nav = useNavigation<NavigationProp<ParamListBase>>();
+  const dispatch = useAppDispatch();
   const { width } = useWindowDimensions();
   const WIDTH = (85 / 100) * width;
-  const [showPassword, setShowPassword] = useState(true);
+
+  const [showPassword, setShowPassword] = useState<boolean>(true);
+
+  const [accountLogin, setAccountLogin] = useState({ email: '', password: '' });
+
+  const [toggleModal, setToggleModal] = useState<IModalState>({
+    toggle: false,
+    images: DeniedSign,
+    message: 'TEST',
+    description: ''
+  });
+
+  const onSubmitLogin = async () => {
+    try {
+      const { payload } = await dispatch(signInAccount(accountLogin))
+      console.log(payload)
+      payload.success === 0 && setToggleModal(prev => ({
+        ...prev,
+        toggle: true,
+        images: DeniedSign,
+        message: payload.error,
+        description: 'Please check your email and password.'
+      }))
+
+      payload.success === 1 && nav.navigate('DashboardBottomNav');
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
 
   return (
     <>
       <StatusBar />
+
+      <CustomModal
+        images={toggleModal.images}
+        message={toggleModal.message}
+        description={toggleModal.description}
+        setToggle={setToggleModal}
+        toggle={toggleModal.toggle}
+      />
+
       <View style={style.container}>
 
         <View style={[style.signInContainer, { width: WIDTH }]}>
@@ -35,6 +79,7 @@ export default function SignIn() {
               <View style={[style.emailContainer, style.shadowEffect]}>
                 <MaterialCommunityIcons name="email-outline" size={24} color="black" />
                 <TextInput
+                  onChangeText={text => setAccountLogin(prev => ({ ...prev, email: text }))}
                   placeholder='Email'
                   inputMode='email'
                   style={[style.textInput, { width: (60 / 100) * width }]}
@@ -46,6 +91,7 @@ export default function SignIn() {
                 <View style={style.iconTextContainer}>
                   <MaterialIcons name="lock-outline" size={24} color="black" />
                   <TextInput
+                    onChangeText={text => setAccountLogin(prev => ({ ...prev, password: text }))}
                     placeholder='Password'
                     secureTextEntry={showPassword}
                     style={[style.textInput, { width: (60 / 100) * width }]}
@@ -70,7 +116,8 @@ export default function SignIn() {
             </View>
 
             <TouchableOpacity
-              onPress={() => nav.navigate('DashboardBottomNav')}
+              // onPress={() => nav.navigate('DashboardBottomNav')}
+              onPress={onSubmitLogin}
               style={style.signUpTouchableOpacity}
             >
               <LinearGradient
@@ -137,7 +184,7 @@ const style = StyleSheet.create({
     marginVertical: 40
   },
   emailContainer: {
-    backgroundColor: '#EFEFEF',
+    backgroundColor: '#FBFBFB',
     height: 50,
     paddingHorizontal: 12,
     marginTop: 20,
@@ -146,7 +193,7 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
   passwordContainer: {
-    backgroundColor: '#EFEFEF',
+    backgroundColor: '#FBFBFB',
     height: 50,
     paddingHorizontal: 12,
     marginTop: 20,

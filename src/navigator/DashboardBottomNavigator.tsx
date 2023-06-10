@@ -1,4 +1,4 @@
-import { TouchableOpacity, TextInput, View } from 'react-native';
+import { TouchableOpacity, TextInput, View, Text } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { AntDesign, FontAwesome, MaterialCommunityIcons, Octicons } from '@expo/vector-icons';
@@ -16,8 +16,9 @@ export default function DashboardBottomNavigator() {
   return (
     <>
       <Tab.Navigator
-        screenOptions={{
+        screenOptions={({ route }) => ({
           tabBarShowLabel: false,
+          tabBarTransitionPreset: 'fade',
           headerLeft: () => (
             <TouchableOpacity
               onPress={() => nav.navigate('Profile')}
@@ -28,14 +29,53 @@ export default function DashboardBottomNavigator() {
               <MaterialCommunityIcons name="account-outline" size={27} color="black" />
             </TouchableOpacity>
           ),
-          headerRight: () => (
-            <TouchableOpacity style={{
-              position: 'relative',
-              right: 20,
-            }}>
-              <Octicons name="search" size={24} color="black" />
-            </TouchableOpacity>
-          ),
+          headerRight: () => {
+            return route.name === 'Search' ? (
+              <View
+                onTouchStart={() => nav.navigate('Search')}
+                style={{
+                  right: 20,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}
+              >
+
+                <TextInput
+                  style={{
+                    backgroundColor: '#FBFBFB',
+                    borderRadius: 12,
+                    elevation: 4,
+                    shadowColor: '#000',
+                    shadowOffset: { width: 0, height: 1 },
+                    shadowOpacity: 0.25,
+                    shadowRadius: 1,
+                    width: 200,
+                    paddingLeft: 20,
+                    paddingRight: 30
+                  }}
+                />
+                <Octicons name="search" size={20} color="black" style={{
+                  opacity: 0.5,
+                  position: 'absolute',
+                  right: 10
+                }} />
+
+              </View>
+            ) : (
+              <TouchableOpacity
+                onPress={() => nav.navigate('Search')}
+              >
+                <Octicons
+                  name="search"
+                  size={20}
+                  color="black"
+                  style={{
+                    right: 20
+                  }}
+                />
+              </TouchableOpacity>
+            )
+          },
           tabBarStyle: {
             position: 'absolute',
             height: 55,
@@ -45,7 +85,7 @@ export default function DashboardBottomNavigator() {
             borderRadius: 12,
             // backgroundColor: '#F7A600'
           }
-        }}
+        })}
       >
 
         <Tab.Screen
@@ -53,7 +93,7 @@ export default function DashboardBottomNavigator() {
           component={Home}
           options={{
             headerTitle: '',
-            headerShadowVisible: false,
+            // headerShadowVisible: false,
             tabBarIcon: ({ size, color, focused }) => (
               <AntDesign
                 name="home"
@@ -64,7 +104,7 @@ export default function DashboardBottomNavigator() {
           }}
         />
 
-        <Tab.Screen
+        {/* <Tab.Screen
           name='Search'
           component={Search}
           options={{
@@ -77,7 +117,7 @@ export default function DashboardBottomNavigator() {
               />
             ),
           }}
-        />
+        /> */}
 
         <Tab.Screen
           name='Bookmark'
@@ -90,7 +130,7 @@ export default function DashboardBottomNavigator() {
                 size={focused ? 28 : size}
                 color={focused ? '#F7A600' : '#000'}
               />
-            )
+            ),
           }}
         />
 

@@ -1,71 +1,107 @@
-import { View, Text, TouchableOpacity, StyleSheet, useWindowDimensions, ScrollView } from 'react-native'
-import React, { useState } from 'react'
+import { View, Text, TouchableOpacity, StyleSheet, useWindowDimensions, ScrollView, ActivityIndicator } from 'react-native'
+import React, { useState, useEffect } from 'react'
+import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
 import GradientText from '../../components/GradientText';
-import BookRender from '../../components/HomeBookRender';
-import BookSaved from '../../components/BookFavorite';
-import mostPopularSampleData from '../../constant/mostPopularSampleData.json';
-import recentlyAddedSampleData from '../../constant/recentlyAddedSampleData.json';
-import recommendedSampleData from '../../constant/recommendedSampleData.json';
+import HomeBookRender from '../../components/HomeBookRender';
+import BookFavorite from '../../components/BookFavorite';
+import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
+import { saved, popular, recently, recommended } from '../../redux/slices/bookSlice';
+import type { IBook } from '../../typings/interfaces';
 
 
 export default function Home() {
-
+  const nav = useNavigation<NavigationProp<ParamListBase>>();
+  const dispatch = useAppDispatch();
+  const selectBookSaved = useAppSelector(state => state.book.saved);
+  const selectBookPopular = useAppSelector(state => state.book.popular);
+  const selectBookRecently = useAppSelector(state => state.book.recently);
+  const selectBookRecommended = useAppSelector(state => state.book.recommended);
   const { width } = useWindowDimensions();
   const [activeTab, setActiveTabs] = useState<string>('Popular');
 
+  useEffect(() => {
+    dispatch(saved())
+    dispatch(popular())
+    dispatch(recently())
+    dispatch(recommended())
+  }, [])
+
+
   return (
-    <ScrollView
-      showsVerticalScrollIndicator={false}
-      style={style.container}>
-
-      <View style={style.homeLatestBookContainer}>
-        <GradientText style={style.homeLatestBookText}>Discover Latest Book</GradientText>
-      </View>
-
+    <>
+      <StatusBar />
       <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
+        style={style.container}
       >
-        <View style={[style.horizontalTabs]}>
-          <TouchableOpacity
-            style={style.horizontalTabsButton}
-            onPress={() => setActiveTabs('Popular')}
-          >
-            <Text style={[activeTab === 'Popular' ? style.activeTab : style.inActiveTab]}>Popular</Text>
-            <View style={[activeTab === 'Popular' && style.activeTabIndicator]}></View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={style.horizontalTabsButton}
-            onPress={() => setActiveTabs('Recently Added')}>
-            <Text style={[activeTab === 'Recently Added' ? style.activeTab : style.inActiveTab]}>Recently Added</Text>
-            <View style={[activeTab === 'Recently Added' && style.activeTabIndicator]}></View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={style.horizontalTabsButton}
-            onPress={() => setActiveTabs('Recommended')}>
-            <Text style={[activeTab === 'Recommended' ? style.activeTab : style.inActiveTab]}>Recommended</Text>
-            <View style={[activeTab === 'Recommended' && style.activeTabIndicator]}></View>
-          </TouchableOpacity>
+
+        <View style={style.homeLatestBookContainer}>
+          <GradientText style={style.homeLatestBookText}>Discover Latest Book</GradientText>
         </View>
-      </ScrollView>
 
-      <ScrollView horizontal>
-        {activeTab === 'Popular' && <BookRender tab={activeTab} item={mostPopularSampleData.books} />}
-        {activeTab === 'Recently Added' && <BookRender tab={activeTab} item={recentlyAddedSampleData.books} />}
-        {activeTab === 'Recommended' && <BookRender tab={activeTab} item={recommendedSampleData.books} />}
-      </ScrollView>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+        >
+          <View style={[style.horizontalTabs]}>
+            <TouchableOpacity
+              style={style.horizontalTabsButton}
+              onPress={() => setActiveTabs('Popular')}
+            >
+              <Text style={[activeTab === 'Popular' ? style.activeTab : style.inActiveTab]}>Popular</Text>
+              <View style={[activeTab === 'Popular' && style.activeTabIndicator]}></View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={style.horizontalTabsButton}
+              onPress={() => setActiveTabs('Recently Added')}>
+              <Text style={[activeTab === 'Recently Added' ? style.activeTab : style.inActiveTab]}>Recently Added</Text>
+              <View style={[activeTab === 'Recently Added' && style.activeTabIndicator]}></View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={style.horizontalTabsButton}
+              onPress={() => setActiveTabs('Recommended')}>
+              <Text style={[activeTab === 'Recommended' ? style.activeTab : style.inActiveTab]}>Recommended</Text>
+              <View style={[activeTab === 'Recommended' && style.activeTabIndicator]}></View>
+            </TouchableOpacity>
+          </View>
+        </ScrollView>
 
-      <View style={style.bookListContainer}>
-        <View style={style.bookListTitleSeeAll}>
-          <Text style={style.bookListTitle}>My Booklists</Text>
-          <TouchableOpacity>
-            <Text style={style.bookListSeeAll}>See all</Text>
-          </TouchableOpacity>
+        <ScrollView horizontal>
+          {activeTab === 'Popular' ? (selectBookPopular.response?.success === 1
+            ? selectBookPopular.response.books.map((e: any, index: number) => <HomeBookRender key={index} {...e} />) : (
+              <View style={[style.bookActivityIndicator, { width }]}>
+                <ActivityIndicator size="large" color="#F7A600" />
+              </View>
+            )) : null}
+          {activeTab === 'Recently Added' ? (selectBookRecently.response?.success === 1
+            ? selectBookRecently.response.books.map((e: any, index: number) => <HomeBookRender key={index} {...e} />) : (
+              <View style={[style.bookActivityIndicator, { width }]}>
+                <ActivityIndicator size="large" color="#F7A600" />
+              </View>
+            )) : null}
+          {activeTab === 'Recommended' ? (selectBookRecommended.response?.success === 1
+            ? selectBookRecommended.response.books.map((e: any, index: number) => <HomeBookRender key={index} {...e} />) : (
+              <View style={[style.bookActivityIndicator, { width }]}>
+                <ActivityIndicator size="large" color="#F7A600" />
+              </View>
+            )) : null}
+        </ScrollView>
+
+        <View style={style.bookListContainer}>
+          <View style={style.bookListTitleSeeAll}>
+            <Text style={style.bookListTitle}>My Booklists</Text>
+            <TouchableOpacity onPress={() => nav.navigate('Bookmark')}>
+              <Text style={style.bookListSeeAll}>See all</Text>
+            </TouchableOpacity>
+          </View>
+          {selectBookSaved.response?.success === 1
+            ? selectBookSaved.response.books.map((e: IBook, index: number) => <BookFavorite key={index} {...e} />)
+            : <ActivityIndicator size="large" color="#F7A600" />}
         </View>
-        <BookSaved />
-      </View>
 
-    </ScrollView>
+      </ScrollView>
+    </>
   )
 };
 
@@ -121,5 +157,11 @@ const style = StyleSheet.create({
     fontFamily: 'PoppinsSemiBold',
     fontSize: 14,
     color: '#F70000'
+  },
+  bookActivityIndicator: {
+    height: 200,
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })

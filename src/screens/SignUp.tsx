@@ -132,7 +132,7 @@ const style = StyleSheet.create({
     marginVertical: 40
   },
   emailContainer: {
-    backgroundColor: '#EFEFEF',
+    backgroundColor: '#FBFBFB',
     height: 50,
     paddingHorizontal: 12,
     marginTop: 20,
@@ -141,7 +141,7 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
   passwordContainer: {
-    backgroundColor: '#EFEFEF',
+    backgroundColor: '#FBFBFB',
     height: 50,
     paddingHorizontal: 12,
     marginTop: 20,

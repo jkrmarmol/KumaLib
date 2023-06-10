@@ -1,12 +1,21 @@
-import { View, useWindowDimensions, StyleSheet } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react';
+import { View, useWindowDimensions, StyleSheet, ActivityIndicator } from 'react-native'
+import { Ionicons } from '@expo/vector-icons';
 import BookFavorite from '../../components/BookFavorite';
 import GradientText from '../../components/GradientText';
-import { Ionicons } from '@expo/vector-icons';
+import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
+import { saved } from '../../redux/slices/bookSlice';
+
 
 export default function Bookmark() {
   const { width } = useWindowDimensions();
   const WIDTH = (90 / 100) * width;
+  const dispatch = useAppDispatch();
+  const selectBookSaved = useAppSelector(state => state.book.saved);
+
+  useEffect(() => {
+    dispatch(saved())
+  }, [])
 
   return (
     <View style={style.container}>
@@ -17,7 +26,14 @@ export default function Bookmark() {
           <GradientText style={style.myBooklistsText}>My Booklists</GradientText>
         </View>
 
-        <BookFavorite />
+        {selectBookSaved.status === 'ok'
+          && selectBookSaved.response?.success === 1
+          ? selectBookSaved.response?.books.map((e: any, index: number) => <BookFavorite key={index} {...e} />)
+          : (
+            <View style={[style.bookActivityIndicator]}>
+              <ActivityIndicator size="large" color="#F7A600" />
+            </View>
+          )}
 
       </View>
     </View>
@@ -37,5 +53,10 @@ const style = StyleSheet.create({
   myBooklistsText: {
     fontFamily: 'PoppinsSemiBold',
     fontSize: 28
+  },
+  bookActivityIndicator: {
+    height: 200,
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })
