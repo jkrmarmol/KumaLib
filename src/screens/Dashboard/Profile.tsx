@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { View, Text, useWindowDimensions, Image, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native'
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { MaterialIcons, AntDesign, Feather, SimpleLineIcons } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar'
 import * as Application from 'expo-application';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
-import { modalOpen } from '../../redux/slices/modalSlice';
 import { viewProfile } from '../../redux/slices/accountSlice';
 import AvatarSample from '../../assets/images/AvatarSample.png';
 import KumaLibLogo from '../../assets/images/KumaLib_Logo.png'
-import WarningSign from '../../assets/images/undraw_Warning_re_eoyh.png'
+import SuccessSign from '../../assets/images/undraw_Done_re_oak4.png'
+import CustomModal from '../../components/CustomModal';
+
 
 
 export default function Profile() {
@@ -17,27 +19,50 @@ export default function Profile() {
   const { width } = useWindowDimensions();
   const WIDTH = (90 / 100) * width;
   const dispatch = useAppDispatch();
+  const [modalToggle, setModalToggle] = useState({
+    toggle: false,
+    message: '',
+    description: '',
+    images: SuccessSign
+  });
   const selectViewProfile = useAppSelector(state => state.account.viewProfile);
-
 
   useEffect(() => {
     dispatch(viewProfile())
   }, [])
 
   if (selectViewProfile.status !== 'ok') {
-    return <View style={{
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
+    return <View style={style.bookActivityIndicator}>
       <ActivityIndicator size="large" color="#F7A600" />
     </View>
+  }
+
+  const onPressLogout = async () => {
+    try {
+      await AsyncStorage.clear();
+      setModalToggle((prev: any) => ({
+        ...prev,
+        toggle: true,
+        message: 'Logout Successfully',
+        description: 'you have been successfully logout.'
+      }))
+      setTimeout(() => nav.navigate('Home'), 2500)
+    } catch (err) {
+      console.log(err)
+    }
   }
 
 
   return (
     <>
       <StatusBar />
+      <CustomModal
+        images={modalToggle.images}
+        message={modalToggle.message}
+        description={modalToggle.description}
+        toggle={modalToggle.toggle}
+        setToggle={setModalToggle}
+      />
       <View style={style.container}>
         <View style={[style.screenWidthContainer, { width: WIDTH }]}>
 
@@ -117,7 +142,7 @@ export default function Profile() {
                   <Text style={style.settingNameText}>Logout</Text>
                 </View>
                 <TouchableOpacity
-                  onPress={() => dispatch(modalOpen({ message: 'Something went wrong', description: 'Please check your internet connection', images: WarningSign }))}
+                  onPress={onPressLogout}
                 >
                   <MaterialIcons name="keyboard-arrow-right" size={28} color="black" style={{ opacity: 0.7 }} />
                 </TouchableOpacity>
@@ -155,7 +180,7 @@ const style = StyleSheet.create({
     backgroundColor: '#A61B2B',
     alignItems: 'center',
     height: 120,
-    borderRadius: 20
+    borderRadius: 12
   },
   profileInfoContainer: {
     marginVertical: 10
@@ -199,8 +224,8 @@ const style = StyleSheet.create({
   downloadTodayContainer: {
     padding: 15,
     backgroundColor: '#fff',
-    borderRadius: 20,
-    elevation: 4,
+    borderRadius: 12,
+    elevation: 2,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.25,
@@ -218,8 +243,8 @@ const style = StyleSheet.create({
   downloadLimitContainer: {
     padding: 15,
     backgroundColor: '#fff',
-    borderRadius: 20,
-    elevation: 4,
+    borderRadius: 12,
+    elevation: 2,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.25,
@@ -242,17 +267,15 @@ const style = StyleSheet.create({
     fontFamily: 'PoppinsSemiBold'
   },
   settingContainer: {
-    padding: 15,
     backgroundColor: '#FFFFFF',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
+    borderRadius: 12,
     elevation: 2,
-    borderRadius: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.25,
+    shadowRadius: 1,
+    justifyContent: 'center',
+    padding: 15
   },
   settingItemContainer: {
     flexDirection: 'row',
@@ -283,5 +306,10 @@ const style = StyleSheet.create({
     fontFamily: 'PoppinsRegular',
     fontSize: 10,
     opacity: 0.5
+  },
+  bookActivityIndicator: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 })

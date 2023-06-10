@@ -1,19 +1,28 @@
+import React, { useLayoutEffect, useEffect, useState } from 'react'
 import { View, Text, useWindowDimensions, Image, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native'
-import React, { useLayoutEffect, useEffect } from 'react'
-import { AntDesign, Foundation, MaterialIcons } from '@expo/vector-icons';
+import { AntDesign, Foundation, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
-import { information } from '../../redux/slices/bookSlice';
+import { information, save, unsave } from '../../redux/slices/bookSlice';
+
 
 export default function BookInformation({ route, navigation }: any) {
   const { id, title, hash } = route.params;
   const { width } = useWindowDimensions();
   const WIDTH = (90 / 100) * width;
   const dispatch = useAppDispatch();
-  const selectBookInformation = useAppSelector(state => state.book.information)
-  if (selectBookInformation.status === 'ok') {
+  const selectBookInformation = useAppSelector(state => state.book.information);
+  const [bookmark, setBookmark] = useState(selectBookInformation.status === 'ok' && selectBookInformation.response?.book._isUserSavedBook);
 
+  const onPressSave = async () => {
+    try {
+      setBookmark(!bookmark)
+      bookmark ? await dispatch(unsave({ id })) : await dispatch(save({ id }))
+    } catch (err) {
+      console.log(err)
+    }
   }
+
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -21,13 +30,19 @@ export default function BookInformation({ route, navigation }: any) {
       headerTitleStyle: {
         fontFamily: 'PoppinsSemiBold',
         fontSize: 16
-      }
+      },
+      headerRight: () => (
+        <TouchableOpacity onPress={onPressSave}>
+          {!bookmark ? <MaterialCommunityIcons name="bookmark-plus-outline" size={30} color="black" /> : <MaterialCommunityIcons name="bookmark-minus" size={30} color="#F7A600" />}
+        </TouchableOpacity>
+      ),
     });
-  }, [navigation, title, id]);
+
+  }, [navigation, title, id, bookmark, selectBookInformation, onPressSave]);
 
   useEffect(() => {
     dispatch(information({ id, hash }))
-  }, [id])
+  }, [id, bookmark])
 
   return (
     <View style={style.container}>

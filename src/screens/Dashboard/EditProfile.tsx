@@ -2,7 +2,7 @@ import { View, Text, useWindowDimensions, TextInput, TouchableOpacity, StyleShee
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react'
 import { IEditProfileState } from '../../typings/interfaces';
-import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
+import { useAppDispatch } from '../../redux/app/hook';
 import { updateProfile } from '../../redux/slices/accountSlice';
 import SuccessSign from '../../assets/images/undraw_Done_re_oak4.png'
 import CustomModal from '../../components/CustomModal';
@@ -20,7 +20,6 @@ export default function EditProfile({ route }: any) {
 
   const onSubmitUpdate = async () => {
     try {
-
       const { payload } = await dispatch(updateProfile({ name: profile.nameOrNick }))
       setModalToggle(true)
     } catch (err) {

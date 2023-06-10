@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, ScrollView, Image, SafeAreaView, useWindowDimensions, TouchableOpacity, StyleSheet } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
+import { unsave } from '../redux/slices/bookSlice';
+import { useAppDispatch } from '../redux/app/hook';
+import type { IBookType } from '../typings/interfaces';
 
-export default function BookFavorite({ cover, title, author }: any) {
+export default function BookFavorite({ cover, title, author, id }: IBookType) {
   const { width } = useWindowDimensions();
+  const [favorite, setFavorite] = useState(true);
+  const dispatch = useAppDispatch();
+
+  const removeBook = async () => {
+    try {
+      setFavorite(!favorite)
+      const { payload } = await dispatch(unsave({ id }));
+      console.log(payload)
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   return (
     <ScrollView>
-      <SafeAreaView
-        style={style.container}
-      >
+      <SafeAreaView style={style.container}>
 
         <TouchableOpacity style={style.bookContainer}>
 
@@ -21,9 +34,9 @@ export default function BookFavorite({ cover, title, author }: any) {
 
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          {/* <Ionicons name="heart-outline" size={24} color="black" /> */}
-          <Ionicons name="heart-sharp" size={24} color="#F70000" />
+        <TouchableOpacity onPress={removeBook}>
+          {favorite ? <Ionicons name="heart-sharp" size={24} color="#F70000" />
+            : <Ionicons name="heart-outline" size={24} color="black" />}
         </TouchableOpacity>
 
       </SafeAreaView>

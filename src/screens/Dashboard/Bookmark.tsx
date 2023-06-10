@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, useWindowDimensions, StyleSheet, ActivityIndicator } from 'react-native'
+import { View, useWindowDimensions, StyleSheet, ActivityIndicator, ScrollView } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import BookFavorite from '../../components/BookFavorite';
 import GradientText from '../../components/GradientText';
@@ -13,13 +13,17 @@ export default function Bookmark() {
   const dispatch = useAppDispatch();
   const selectBookSaved = useAppSelector(state => state.book.saved);
 
+
+
   useEffect(() => {
     dispatch(saved())
   }, [])
 
   return (
     <View style={style.container}>
-      <View style={{ width: WIDTH }}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        style={{ width: WIDTH }}>
 
         <View style={style.titleContainer}>
           <Ionicons name="bookmark-outline" size={30} color="#F70000" />
@@ -35,7 +39,7 @@ export default function Bookmark() {
             </View>
           )}
 
-      </View>
+      </ScrollView>
     </View>
   )
 }

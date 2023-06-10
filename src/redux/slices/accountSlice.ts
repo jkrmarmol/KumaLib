@@ -41,12 +41,36 @@ export const updateProfile = createAsyncThunk(
   }
 )
 
+export const updatePassword = createAsyncThunk(
+  'account/updateProfile',
+  async ({ password }: any) => {
+    try {
+      const userHeader = new Headers();
+      userHeader.append('Cookie', `remix_userid=${AsyncStorage.getItem('remix_userid')}; remix_userkey=${AsyncStorage.getItem('remix_userkey')}`);
+      userHeader.append('Content-Type', 'application/x-www-form-urlencoded');
+      const updateProfileResponse = await fetch(`${SERVER_API}/eapi/user/update`, {
+        method: 'POST',
+        headers: userHeader,
+        body: `password=${encodeURIComponent(password)}`
+      })
+      const updateProfileJson = await updateProfileResponse.json();
+      return updateProfileJson;
+    } catch (err) {
+      console.log(err)
+    }
+  }
+)
+
 let initialState: IAccountInitialState = {
   viewProfile: {
     response: null,
     status: ''
   },
   updateProfile: {
+    response: null,
+    status: ''
+  },
+  updatePassword: {
     response: null,
     status: ''
   }
@@ -68,15 +92,15 @@ export const accountSlice = createSlice({
       .addCase(viewProfile.rejected, (state, action) => {
         state.viewProfile.status = 'failed';
       })
-      .addCase(updateProfile.pending, (state, action) => {
-        state.updateProfile.status = 'loading';
+      .addCase(updatePassword.pending, (state, action) => {
+        state.updatePassword.status = 'loading';
       })
-      .addCase(updateProfile.fulfilled, (state, { payload }) => {
-        state.updateProfile.status = 'ok';
-        state.updateProfile.response = payload;
+      .addCase(updatePassword.fulfilled, (state, { payload }) => {
+        state.updatePassword.status = 'ok';
+        state.updatePassword.response = payload;
       })
-      .addCase(updateProfile.rejected, (state, action) => {
-        state.updateProfile.status = 'failed';
+      .addCase(updatePassword.rejected, (state, action) => {
+        state.updatePassword.status = 'failed';
       })
   }
 })

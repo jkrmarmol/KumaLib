@@ -111,9 +111,10 @@ export interface IBook {
   dl: string;
   preview: string;
   date_saved: string;
+  _isUserSavedBook: boolean
 }
 
-interface IBookType {
+export interface IBookType {
   id: number;
   title: string;
   author: string;
@@ -194,6 +195,18 @@ export interface IBookInitialState {
       book: IBook
     };
     status: string;
+  },
+  unsave: {
+    response: null | {
+      success: number;
+    };
+    status: string;
+  },
+  save: {
+    response: null | {
+      success: number;
+    };
+    status: string;
   }
 }
 
@@ -205,5 +218,9 @@ export interface IAccountInitialState {
   updateProfile: {
     response: null | IZLibraryType;
     status: string;
-  }
+  };
+  updatePassword: {
+    response: null | IZLibraryType;
+    status: string;
+  };
 }

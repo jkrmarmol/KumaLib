@@ -102,11 +102,6 @@ export default function MainNavigator() {
         name='BookInformation'
         component={BookInformation}
         options={{
-          headerRight: () => (
-            <TouchableOpacity>
-              <MaterialCommunityIcons name="bookmark-plus-outline" size={30} color="black" />
-            </TouchableOpacity>
-          ),
           animation: 'slide_from_right'
         }}
       />

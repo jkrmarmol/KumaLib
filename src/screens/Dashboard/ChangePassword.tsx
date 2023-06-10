@@ -1,20 +1,62 @@
 import React, { useState } from 'react'
 import { View, Text, useWindowDimensions, TextInput, TouchableOpacity, StyleSheet } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
-import { IChangePasswordState } from '../../typings/interfaces';
+import type { IChangePasswordState } from '../../typings/interfaces';
+import CustomModal from '../../components/CustomModal';
+import ErrorSign from '../../assets/images/undraw_access_denied_re_awnf.png'
+import SuccessSign from '../../assets/images/undraw_Done_re_oak4.png'
+import { useAppDispatch } from '../../redux/app/hook';
+import { updatePassword } from '../../redux/slices/accountSlice';
 
 export default function ChangePassword() {
   const { width } = useWindowDimensions();
   const WIDTH = (90 / 100) * width;
+  const dispatch = useAppDispatch();
+  const [modalToggle, setModalToggle] = useState(false);
+  const [modalMessage, setMessage] = useState({
+    message: '',
+    description: '',
+    images: ErrorSign
+  });
   const [password, setPassword] = useState<IChangePasswordState>({
     newPassword: '',
     confirmPassword: ''
   });
-  console.log(password)
+
+
+  const onSubmitUpdatePassword = async () => {
+    try {
+      if (password.confirmPassword !== password.newPassword) {
+        setModalToggle(true);
+        setMessage({ message: 'password not match', description: 'please check password and new password.', images: ErrorSign })
+      }
+      if (password.confirmPassword === password.newPassword) {
+        const { payload } = await dispatch(updatePassword({ password: password.newPassword }));
+        if (payload.success === 0) {
+          setMessage({ message: 'Invalid Password', description: payload.error, images: ErrorSign })
+          setModalToggle(true)
+        }
+        if (payload.success === 1) {
+          setMessage({ message: 'Password Updated', description: 'you have successfully update your password', images: SuccessSign })
+          setModalToggle(true)
+        }
+      }
+
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   return (
     <>
       <StatusBar />
+      <CustomModal
+        images={modalMessage.images}
+        toggle={modalToggle}
+        setToggle={setModalToggle}
+        message={modalMessage.message}
+        description={modalMessage.description}
+      />
       <View style={style.container}>
 
         <View style={[style.appWidthContainer, { width: WIDTH }]}>
@@ -49,7 +91,7 @@ export default function ChangePassword() {
 
           </View>
 
-          <TouchableOpacity style={style.saveButton}>
+          <TouchableOpacity style={style.saveButton} onPress={onSubmitUpdatePassword}>
             <Text style={style.saveButtonText}>Save</Text>
           </TouchableOpacity>
 

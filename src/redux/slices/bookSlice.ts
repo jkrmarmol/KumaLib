@@ -111,6 +111,44 @@ export const information = createAsyncThunk(
   }
 )
 
+export const unsave = createAsyncThunk(
+  'book/unsave',
+  async ({ id }: any) => {
+    try {
+      const userHeader = new Headers();
+      userHeader.append("Cookie", `remix_userid=${await AsyncStorage.getItem('remix_userid')}; remix_userkey=${await AsyncStorage.getItem('remix_userkey')}`);
+      const unsaveResponse = await fetch(`${SERVER_API}/eapi/user/book/${id}/unsave`, {
+        method: 'GET',
+        headers: userHeader
+      });
+      const unsaveJson = await unsaveResponse.json();
+      return unsaveJson;
+    } catch (err) {
+      console.log(err)
+    }
+  }
+)
+
+export const save = createAsyncThunk(
+  'book/save',
+  async ({ id }: any) => {
+    try {
+      console.log(id)
+      const userHeader = new Headers();
+      userHeader.append("Cookie", `remix_userid=${await AsyncStorage.getItem('remix_userid')}; remix_userkey=${await AsyncStorage.getItem('remix_userkey')}`);
+      const saveResponse = await fetch(`${SERVER_API}/eapi/user/book/${id}/save`, {
+        method: 'GET',
+        headers: userHeader
+      });
+      const saveJson = await saveResponse.json();
+      console.log(saveJson)
+      return saveJson;
+    } catch (err) {
+      console.log(err)
+    }
+  }
+)
+
 
 let initialState: IBookInitialState = {
   saved: {
@@ -134,6 +172,14 @@ let initialState: IBookInitialState = {
     status: ''
   },
   information: {
+    response: null,
+    status: ''
+  },
+  unsave: {
+    response: null,
+    status: ''
+  },
+  save: {
     response: null,
     status: ''
   }
@@ -204,6 +250,26 @@ const bookSlice = createSlice({
       })
       .addCase(information.rejected, (state, action) => {
         state.information.status = 'failed';
+      })
+      .addCase(unsave.pending, (state, action) => {
+        state.unsave.status = 'loading';
+      })
+      .addCase(unsave.fulfilled, (state, { payload }) => {
+        state.unsave.status = 'ok';
+        state.unsave.response = payload;
+      })
+      .addCase(unsave.rejected, (state, action) => {
+        state.unsave.status = 'failed';
+      })
+      .addCase(save.pending, (state, action) => {
+        state.save.status = 'loading';
+      })
+      .addCase(save.fulfilled, (state, { payload }) => {
+        state.save.status = 'ok';
+        state.save.response = payload;
+      })
+      .addCase(save.rejected, (state, action) => {
+        state.save.status = 'failed';
       })
   }
 })

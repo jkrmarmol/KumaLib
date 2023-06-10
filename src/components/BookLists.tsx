@@ -1,45 +1,53 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import type { NavigationProp, ParamListBase } from '@react-navigation/native'
-import type { IDataBookRender } from '../typings/interfaces'
+import type { IBookType } from '../typings/interfaces'
 import React from 'react'
 
 
-export default function BookLists({ id, title, cover, author, hash }: any) {
+export default function BookLists({ id, title, cover, author, hash }: IBookType) {
   const nav = useNavigation<NavigationProp<ParamListBase>>();
 
   return (
     <TouchableOpacity
       onPress={() => nav.navigate('BookInformation', { id, title, hash })}
-      style={{
-        flexDirection: 'row',
-        marginVertical: 7,
-      }}>
+      style={style.container}>
       <Image
         source={{ uri: cover }}
-        style={{
-          resizeMode: 'contain',
-          width: 120,
-          height: 180,
-          borderRadius: 12
-        }}
+        style={style.bookImage}
       />
-      <View style={{
-        alignItems: 'flex-start',
-        justifyContent: 'center',
-        paddingHorizontal: 10,
-        flexWrap: 'wrap',
-        flex: 1
-      }}>
-        <Text style={{
-          fontFamily: 'PoppinsBold',
-          fontSize: 16
-        }}>{title}</Text>
-        <Text style={{
-          fontFamily: 'PoppinsRegular',
-          fontSize: 12
-        }}>by: {author}</Text>
+      <View style={style.bookTitleAuthorContainer}>
+        <Text style={style.bookTitleText}>{title}</Text>
+        <Text style={style.bookAuthorText}>by: {author}</Text>
       </View>
     </TouchableOpacity>
   )
 }
+
+const style = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    marginVertical: 7,
+  },
+  bookImage: {
+    resizeMode: 'contain',
+    width: 120,
+    height: 180,
+    borderRadius: 12
+  },
+  bookTitleAuthorContainer: {
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+    flexWrap: 'wrap',
+    flex: 1
+  },
+  bookTitleText: {
+    fontFamily: 'PoppinsBold',
+    fontSize: 16
+  },
+  bookAuthorText: {
+    fontFamily: 'PoppinsRegular',
+    fontSize: 12
+  }
+})
