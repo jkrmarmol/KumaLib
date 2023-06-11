@@ -1,9 +1,8 @@
-import { TouchableOpacity, TextInput, View, Text } from 'react-native';
+import { TouchableOpacity, TextInput, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { AntDesign, FontAwesome, MaterialCommunityIcons, Octicons } from '@expo/vector-icons';
 import Home from '../screens/Dashboard/Home';
-import Search from '../screens/Dashboard/Search';
 import Bookmark from '../screens/Dashboard/Bookmark';
 import Recently from '../screens/Dashboard/Recently';
 
@@ -83,7 +82,6 @@ export default function DashboardBottomNavigator() {
             left: 15,
             right: 15,
             borderRadius: 12,
-            // backgroundColor: '#F7A600'
           }
         })}
       >
@@ -93,7 +91,6 @@ export default function DashboardBottomNavigator() {
           component={Home}
           options={{
             headerTitle: '',
-            // headerShadowVisible: false,
             tabBarIcon: ({ size, color, focused }) => (
               <AntDesign
                 name="home"
@@ -103,21 +100,6 @@ export default function DashboardBottomNavigator() {
             )
           }}
         />
-
-        {/* <Tab.Screen
-          name='Search'
-          component={Search}
-          options={{
-            headerTitle: '',
-            tabBarIcon: ({ size, color, focused }) => (
-              <AntDesign
-                name="search1"
-                size={focused ? 28 : size}
-                color={focused ? '#F7A600' : '#000'}
-              />
-            ),
-          }}
-        /> */}
 
         <Tab.Screen
           name='Bookmark'

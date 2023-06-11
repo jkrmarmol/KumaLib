@@ -40,7 +40,6 @@ export default function ChangePassword() {
           setModalToggle(true)
         }
       }
-
     } catch (err) {
       console.log(err)
     }

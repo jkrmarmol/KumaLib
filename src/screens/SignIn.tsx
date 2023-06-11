@@ -29,7 +29,6 @@ export default function SignIn() {
   const onSubmitLogin = async () => {
     try {
       const { payload } = await dispatch(signInAccount(accountLogin))
-      console.log(payload)
       payload.success === 0 && setToggleModal(prev => ({
         ...prev,
         toggle: true,

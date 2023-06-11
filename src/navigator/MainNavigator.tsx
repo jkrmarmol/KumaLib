@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { TouchableOpacity, Text, StyleSheet, View, TextInput } from 'react-native'
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
-import { MaterialCommunityIcons, AntDesign, FontAwesome } from '@expo/vector-icons';
+import { AntDesign, FontAwesome } from '@expo/vector-icons';
 import Home from "../screens/Home";
 import SignIn from "../screens/SignIn";
 import SignUp from '../screens/SignUp';

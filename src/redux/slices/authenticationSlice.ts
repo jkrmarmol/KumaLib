@@ -9,12 +9,15 @@ export const checkAuthenticated = createAsyncThunk(
   async () => {
     try {
       const userHeader = new Headers();
-      userHeader.append("Cookie", `remix_userid=${AsyncStorage.getItem('remix_userid')}; remix_userkey=${AsyncStorage.getItem('remix_userkey')}`);
+      userHeader.append("Cookie", `remix_userid=${await AsyncStorage.getItem('remix_userid')}; remix_userkey=${await AsyncStorage.getItem('remix_userkey')}`);
       const checkAuthResponse = await fetch(`${SERVER_API}/eapi/user/profile`, {
         method: 'GET',
         headers: userHeader
       })
       const checkAuthJson = await checkAuthResponse.json();
+      if (await AsyncStorage.getItem('remix_userid') === null && await AsyncStorage.getItem('remix_userkey') === null) {
+        return { success: 0 }
+      }
       return checkAuthJson;
     } catch (err) {
       console.log(err)
@@ -34,6 +37,8 @@ export const signInAccount = createAsyncThunk(
         body: `email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
       });
       const signInJson = await signInResponse.json();
+      await AsyncStorage.setItem('remix_userid', `${signInJson.user.id}`)
+      await AsyncStorage.setItem('remix_userkey', signInJson.user.remix_userkey)
       return signInJson;
     } catch (err) {
       console.log(err)
@@ -44,11 +49,11 @@ export const signInAccount = createAsyncThunk(
 let initialState: IAuthenticationInitialState = {
   signInAccount: {
     response: null,
-    status: null
+    status: ''
   },
   checkAuthenticated: {
     response: null,
-    status: null
+    status: ''
   }
 }
 
