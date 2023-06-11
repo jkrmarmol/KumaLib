@@ -66,9 +66,7 @@ export default function BookInformation({ route, navigation }: any) {
               source={{ uri: selectBookInformation.response.book.cover }}
               style={style.bookImage}
             />
-
             <View style={style.bookInfoRightContainer}>
-
               <View style={style.ratingContainer}>
                 <View style={style.ratingChildContainer}>
                   <AntDesign name="staro" size={20} color="black" />

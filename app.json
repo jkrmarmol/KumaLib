@@ -8,7 +8,7 @@
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./src/assets/images/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#151521"
     },
     "assetBundlePatterns": [
@@ -30,7 +30,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "18075169-9bc7-49bb-89c8-c9514b7f78bd"
+        "projectId": "4002e871-72b3-438f-b6ce-ce7498970ff3"
       }
     }
   }
