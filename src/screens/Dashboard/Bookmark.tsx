@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { View, useWindowDimensions, StyleSheet, ActivityIndicator, ScrollView } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
+import { StatusBar } from 'expo-status-bar';
 import BookFavorite from '../../components/BookFavorite';
 import GradientText from '../../components/GradientText';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
@@ -18,27 +19,30 @@ export default function Bookmark() {
   }, [])
 
   return (
-    <View style={style.container}>
-      <ScrollView
-        showsVerticalScrollIndicator={false}
-        style={{ width: WIDTH }}>
+    <>
+      <StatusBar style='dark' />
+      <View style={style.container}>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          style={{ width: WIDTH }}>
 
-        <View style={style.titleContainer}>
-          <Ionicons name="bookmark-outline" size={30} color="#F70000" />
-          <GradientText style={style.myBooklistsText}>My Booklists</GradientText>
-        </View>
+          <View style={style.titleContainer}>
+            <Ionicons name="bookmark-outline" size={30} color="#F70000" />
+            <GradientText style={style.myBooklistsText}>My Booklists</GradientText>
+          </View>
 
-        {selectBookSaved.status === 'ok'
-          && selectBookSaved.response?.success === 1
-          ? selectBookSaved.response?.books.map((e: any, index: number) => <BookFavorite key={index} {...e} />)
-          : (
-            <View style={[style.bookActivityIndicator]}>
-              <ActivityIndicator size="large" color="#F7A600" />
-            </View>
-          )}
+          {selectBookSaved.status === 'ok'
+            && selectBookSaved.response?.success === 1
+            ? selectBookSaved.response?.books.map((e: any, index: number) => <BookFavorite key={index} {...e} />)
+            : (
+              <View style={[style.bookActivityIndicator]}>
+                <ActivityIndicator size="large" color="#F7A600" />
+              </View>
+            )}
 
-      </ScrollView>
-    </View>
+        </ScrollView>
+      </View>
+    </>
   )
 }
 

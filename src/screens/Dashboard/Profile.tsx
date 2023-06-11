@@ -55,7 +55,7 @@ export default function Profile() {
 
   return (
     <>
-      <StatusBar />
+      <StatusBar style='dark' />
       <CustomModal
         images={modalToggle.images}
         message={modalToggle.message}

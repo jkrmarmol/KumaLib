@@ -29,7 +29,7 @@ export default function EditProfile({ route }: any) {
 
   return (
     <>
-      <StatusBar />
+      <StatusBar style='dark' />
       <CustomModal
         images={SuccessSign}
         toggle={modalToggle}

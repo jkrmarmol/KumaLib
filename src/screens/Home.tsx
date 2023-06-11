@@ -3,7 +3,6 @@ import {
   View,
   Text,
   Image,
-  StatusBar,
   FlatList,
   useWindowDimensions,
   Animated,
@@ -11,6 +10,7 @@ import {
   StyleSheet
 } from 'react-native';
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
 import slide from '../constant/slideItems';
 import OnboardingItems from '../components/OnboardingItems';
 import Paginator from '../components/Paginator';
@@ -30,10 +30,7 @@ export default function Home() {
 
   return (
     <>
-      <StatusBar
-        backgroundColor={'#fff'}
-        barStyle={'dark-content'}
-      />
+      <StatusBar style='dark' />
 
       <View style={style.mainContainer}>
         <View style={[style.container, { width: WIDTH }]}>

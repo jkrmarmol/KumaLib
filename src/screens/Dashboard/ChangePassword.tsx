@@ -47,7 +47,7 @@ export default function ChangePassword() {
 
   return (
     <>
-      <StatusBar />
+      <StatusBar style='dark' />
       <CustomModal
         images={modalMessage.images}
         toggle={modalToggle}

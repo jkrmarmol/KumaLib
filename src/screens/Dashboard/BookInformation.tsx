@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useEffect, useState } from 'react'
 import { View, Text, useWindowDimensions, Image, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native'
 import { AntDesign, Foundation, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
+import { StatusBar } from 'expo-status-bar';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
 import { information, save, unsave, download } from '../../redux/slices/bookSlice';
 
@@ -53,113 +54,111 @@ export default function BookInformation({ route, navigation }: any) {
   }, [id])
 
   return (
-    <View style={style.container}>
+    <>
+      <StatusBar style='dark' />
+      <View style={style.container}>
 
-      {selectBookInformation.status === 'ok' && selectBookInformation.response?.success === 1
-        ? (<ScrollView
-          showsVerticalScrollIndicator={false}
-          style={{ width: WIDTH, flex: 1 }}>
+        {selectBookInformation.status === 'ok' && selectBookInformation.response?.success === 1
+          ? (<ScrollView
+            showsVerticalScrollIndicator={false}
+            style={{ width: WIDTH, flex: 1 }}>
 
-          <View style={style.bookImageTextContainer}>
+            <View style={style.bookImageTextContainer}>
 
-            <Image
-              source={{ uri: selectBookInformation.response.book.cover }}
-              style={style.bookImage}
-            />
-            <View style={style.bookInfoRightContainer}>
-              <View style={style.ratingContainer}>
-                <View style={style.ratingChildContainer}>
-                  <AntDesign name="staro" size={20} color="black" />
-                  <Text style={style.ratingText}>{selectBookInformation.response.book.interestScore} / {selectBookInformation.response.book.qualityScore}</Text>
+              <Image
+                source={{ uri: selectBookInformation.response.book.cover }}
+                style={style.bookImage}
+              />
+              <View style={style.bookInfoRightContainer}>
+                <View style={style.ratingContainer}>
+                  <View style={style.ratingChildContainer}>
+                    <AntDesign name="staro" size={20} color="black" />
+                    <Text style={style.ratingText}>{selectBookInformation.response.book.interestScore} / {selectBookInformation.response.book.qualityScore}</Text>
+                  </View>
+                  <Text style={style.ratingDescription}>Book Rating / Book Quality</Text>
                 </View>
-                <Text style={style.ratingDescription}>Book Rating / Book Quality</Text>
-              </View>
 
-              <View style={style.pagesContainer}>
-                <View style={style.pagesChildContainer}>
-                  <Foundation name="page-copy" size={20} color="black" />
-                  <Text style={style.pagesText}>{selectBookInformation.response.book.pages}</Text>
+                <View style={style.pagesContainer}>
+                  <View style={style.pagesChildContainer}>
+                    <Foundation name="page-copy" size={20} color="black" />
+                    <Text style={style.pagesText}>{selectBookInformation.response.book.pages}</Text>
+                  </View>
+                  <Text style={style.pagesDescription}>Pages</Text>
                 </View>
-                <Text style={style.pagesDescription}>Pages</Text>
-              </View>
 
-              <View style={style.publishedContainer}>
-                <View style={style.publishedChildContainer}>
-                  <MaterialIcons name="publish" size={20} color="black" />
-                  <Text style={style.publishedText}>{selectBookInformation.response.book.year}</Text>
+                <View style={style.publishedContainer}>
+                  <View style={style.publishedChildContainer}>
+                    <MaterialIcons name="publish" size={20} color="black" />
+                    <Text style={style.publishedText}>{selectBookInformation.response.book.year}</Text>
+                  </View>
+                  <Text style={style.publishedDescription}>Year Published</Text>
                 </View>
-                <Text style={style.publishedDescription}>Year Published</Text>
+
               </View>
 
             </View>
 
-          </View>
+            <View style={style.bookInfoContainer}>
+              <View style={style.bookTitleAuthorContainer}>
+                <Text style={style.bookTitleText}>{selectBookInformation.response.book.title}</Text>
+                <Text style={style.bookAuthorText}>{selectBookInformation.response.book.author}</Text>
+              </View>
 
-          <View style={style.bookInfoContainer}>
-            <View style={style.bookTitleAuthorContainer}>
-              <Text style={style.bookTitleText}>{selectBookInformation.response.book.title}</Text>
-              <Text style={style.bookAuthorText}>{selectBookInformation.response.book.author}</Text>
+              <View style={style.bookDescriptionContainer}>
+                <Text style={style.bookDescriptionTitle}>Description</Text>
+                <Text style={style.bookDescriptionText}>{selectBookInformation.response.book.description}</Text>
+              </View>
+
+              <View style={style.bookMoreInfoContainer}>
+                <Text style={style.bookMoreInfoTitle}>More Information</Text>
+
+                <View style={style.bookMoreInfoFlex}>
+                  <Text style={style.bookMoreInfoKey}>Publisher: </Text>
+                  <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.publisher}</Text>
+                </View>
+
+                <View style={style.bookMoreInfoFlex}>
+                  <Text style={style.bookMoreInfoKey}>Language: </Text>
+                  <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.language}</Text>
+                </View>
+
+                <View style={style.bookMoreInfoFlex}>
+                  <Text style={style.bookMoreInfoKey}>ISBN 10: </Text>
+                  <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.identifier.split(',')[1]}</Text>
+                </View>
+
+                <View style={style.bookMoreInfoFlex}>
+                  <Text style={style.bookMoreInfoKey}>ISBN 13: </Text>
+                  <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.identifier.split(',')[0]}</Text>
+                </View>
+
+                <View style={style.bookMoreInfoFlex}>
+                  <Text style={style.bookMoreInfoKey}>File: </Text>
+                  <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.extension.toUpperCase() + ' ' + selectBookInformation.response.book.filesizeString}</Text>
+                </View>
+
+              </View>
+
             </View>
 
-            <View style={style.bookDescriptionContainer}>
-              <Text style={style.bookDescriptionTitle}>Description</Text>
-              <Text style={style.bookDescriptionText}>{selectBookInformation.response.book.description}</Text>
-            </View>
-
-            <View style={style.bookMoreInfoContainer}>
-              <Text style={style.bookMoreInfoTitle}>More Information</Text>
-
-              <View style={style.bookMoreInfoFlex}>
-                <Text style={style.bookMoreInfoKey}>Publisher: </Text>
-                <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.publisher}</Text>
-              </View>
-
-              <View style={style.bookMoreInfoFlex}>
-                <Text style={style.bookMoreInfoKey}>Language: </Text>
-                <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.language}</Text>
-              </View>
-
-              <View style={style.bookMoreInfoFlex}>
-                <Text style={style.bookMoreInfoKey}>ISBN 10: </Text>
-                <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.identifier.split(',')[1]}</Text>
-              </View>
-
-              <View style={style.bookMoreInfoFlex}>
-                <Text style={style.bookMoreInfoKey}>ISBN 13: </Text>
-                <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.identifier.split(',')[0]}</Text>
-              </View>
-
-              <View style={style.bookMoreInfoFlex}>
-                <Text style={style.bookMoreInfoKey}>File: </Text>
-                <Text style={style.bookMoreInfoValue}>{selectBookInformation.response.book.extension.toUpperCase() + ' ' + selectBookInformation.response.book.filesizeString}</Text>
-              </View>
-
-            </View>
-
-          </View>
-
-          <TouchableOpacity
-            onPress={downloadFile}
-            style={style.bookButtonEffect}
-          >
-            <LinearGradient
-              colors={['#F7A600', '#F70000']}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={style.bookButtonContainer}
+            <TouchableOpacity
+              onPress={downloadFile}
+              style={style.bookButtonEffect}
             >
-              <Text style={style.bookButtonText}>Download {selectBookInformation.response.book.extension.toUpperCase() + ' ' + selectBookInformation.response.book.filesizeString}</Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        </ScrollView>) : <View style={style.bookActivityIndicator}>
-          <ActivityIndicator size="large" color="#F7A600" />
-        </View>}
-
-
-
-
-
-    </View >
+              <LinearGradient
+                colors={['#F7A600', '#F70000']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={style.bookButtonContainer}
+              >
+                <Text style={style.bookButtonText}>Download {selectBookInformation.response.book.extension.toUpperCase() + ' ' + selectBookInformation.response.book.filesizeString}</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+          </ScrollView>) : <View style={style.bookActivityIndicator}>
+            <ActivityIndicator size="large" color="#F7A600" />
+          </View>}
+      </View>
+    </>
   )
 }
 

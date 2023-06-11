@@ -61,7 +61,7 @@ export default function SignIn() {
 
           <Text style={style.signInText}>Sign In</Text>
 
-          <Text style={style.signInDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</Text>
+          <Text style={style.signInDescription}>Please sign in to continue.</Text>
 
         </View >
 

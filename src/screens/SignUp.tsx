@@ -20,7 +20,7 @@ export default function SignUp() {
 
           <Text style={style.signInText}>Sign Up</Text>
 
-          <Text style={style.signInDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</Text>
+          <Text style={style.signInDescription}>Please sign up to continue.</Text>
 
         </View >
 

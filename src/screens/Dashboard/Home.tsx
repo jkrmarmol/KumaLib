@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <StatusBar />
+      <StatusBar style='dark' />
       <ScrollView
         showsVerticalScrollIndicator={false}
         style={style.container}
