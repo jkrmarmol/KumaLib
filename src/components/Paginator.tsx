@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Animated, useWindowDimensions, StyleSheet } from 'react-native'
-import { IPaginatorParam } from '../typings/interface';
+import type { IPaginatorParam } from '../typings/interfaces';
 
 
 export default function Paginator({ data, scrollX }: IPaginatorParam) {

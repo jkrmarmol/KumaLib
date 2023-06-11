@@ -1,23 +1,13 @@
-import { View, Text, useWindowDimensions, ScrollView, Image, TextInput, StyleSheet, ActivityIndicator } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import { View, Text, useWindowDimensions, ScrollView, StyleSheet, ActivityIndicator } from 'react-native'
 import BookLists from '../../components/BookLists';
-import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
-import { search } from '../../redux/slices/bookSlice';
-import { searchBook } from '../../redux/slices/searchSlice';
+import { useAppSelector } from '../../redux/app/hook';
 
 
 export default function Search() {
   const { width } = useWindowDimensions()
   const WIDTH = (90 / 100) * width;
-  const [searchBook, setSearchBook] = useState<string>('')
-  const dispatch = useAppDispatch();
   const selectBookSearch = useAppSelector(state => state.book.search);
-  const selectBookInputSearch = useAppSelector(state => state.search);
-
-  // useEffect(() => {
-  //   dispatch(search(selectBookInputSearch));
-  // }, [])
-
 
   return (
     <View style={style.container}>

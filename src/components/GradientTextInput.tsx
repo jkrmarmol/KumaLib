@@ -5,9 +5,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useAppDispatch } from '../redux/app/hook';
 import { searchBook } from '../redux/slices/searchSlice';
 
+
 export default function GradientTextInput(props: any) {
   const dispatch = useAppDispatch();
-
 
   return (
     <MaskedView maskElement={

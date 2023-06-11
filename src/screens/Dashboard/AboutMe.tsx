@@ -1,4 +1,4 @@
-import { View, Text, Image, useWindowDimensions, TouchableOpacity, ScrollView, StyleSheet, Linking, Alert } from 'react-native'
+import { View, Text, Image, useWindowDimensions, TouchableOpacity, ScrollView, StyleSheet, Linking, Alert } from 'react-native';
 import React, { useCallback } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { MaterialCommunityIcons, FontAwesome, Entypo } from '@expo/vector-icons';
@@ -17,7 +17,6 @@ export default function AboutMe() {
       Alert.alert(`URL not supported: ${link}`);
     }
   }, []);
-
 
   return (
     <>

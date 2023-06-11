@@ -23,7 +23,6 @@ export default function ChangePassword() {
     confirmPassword: ''
   });
 
-
   const onSubmitUpdatePassword = async () => {
     try {
       if (password.confirmPassword !== password.newPassword) {

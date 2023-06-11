@@ -14,7 +14,6 @@ import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/
 import slide from '../constant/slideItems';
 import OnboardingItems from '../components/OnboardingItems';
 import Paginator from '../components/Paginator';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function Home() {
@@ -28,7 +27,6 @@ export default function Home() {
     setCurrentIndex(viewableItems[0].index)
   }).current;
   const viewConfig = useRef({ viewAreaCoveragePercentThreshold: 50 }).current;
-
 
   return (
     <>

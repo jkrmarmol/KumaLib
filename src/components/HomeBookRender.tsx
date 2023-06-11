@@ -1,9 +1,10 @@
 import React from 'react'
 import { Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
+import type { IBookType } from '../typings/interfaces';
 
 
-export default function HomeBookRender({ id, title, cover, author, hash }: any) {
+export default function HomeBookRender({ id, title, cover, author, hash }: IBookType) {
   const nav = useNavigation<NavigationProp<ParamListBase>>();
 
   return (

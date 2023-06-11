@@ -1,20 +1,22 @@
 import React, { useState } from 'react'
 import { View, Text, ScrollView, Image, SafeAreaView, useWindowDimensions, TouchableOpacity, StyleSheet } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+import type { NavigationProp, ParamListBase } from '@react-navigation/native';
 import { unsave } from '../redux/slices/bookSlice';
 import { useAppDispatch } from '../redux/app/hook';
 import type { IBookType } from '../typings/interfaces';
 
-export default function BookFavorite({ cover, title, author, id }: IBookType) {
+
+export default function BookFavorite({ cover, title, author, id, hash }: IBookType) {
+  const nav = useNavigation<NavigationProp<ParamListBase>>();
   const { width } = useWindowDimensions();
   const [favorite, setFavorite] = useState(true);
   const dispatch = useAppDispatch();
-
   const removeBook = async () => {
     try {
       setFavorite(!favorite)
-      const { payload } = await dispatch(unsave({ id }));
-      console.log(payload)
+      await dispatch(unsave({ id }));
     } catch (err) {
       console.log(err)
     }
@@ -24,7 +26,10 @@ export default function BookFavorite({ cover, title, author, id }: IBookType) {
     <ScrollView>
       <SafeAreaView style={style.container}>
 
-        <TouchableOpacity style={style.bookContainer}>
+        <TouchableOpacity
+          onPress={() => nav.navigate('BookInformation', { id, title, hash })}
+          style={style.bookContainer}
+        >
 
           <Image source={{ uri: cover }} style={style.bookImages} />
           <View style={[style.bookTitleAuthor, { width: width / 3 }]}>

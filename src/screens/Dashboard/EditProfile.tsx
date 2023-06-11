@@ -1,7 +1,7 @@
 import { View, Text, useWindowDimensions, TextInput, TouchableOpacity, StyleSheet } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react'
-import { IEditProfileState } from '../../typings/interfaces';
+import type { IEditProfileState } from '../../typings/interfaces';
 import { useAppDispatch } from '../../redux/app/hook';
 import { updateProfile } from '../../redux/slices/accountSlice';
 import SuccessSign from '../../assets/images/undraw_Done_re_oak4.png'
@@ -20,13 +20,12 @@ export default function EditProfile({ route }: any) {
 
   const onSubmitUpdate = async () => {
     try {
-      const { payload } = await dispatch(updateProfile({ name: profile.nameOrNick }))
+      await dispatch(updateProfile({ name: profile.nameOrNick }))
       setModalToggle(true)
     } catch (err) {
       console.log(err)
     }
   }
-
 
   return (
     <>

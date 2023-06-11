@@ -207,6 +207,10 @@ export interface IBookInitialState {
       success: number;
     };
     status: string;
+  },
+  download: {
+    response: null | any;
+    status: string;
   }
 }
 

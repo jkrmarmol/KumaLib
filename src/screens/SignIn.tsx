@@ -9,7 +9,7 @@ import { signInAccount } from '../redux/slices/authenticationSlice';
 import SocMedAuth from '../components/SocMedAuth'
 import DeniedSign from '../assets/images/undraw_access_denied_re_awnf.png';
 import CustomModal from '../components/CustomModal';
-import { IModalState } from '../typings/interfaces';
+import type { IModalState } from '../typings/interfaces';
 
 
 export default function SignIn() {
@@ -17,11 +17,8 @@ export default function SignIn() {
   const dispatch = useAppDispatch();
   const { width } = useWindowDimensions();
   const WIDTH = (85 / 100) * width;
-
   const [showPassword, setShowPassword] = useState<boolean>(true);
-
   const [accountLogin, setAccountLogin] = useState({ email: '', password: '' });
-
   const [toggleModal, setToggleModal] = useState<IModalState>({
     toggle: false,
     images: DeniedSign,
@@ -46,7 +43,6 @@ export default function SignIn() {
       console.log(err)
     }
   }
-
 
   return (
     <>

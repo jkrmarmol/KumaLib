@@ -28,7 +28,9 @@
     "react-native-reanimated-carousel": "^3.3.2",
     "react-native-svg": "13.4.0",
     "react-redux": "^8.0.5",
-    "@react-native-async-storage/async-storage": "1.17.11"
+    "@react-native-async-storage/async-storage": "1.17.11",
+    "expo-file-system": "~15.2.2",
+    "expo-sharing": "~11.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -36,5 +38,17 @@
     "@types/react-native": "^0.72.2",
     "typescript": "^4.9.4"
   },
-  "private": true
+  "private": true,
+  "description": "KumaLib is an underdevelopment mobile app built in React Native with the use of TypeScript.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkrmarmol/KumaLib.git"
+  },
+  "keywords": [],
+  "author": "Kurt Russelle Marmol <jkurtrussellemarmol@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkrmarmol/KumaLib/issues"
+  },
+  "homepage": "https://github.com/jkrmarmol/KumaLib#readme"
 }

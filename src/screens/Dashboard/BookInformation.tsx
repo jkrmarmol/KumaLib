@@ -3,7 +3,7 @@ import { View, Text, useWindowDimensions, Image, ScrollView, TouchableOpacity, S
 import { AntDesign, Foundation, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
-import { information, save, unsave } from '../../redux/slices/bookSlice';
+import { information, save, unsave, download } from '../../redux/slices/bookSlice';
 
 
 export default function BookInformation({ route, navigation }: any) {
@@ -23,7 +23,16 @@ export default function BookInformation({ route, navigation }: any) {
     }
   }
 
-
+  const downloadFile = async () => {
+    try {
+      if (selectBookInformation.status === 'ok' && selectBookInformation.response?.success === 1) {
+        const { title, extension } = selectBookInformation.response.book;
+        await dispatch(download({ title, extension, id, hash }))
+      }
+    } catch (err) {
+      console.log(err)
+    }
+  }
   useLayoutEffect(() => {
     navigation.setOptions({
       title,
@@ -33,16 +42,15 @@ export default function BookInformation({ route, navigation }: any) {
       },
       headerRight: () => (
         <TouchableOpacity onPress={onPressSave}>
-          {!bookmark ? <MaterialCommunityIcons name="bookmark-plus-outline" size={30} color="black" /> : <MaterialCommunityIcons name="bookmark-minus" size={30} color="#F7A600" />}
+          {bookmark ? <MaterialCommunityIcons name="bookmark-minus" size={30} color="#F7A600" /> : <MaterialCommunityIcons name="bookmark-plus-outline" size={30} color="black" />}
         </TouchableOpacity>
       ),
     });
-
-  }, [navigation, title, id, bookmark, selectBookInformation, onPressSave]);
+  }, [navigation, title, id, bookmark, selectBookInformation, setBookmark]);
 
   useEffect(() => {
-    dispatch(information({ id, hash }))
-  }, [id, bookmark])
+    dispatch(information({ id, hash }));
+  }, [id])
 
   return (
     <View style={style.container}>
@@ -132,7 +140,10 @@ export default function BookInformation({ route, navigation }: any) {
 
           </View>
 
-          <TouchableOpacity style={style.bookButtonEffect}>
+          <TouchableOpacity
+            onPress={downloadFile}
+            style={style.bookButtonEffect}
+          >
             <LinearGradient
               colors={['#F7A600', '#F70000']}
               start={{ x: 0, y: 0 }}

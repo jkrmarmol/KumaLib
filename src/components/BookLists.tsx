@@ -1,8 +1,8 @@
+import React from 'react'
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import type { NavigationProp, ParamListBase } from '@react-navigation/native'
 import type { IBookType } from '../typings/interfaces'
-import React from 'react'
 
 
 export default function BookLists({ id, title, cover, author, hash }: IBookType) {

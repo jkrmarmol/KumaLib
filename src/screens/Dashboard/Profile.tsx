@@ -13,7 +13,6 @@ import SuccessSign from '../../assets/images/undraw_Done_re_oak4.png'
 import CustomModal from '../../components/CustomModal';
 
 
-
 export default function Profile() {
   const nav = useNavigation<NavigationProp<ParamListBase>>();
   const { width } = useWindowDimensions();
@@ -26,10 +25,11 @@ export default function Profile() {
     images: SuccessSign
   });
   const selectViewProfile = useAppSelector(state => state.account.viewProfile);
+  const selectUpdateProfile = useAppSelector(state => state.account.updateProfile);
 
   useEffect(() => {
     dispatch(viewProfile())
-  }, [])
+  }, [selectUpdateProfile])
 
   if (selectViewProfile.status !== 'ok') {
     return <View style={style.bookActivityIndicator}>

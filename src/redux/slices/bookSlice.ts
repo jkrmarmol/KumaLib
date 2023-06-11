@@ -1,6 +1,8 @@
 import { SERVER_API } from "@env";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import * as FileSystem from 'expo-file-system';
+import { shareAsync } from 'expo-sharing';
 import type { IBookInitialState } from "../../typings/interfaces";
 
 export const saved = createAsyncThunk(
@@ -131,9 +133,8 @@ export const unsave = createAsyncThunk(
 
 export const save = createAsyncThunk(
   'book/save',
-  async ({ id }: any) => {
+  async ({ id }: any, thunkAPI) => {
     try {
-      console.log(id)
       const userHeader = new Headers();
       userHeader.append("Cookie", `remix_userid=${await AsyncStorage.getItem('remix_userid')}; remix_userkey=${await AsyncStorage.getItem('remix_userkey')}`);
       const saveResponse = await fetch(`${SERVER_API}/eapi/user/book/${id}/save`, {
@@ -141,8 +142,22 @@ export const save = createAsyncThunk(
         headers: userHeader
       });
       const saveJson = await saveResponse.json();
-      console.log(saveJson)
       return saveJson;
+    } catch (err) {
+      console.log(err)
+    }
+  }
+)
+
+export const download = createAsyncThunk(
+  'book/download',
+  async ({ title, extension, id, hash }: any) => {
+    try {
+      const downloadResponse = await FileSystem.downloadAsync(
+        `${SERVER_API}/dl/${id}/${hash}`,
+        FileSystem.documentDirectory + title + '.' + extension);
+      shareAsync(downloadResponse.uri)
+      return downloadResponse;
     } catch (err) {
       console.log(err)
     }
@@ -180,6 +195,10 @@ let initialState: IBookInitialState = {
     status: ''
   },
   save: {
+    response: null,
+    status: ''
+  },
+  download: {
     response: null,
     status: ''
   }
@@ -270,6 +289,16 @@ const bookSlice = createSlice({
       })
       .addCase(save.rejected, (state, action) => {
         state.save.status = 'failed';
+      })
+      .addCase(download.pending, (state, action) => {
+        state.download.status = 'loading';
+      })
+      .addCase(download.fulfilled, (state, { payload }) => {
+        state.download.status = 'ok';
+        state.download.response = payload;
+      })
+      .addCase(download.rejected, (state, action) => {
+        state.download.status = 'failed';
       })
   }
 })

@@ -13,8 +13,6 @@ export default function Bookmark() {
   const dispatch = useAppDispatch();
   const selectBookSaved = useAppSelector(state => state.book.saved);
 
-
-
   useEffect(() => {
     dispatch(saved())
   }, [])

@@ -1,4 +1,4 @@
-import { View, Text, useWindowDimensions, ScrollView, ActivityIndicator, StyleSheet } from 'react-native'
+import { View, useWindowDimensions, ScrollView, ActivityIndicator, StyleSheet } from 'react-native'
 import React, { useEffect } from 'react'
 import { Feather } from '@expo/vector-icons';
 import GradientText from '../../components/GradientText'
