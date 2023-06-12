@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useEffect, useState } from 'react'
 import { View, Text, useWindowDimensions, Image, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native'
+import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { AntDesign, Foundation, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
@@ -11,6 +12,7 @@ export default function BookInformation({ route, navigation }: any) {
   const { id, title, hash } = route.params;
   const { width } = useWindowDimensions();
   const WIDTH = (90 / 100) * width;
+  const nav = useNavigation<NavigationProp<ParamListBase>>()
   const dispatch = useAppDispatch();
   const selectBookInformation = useAppSelector(state => state.book.information);
   const [bookmark, setBookmark] = useState(selectBookInformation.status === 'ok' && selectBookInformation.response?.book._isUserSavedBook);
@@ -34,6 +36,15 @@ export default function BookInformation({ route, navigation }: any) {
       console.log(err)
     }
   }
+
+  const viewFile = async () => {
+    try {
+
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   useLayoutEffect(() => {
     navigation.setOptions({
       title,
@@ -140,6 +151,20 @@ export default function BookInformation({ route, navigation }: any) {
               </View>
 
             </View>
+
+            <TouchableOpacity
+              onPress={() => nav.navigate('ViewFile', { id, title })}
+              style={[style.bookButtonEffect, { marginBottom: -6 }]}
+            >
+              <LinearGradient
+                colors={['#F7A600', '#F70000']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={style.bookButtonContainer}
+              >
+                <Text style={style.bookButtonText}>View </Text>
+              </LinearGradient>
+            </TouchableOpacity>
 
             <TouchableOpacity
               onPress={downloadFile}
@@ -286,11 +311,11 @@ const style = StyleSheet.create({
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.25,
     shadowRadius: 1,
-    borderRadius: 16,
+    borderRadius: 12,
     marginVertical: 20
   },
   bookButtonContainer: {
-    borderRadius: 16,
+    borderRadius: 12,
     height: 50,
     justifyContent: 'center',
     alignItems: 'center'

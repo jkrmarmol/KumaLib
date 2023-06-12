@@ -20,6 +20,7 @@ export default function Home() {
   const { width } = useWindowDimensions();
   const [activeTab, setActiveTabs] = useState<string>('Popular');
 
+
   useEffect(() => {
     dispatch(saved())
     dispatch(popular())

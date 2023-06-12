@@ -13,6 +13,7 @@ import EditProfile from '../screens/Dashboard/EditProfile';
 import ChangePassword from '../screens/Dashboard/ChangePassword';
 import AboutMe from '../screens/Dashboard/AboutMe';
 import Search from '../screens/Dashboard/Search';
+import ViewFile from '../screens/Dashboard/ViewFile';
 import { useAppDispatch, useAppSelector } from '../redux/app/hook';
 import { checkAuthenticated } from '../redux/slices/authenticationSlice';
 import { searchBook } from '../redux/slices/searchSlice';
@@ -212,6 +213,17 @@ export default function MainNavigator() {
             fontFamily: 'PoppinsSemiBold',
             fontSize: 18
           },
+          animation: 'slide_from_right'
+        }}
+      />
+
+      <Stack.Screen
+        name='ViewFile'
+        component={ViewFile}
+        options={{
+          headerShadowVisible: false,
+          headerTitle: '',
+          headerTransparent: true,
           animation: 'slide_from_right'
         }}
       />
