@@ -1,20 +1,39 @@
 import React, { useState } from 'react';
 import { View, Text, useWindowDimensions, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { MaterialCommunityIcons, MaterialIcons, Entypo } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar'
 import SocMedAuth from '../components/SocMedAuth'
+import { WebView } from 'react-native-webview'
 
 
 export default function SignUp() {
   const { width } = useWindowDimensions();
   const WIDTH = (85 / 100) * width;
+  const nav = useNavigation<NavigationProp<ParamListBase>>()
   const [showPassword, setShowPassword] = useState(true);
+
+  const url: any = 'https://1lib.at/registration.php'
+
+
+  const handleNavigationStateChange = (navState: any) => {
+    if (url !== navState.url) {
+      nav.navigate('SignIn')
+    }
+  };
 
   return (
     <>
-      <StatusBar />
-      <View style={style.container}>
+      <StatusBar
+        style='dark'
+        translucent={true}
+      />
+      <WebView
+        source={{ uri: url }}
+        onNavigationStateChange={handleNavigationStateChange}
+      />
+      {/* <View style={style.container}>
 
         <View style={[style.signInContainer, { width: WIDTH }]}>
 
@@ -91,7 +110,7 @@ export default function SignUp() {
 
         </View>
 
-      </View >
+      </View > */}
     </>
   )
 }

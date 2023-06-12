@@ -72,9 +72,6 @@ export default function MainNavigator() {
         component={SignUp}
         options={{
           headerTitle: '',
-          headerStyle: {
-            backgroundColor: '#F7A600',
-          },
           headerShadowVisible: false,
           headerRight: () => (
             <TouchableOpacity

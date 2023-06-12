@@ -37,8 +37,10 @@ export const signInAccount = createAsyncThunk(
         body: `email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
       });
       const signInJson = await signInResponse.json();
-      await AsyncStorage.setItem('remix_userid', `${signInJson.user.id}`)
-      await AsyncStorage.setItem('remix_userkey', signInJson.user.remix_userkey)
+      if (signInJson.success === 1) {
+        await AsyncStorage.setItem('remix_userid', `${signInJson.user.id}`)
+        await AsyncStorage.setItem('remix_userkey', signInJson.user.remix_userkey)
+      }
       return signInJson;
     } catch (err) {
       console.log(err)
