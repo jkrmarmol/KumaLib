@@ -5,6 +5,7 @@ import * as FileSystem from 'expo-file-system';
 import { shareAsync } from 'expo-sharing';
 import type { IBookInitialState, IDownload } from "../../typings/interfaces";
 
+
 export const saved = createAsyncThunk(
   'book/saved',
   async () => {
@@ -154,8 +155,10 @@ export const download = createAsyncThunk(
   async ({ title, extension, id, hash }: IDownload) => {
     try {
       const downloadResponse = await FileSystem.downloadAsync(
-        `${SERVER_API}/dl/${id}/${hash}`, FileSystem.documentDirectory + title + '.' + extension);
+        `${SERVER_API}/dl/${id}/${hash}`,
+        FileSystem.documentDirectory + `${title}.${extension}`);
       shareAsync(downloadResponse.uri)
+      return downloadResponse;
     } catch (err) {
       console.log(err)
     }
