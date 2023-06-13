@@ -23,7 +23,8 @@
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.jkrmarmol.KumaLib"
+      "permissions": ["ACCESS_NETWORK_STATE", "INTERNET"],
+      // "package": "com.jkrmarmol.KumaLib"
     },
     "web": {
       "favicon": "./assets/favicon.png"

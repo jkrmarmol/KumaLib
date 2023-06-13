@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as FileSystem from 'expo-file-system';
 import { shareAsync } from 'expo-sharing';
-import type { IBookInitialState } from "../../typings/interfaces";
+import type { IBookInitialState, IDownload } from "../../typings/interfaces";
 
 export const saved = createAsyncThunk(
   'book/saved',
@@ -133,7 +133,7 @@ export const unsave = createAsyncThunk(
 
 export const save = createAsyncThunk(
   'book/save',
-  async ({ id }: any, thunkAPI) => {
+  async ({ id }: any) => {
     try {
       const userHeader = new Headers();
       userHeader.append("Cookie", `remix_userid=${await AsyncStorage.getItem('remix_userid')}; remix_userkey=${await AsyncStorage.getItem('remix_userkey')}`);
@@ -151,20 +151,11 @@ export const save = createAsyncThunk(
 
 export const download = createAsyncThunk(
   'book/download',
-  async ({ title, extension, id, hash }: any) => {
+  async ({ title, extension, id, hash }: IDownload) => {
     try {
-      // const downloadResponse = await FileSystem.downloadAsync(
-      //   `https://1lib.at/dl/${id}/${hash}`,
-      //   FileSystem.documentDirectory + `${title}.${extension}`)
-      // shareAsync(downloadResponse.uri)
-      // return downloadResponse;
-
-      const url = `${SERVER_API}/dl/${id}/${hash}`;
-      const fileUri = FileSystem.cacheDirectory + `${title}.${extension}`;
-      const downloadResumable = FileSystem.createDownloadResumable(url, fileUri);
-      const { uri }: any = await downloadResumable.downloadAsync();
-      console.log('File downloaded successfully:', uri);
-      return 'hehe'
+      const downloadResponse = await FileSystem.downloadAsync(
+        `${SERVER_API}/dl/${id}/${hash}`, FileSystem.documentDirectory + title + '.' + extension);
+      shareAsync(downloadResponse.uri)
     } catch (err) {
       console.log(err)
     }

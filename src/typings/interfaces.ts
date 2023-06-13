@@ -228,3 +228,10 @@ export interface IAccountInitialState {
     status: string;
   };
 }
+
+export interface IDownload {
+  title: string;
+  extension: string;
+  id: string;
+  hash: string;
+}

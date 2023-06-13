@@ -4,6 +4,7 @@ import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/
 import { AntDesign, Foundation, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
+import { shareAsync } from 'expo-sharing';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
 import { information, save, unsave, download } from '../../redux/slices/bookSlice';
 
@@ -30,7 +31,8 @@ export default function BookInformation({ route, navigation }: any) {
     try {
       if (selectBookInformation.status === 'ok' && selectBookInformation.response?.success === 1) {
         const { title, extension } = selectBookInformation.response.book;
-        await dispatch(download({ title, extension, id, hash }))
+        const { payload } = await dispatch(download({ title, extension, id, hash }))
+
       }
     } catch (err) {
       console.log(err)
