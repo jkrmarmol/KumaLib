@@ -24,7 +24,7 @@
         "backgroundColor": "#ffffff"
       },
       "permissions": ["ACCESS_NETWORK_STATE", "INTERNET"],
-      // "package": "com.jkrmarmol.KumaLib"
+      "package": "com.jkrmarmol.KumaLib"
     },
     "web": {
       "favicon": "./assets/favicon.png"
