@@ -40,14 +40,6 @@
       "eas": {
         "projectId": "4002e871-72b3-438f-b6ce-ce7498970ff3"
       }
-    },
-    "plugins": [
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Allow KumaLib to access your camera."
-        }
-      ]
-    ]
+    }
   }
 }
