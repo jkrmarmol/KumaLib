@@ -1,10 +1,10 @@
 # KumaLib
 
-KumaLib is an underdevelopment mobile app built in React Native with the use of TypeScript.
+KumaLib is mobile app built in React Native with the use of TypeScript.
 
 ## Description
 
-This mobile app aims to provide a vast collection of ebooks and articles across diverse genres. It is currently under active development and is not yet ready for production use.
+This mobile app aims to provide a vast collection of ebooks and articles across diverse genres.
 
 ## Technologies Used
 
