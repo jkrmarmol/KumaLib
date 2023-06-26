@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { View, Text, useWindowDimensions, Image, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native'
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import { MaterialIcons, AntDesign, Feather, SimpleLineIcons } from '@expo/vector-icons';
-import { StatusBar } from 'expo-status-bar'
+import { StatusBar } from 'expo-status-bar';
 import * as Application from 'expo-application';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hook';
 import { viewProfile } from '../../redux/slices/accountSlice';
-import AvatarSample from '../../assets/images/AvatarSample.png';
-import KumaLibLogo from '../../assets/images/KumaLib_Logo.png'
-import SuccessSign from '../../assets/images/undraw_Done_re_oak4.png'
+import ByteDevsLogo from '../../assets/images/bytedevs.png';
+import KumaLibLogo from '../../assets/images/KumaLib_Logo.png';
+import SuccessSign from '../../assets/images/undraw_Done_re_oak4.png';
 import CustomModal from '../../components/CustomModal';
 
 
@@ -75,7 +75,7 @@ export default function Profile() {
               <Text style={style.profileEmailText}>{selectViewProfile.response?.user.email}</Text>
             </View>
             <Image
-              source={AvatarSample}
+              source={ByteDevsLogo}
               style={style.profileAvatar}
             />
           </View>
@@ -126,11 +126,11 @@ export default function Profile() {
 
               <View style={style.settingItemContainer}>
                 <View style={style.settingIconNameContainer}>
-                  <AntDesign name="meh" size={24} color="black" />
-                  <Text style={style.settingNameText}>About Me</Text>
+                  <AntDesign name="team" size={24} color="black" />
+                  <Text style={style.settingNameText}>Our Team</Text>
                 </View>
                 <TouchableOpacity
-                  onPress={() => nav.navigate('AboutMe')}
+                  onPress={() => nav.navigate('OurTeam')}
                 >
                   <MaterialIcons name="keyboard-arrow-right" size={28} color="black" style={{ opacity: 0.7 }} />
                 </TouchableOpacity>
@@ -289,8 +289,8 @@ const style = StyleSheet.create({
   },
   settingNameText: {
     left: 5,
-    fontFamily: 'PoppinsRegular',
-    fontSize: 14
+    fontFamily: 'PoppinsMedium',
+    fontSize: 14,
   },
   footerContainer: {
     flex: 1,

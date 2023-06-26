@@ -235,3 +235,10 @@ export interface IDownload {
   id: string;
   hash: string;
 }
+
+export interface ITeamMember {
+  image: ImageSourcePropType;
+  name: string;
+  position: string;
+  course: string
+}

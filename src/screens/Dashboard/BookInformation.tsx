@@ -67,7 +67,6 @@ export default function BookInformation({ route, navigation }: any) {
             style={{ width: WIDTH, flex: 1 }}>
 
             <View style={style.bookImageTextContainer}>
-
               <Image
                 source={{ uri: selectBookInformation.response.book.cover }}
                 style={style.bookImage}
@@ -144,7 +143,7 @@ export default function BookInformation({ route, navigation }: any) {
 
             </View>
 
-            <TouchableOpacity
+            {selectBookInformation.response.book.extension === 'pdf' && <TouchableOpacity
               onPress={() => nav.navigate('ViewFile', { id, title })}
               style={[style.bookButtonEffect, { marginBottom: -6 }]}
             >
@@ -156,7 +155,8 @@ export default function BookInformation({ route, navigation }: any) {
               >
                 <Text style={style.bookButtonText}>View </Text>
               </LinearGradient>
-            </TouchableOpacity>
+            </TouchableOpacity>}
+
 
             <TouchableOpacity
               onPress={downloadFile}

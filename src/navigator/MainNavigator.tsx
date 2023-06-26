@@ -14,6 +14,7 @@ import ChangePassword from '../screens/Dashboard/ChangePassword';
 import AboutMe from '../screens/Dashboard/AboutMe';
 import Search from '../screens/Dashboard/Search';
 import ViewFile from '../screens/Dashboard/ViewFile';
+import OurTeam from '../screens/Dashboard/OurTeam';
 import { useAppDispatch, useAppSelector } from '../redux/app/hook';
 import { checkAuthenticated } from '../redux/slices/authenticationSlice';
 import { searchBook } from '../redux/slices/searchSlice';
@@ -200,7 +201,7 @@ export default function MainNavigator() {
         }}
       />
 
-      <Stack.Screen
+      {/* <Stack.Screen
         name='AboutMe'
         component={AboutMe}
         options={{
@@ -209,6 +210,20 @@ export default function MainNavigator() {
           headerTransparent: true,
           headerTintColor: '#fff',
           headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontFamily: 'PoppinsSemiBold',
+            fontSize: 18
+          },
+          animation: 'slide_from_right'
+        }}
+      /> */}
+
+      <Stack.Screen
+        name='OurTeam'
+        component={OurTeam}
+        options={{
+          headerTitleAlign: 'center',
+          headerTitle: 'Our Team',
           headerTitleStyle: {
             fontFamily: 'PoppinsSemiBold',
             fontSize: 18

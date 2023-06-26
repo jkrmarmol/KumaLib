@@ -7,10 +7,10 @@ import {
   useWindowDimensions,
   Animated,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
+  StatusBar
 } from 'react-native';
 import { useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
 import slide from '../constant/slideItems';
 import OnboardingItems from '../components/OnboardingItems';
 import Paginator from '../components/Paginator';
@@ -30,7 +30,10 @@ export default function Home() {
 
   return (
     <>
-      <StatusBar style='dark' />
+      <StatusBar
+        barStyle={'dark-content'}
+        backgroundColor="#fff"
+      />
 
       <View style={style.mainContainer}>
         <View style={[style.container, { width: WIDTH }]}>
@@ -86,7 +89,7 @@ export default function Home() {
           </View>
 
           <View style={style.footerContainer}>
-            <Text style={style.footerText}>Designed and Developed by Kurt Russelle Marmol</Text>
+            <Text style={style.footerText}>Designed and Developed by ByteDevs Technologies.</Text>
           </View>
         </View>
       </View>
@@ -137,7 +140,7 @@ const style = StyleSheet.create({
     marginBottom: 20
   },
   footerText: {
-    fontFamily: 'PoppinsRegular',
+    fontFamily: 'PoppinsMedium',
     fontSize: 10,
     textAlign: 'center'
   }
